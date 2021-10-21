@@ -19,7 +19,8 @@ struct BlockView<T : Entity> : View {
         VStack {
             Text(title)
             LazyVGrid(
-                columns: columns
+                columns: columns,
+                alignment: HorizontalAlignment.center
             ) {
                 ForEach(items, id: \.id) {
                     item in

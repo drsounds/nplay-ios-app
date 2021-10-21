@@ -13,12 +13,39 @@ struct BlurbView: View {
     var label : String = ""
     var type : String = ""
     var body: some View {
-        VStack(alignment: HorizontalAlignment.center, spacing: 3) {
+        VStack() {
             ImageView()
-            Text(label.uppercased()).opacity(0.5)
-            Text(name).bold()
-            Text(description).opacity(0.8)
+            VStack {
+                Text(label.uppercased()).opacity(0.2)
+                Text(name).bold()
+                Text(description).opacity(0.8)
+            }
+            .frame(maxWidth: .infinity)
+            .padding(10)
         }
+        .background(
+            LinearGradient(
+                gradient: Gradient(
+                    colors: [
+                        Color(
+                            hue: 0,
+                            saturation: 0,
+                            brightness: 0,
+                            opacity: 0.05
+                        ),
+                        Color(
+                            hue: 0,
+                            saturation: 0,
+                            brightness: 0,
+                            opacity: 0.00
+                        )
+                    ]
+                ),
+                startPoint: .top, endPoint: .bottom
+            )
+        )
+        .frame(maxWidth:.infinity)
+        .cornerRadius(12.0)
     }
 }
 
