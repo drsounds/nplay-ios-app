@@ -4,6 +4,7 @@
 //  Based on code
 //  Created by Alexander Forselius on 2021-10-21.
 //
+//  Based on code https://www.raywenderlich.com/11609977-getting-started-with-cloud-firestore-and-swiftui
 
 import Foundation
 import Combine
@@ -18,9 +19,12 @@ class EntityViewLoader<T : Entity> : ObservableObject {
     }
     func load() {
         objectRepository.get()
-        objectRepository.objects.map {
-            obj in
-            self.obj = EntityViewModel<T>(obj: obj)
+        objectRepository.$objects.map {
+            objs in
+            objs.map {
+                obj in
+                self.obj = EntityViewModel<T>(obj: obj)
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ struct ShowPage: View {
     var id : String = ""
     init(id: String) {
         self.id = id
-        self.showViewLoader = EntityViewLoader<Show>(path: "shows/" + id)
+        self.showViewLoader = EntityViewLoader<Show>(path: id)
         self.showViewLoader.load()
     }
     var body: some View {

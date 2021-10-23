@@ -12,14 +12,20 @@ struct BrowseView : View {
     
     var shows : [Show] = [];
     var body: some View {
-        ScrollView {
-            VStack {
-                BlockView(
-                    items: self.shows,
-                    title: "Shows"
-                )
+        NavigationView {
+            ScrollView {
+                VStack {
+                    BlockView(
+                        items: self.shows,
+                        title: "Shows",
+                        destination: {
+                            item in
+                            ShowPage(id: item.id!)
+                        }
+                    )
+                }
+                .padding(5)
             }
-            .padding(5)
         }
     }
     

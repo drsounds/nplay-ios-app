@@ -1,7 +1,6 @@
 //
 //  EntityViewModel.swift
 //  nPlay
-//  Based on code https://www.raywenderlich.com/11609977-getting-started-with-cloud-firestore-and-swiftui
 //  Created by Alexander Forselius on 2021-10-21.
 //
 

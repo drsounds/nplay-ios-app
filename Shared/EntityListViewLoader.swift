@@ -4,6 +4,7 @@
 //  Based on code
 //  Created by Alexander Forselius on 2021-10-21.
 //
+//  Based on code https://www.raywenderlich.com/11609977-getting-started-with-cloud-firestore-and-swiftui
 
 import Foundation
 import Combine
