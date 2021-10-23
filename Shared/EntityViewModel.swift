@@ -9,10 +9,10 @@ import Foundation
 import Combine
 
 class EntityViewModel<T : Entity> : ObservableObject, Identifiable {
-    private let repository : EntityRepository<T> = EntityRepository<T>();
+    private let repository : EntityRepository<T> = EntityRepository<T>(path: "");
     private var cancellables: Set<AnyCancellable> = [];
     @Published var obj : T;
     init(obj: T) {
-        self.obj = obj 
+        self.obj = obj
     }
 }

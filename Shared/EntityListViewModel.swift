@@ -9,10 +9,12 @@ import Foundation
 import Combine
 
 class EntityListViewModel<T : Entity> : ObservableObject {
-    @Published var objectRepository = EntityRepository<T>()
+    @Published var objectRepository = EntityRepository<T>(path: "")
     @Published var objectViewModels : [EntityViewModel<T>] = [];
     private var cancellables: Set<AnyCancellable> = []
-    init() {
+    init(path: String) {
+        objectRepository = EntityRepository<T>(path: path)
+        objectRepository.get()
       objectRepository.$objects.map { cards in
         cards.map(EntityViewModel.init)
       }

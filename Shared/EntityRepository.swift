@@ -11,14 +11,16 @@ import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 import Combine
- 
+
 class EntityRepository<T : Entity>: ObservableObject {
-  @Published var objects : Array<T> = [];
-  private var path : String = "";
+  @Published var objects : Array<T> = []
+  private var path : String = ""
   private let store = Firestore.firestore()
+  init(path: String) {
+     self.path = path
+  }
   func get() {
-  // 3
-  store.collection(path)
+   store.collection(path)
     .addSnapshotListener { querySnapshot, error in
       // 4
       if let error = error {

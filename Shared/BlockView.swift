@@ -13,7 +13,7 @@ struct BlockView<T : Entity> : View {
         GridItem(.flexible()),
         GridItem(.flexible())
     ];
-    var items : Array<T> = [];
+    var items = [T]();
     var title : String = "";
     var body : some View {
         VStack {
@@ -24,7 +24,7 @@ struct BlockView<T : Entity> : View {
             ) {
                 ForEach(items, id: \.id) {
                     item in
-                    BlurbView(name:item.name, description:item.description)
+                    BlurbView(name:item.name, description:item.description, color: item.color, imageUrl: item.imageUrl)
                 }
             }
         }

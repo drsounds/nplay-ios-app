@@ -51,6 +51,8 @@
 		DAEDC83A2721D817001555BF /* EntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC8382721D817001555BF /* EntityViewModel.swift */; };
 		DAEDC83C2721D90B001555BF /* EntityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC83B2721D90B001555BF /* EntityListViewModel.swift */; };
 		DAEDC83D2721D90B001555BF /* EntityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC83B2721D90B001555BF /* EntityListViewModel.swift */; };
+		DAEDC83F2724313A001555BF /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC83E2724313A001555BF /* HexColor.swift */; };
+		DAEDC8402724313A001555BF /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC83E2724313A001555BF /* HexColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,7 @@
 		DAEDC8352721D687001555BF /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		DAEDC8382721D817001555BF /* EntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityViewModel.swift; sourceTree = "<group>"; };
 		DAEDC83B2721D90B001555BF /* EntityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityListViewModel.swift; sourceTree = "<group>"; };
+		DAEDC83E2724313A001555BF /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +199,7 @@
 				DAEDC8352721D687001555BF /* Entity.swift */,
 				DAEDC8382721D817001555BF /* EntityViewModel.swift */,
 				DAEDC83B2721D90B001555BF /* EntityListViewModel.swift */,
+				DAEDC83E2724313A001555BF /* HexColor.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -466,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEDC83F2724313A001555BF /* HexColor.swift in Sources */,
 				DA4F44782721ADF20036B3B5 /* BrowseView.swift in Sources */,
 				DAEDC8302721C698001555BF /* Episode.swift in Sources */,
 				DAEDC8362721D687001555BF /* Entity.swift in Sources */,
@@ -489,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEDC8402724313A001555BF /* HexColor.swift in Sources */,
 				DA4F44792721ADF20036B3B5 /* BrowseView.swift in Sources */,
 				DAEDC8312721C698001555BF /* Episode.swift in Sources */,
 				DAEDC8372721D687001555BF /* Entity.swift in Sources */,

@@ -12,9 +12,11 @@ struct BlurbView: View {
     var description : String = ""
     var label : String = ""
     var type : String = ""
+    var color : String = "#888888"
+    var imageUrl: String = ""
     var body: some View {
         VStack() {
-            ImageView()
+            ImageView(url: imageUrl)
             VStack {
                 Text(label.uppercased()).opacity(0.2)
                 Text(name).bold()
@@ -27,18 +29,8 @@ struct BlurbView: View {
             LinearGradient(
                 gradient: Gradient(
                     colors: [
-                        Color(
-                            hue: 0,
-                            saturation: 0,
-                            brightness: 0,
-                            opacity: 0.05
-                        ),
-                        Color(
-                            hue: 0,
-                            saturation: 0,
-                            brightness: 0,
-                            opacity: 0.00
-                        )
+                        Color.init(hex: color),
+                        Color.init(hex: color + "00"),
                     ]
                 ),
                 startPoint: .top, endPoint: .bottom

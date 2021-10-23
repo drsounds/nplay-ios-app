@@ -20,7 +20,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(items) { item in
-                    NavigationLink(destination: Text("Item at \(item.timestamp!, formatter: itemFormatter)")) {
+                    NavigationLink(destination: Text("Item at  \(item.timestamp!, formatter: itemFormatter)")) {
                         Text(item.timestamp!, formatter: itemFormatter)
                     }
                 }

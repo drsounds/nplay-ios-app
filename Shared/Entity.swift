@@ -14,6 +14,7 @@ class Entity : Identifiable, Codable {
     var name : String = ""
     var description : String = ""
     var imageUrl : String = ""
+    var color : String = "#88888855"
     init() {
     }
     init(id: String?, name: String, description: String, imageUrl: String) {

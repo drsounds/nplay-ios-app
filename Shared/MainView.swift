@@ -12,6 +12,10 @@ struct MainView : View {
         TabView {
             BrowseView()
                 .tabItem {
+                    Label("Browse", systemImage: "house.dash")
+                }
+            BrowseView()
+                .tabItem {
                     Label("Browse", systemImage: "list.dash")
                 }
         }
