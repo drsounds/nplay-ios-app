@@ -7,10 +7,11 @@
 import Foundation
 import Combine
 
-class EntityViewModel<T : Entity> : ObservableObject, Identifiable {
-    private let repository : EntityRepository<T> = EntityRepository<T>(path: "");
-    private var cancellables: Set<AnyCancellable> = [];
-    @Published var obj : T;
+class EntityViewModel<T : Entity> : ObservableObject, Identifiable { 
+    @Published var obj : T?;
+    init() {
+        
+    }
     init(obj: T) {
         self.obj = obj
     }

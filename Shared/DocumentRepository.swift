@@ -12,27 +12,22 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 import Combine
 
-class EntityRepository<T : Entity>: ObservableObject {
-  @Published var objects : Array<T> = []
+class DocumentRepository<T : Entity>: ObservableObject {
+    @Published var obj : T? = nil
   private var path : String = ""
   private let store = Firestore.firestore()
   init(path: String) {
      self.path = path
   }
-  func get() {
-   store.collection(path)
+    func get() {
+   store.document(path)
     .addSnapshotListener { querySnapshot, error in
-      // 4
       if let error = error {
           print("Error when retrieving \(self.path): \(error.localizedDescription)")
         return
       }
-
-      // 5
-      self.objects = querySnapshot?.documents.compactMap { document in
-        // 6
-        try? document.data(as: T.self)
-      } ?? []
+        let obj = try! querySnapshot!.data(as: T.self)
+        self.obj = obj
     }
-   } 
+   }
 }

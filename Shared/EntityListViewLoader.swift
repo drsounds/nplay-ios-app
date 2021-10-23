@@ -10,11 +10,11 @@ import Foundation
 import Combine
 
 class EntityListViewLoader<T : Entity> : ObservableObject {
-    @Published var objectRepository = EntityRepository<T>(path: "")
+    @Published var objectRepository = CollectionRepository<T>(path: "")
     @Published var objectViewModels : [EntityViewModel<T>] = [];
     private var cancellables: Set<AnyCancellable> = []
     init(path: String) {
-        objectRepository = EntityRepository<T>(path: path)
+        objectRepository = CollectionRepository<T>(path: path)
     }
     func load() {
         objectRepository.get()

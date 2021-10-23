@@ -8,8 +8,7 @@
 import Foundation
 import Combine
 
-class EntityListViewModel<T : Entity> : ObservableObject {
-    @Published var objectRepository = EntityRepository<T>(path: "")
+class EntityListViewModel<T : Entity> : ObservableObject { 
     @Published var objectViewModels : [EntityViewModel<T>] = [];
     private var cancellables: Set<AnyCancellable> = []
     init(objects: [EntityViewModel<T>]) {

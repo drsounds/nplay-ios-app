@@ -10,21 +10,18 @@ import Foundation
 import Combine
 
 class EntityViewLoader<T : Entity> : ObservableObject {
-    @Published var objectRepository = EntityRepository<T>(path: "")
-    @Published var obj : EntityViewModel<T>? = nil;
+    @Published var objectRepository = DocumentRepository<T>(path: "")
+    @Published var obj : EntityViewModel<T> = EntityViewModel<T>();
     private var cancellables: Set<AnyCancellable> = []
     init(path: String) {
-        objectRepository = EntityRepository<T>(path: path)
+        objectRepository = DocumentRepository<T>(path: path)
         
     }
-    func load() {
+    func setPath(_ path: String) {
+        objectRepository = DocumentRepository<T>(path: path)
+    }
+    func get() {
         objectRepository.get()
-        objectRepository.$objects.map {
-            objs in
-            objs.map {
-                obj in
-                self.obj = EntityViewModel<T>(obj: obj)
-            }
-        }
+        self.objectRepository.$obj.assign(to: \.obj.obj, on: self)
     }
 }

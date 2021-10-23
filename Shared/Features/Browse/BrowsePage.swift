@@ -17,7 +17,7 @@ struct BrowsePage: View {
 
     var body : some View {
         BrowseView(shows: showListViewLoader.objectViewModels.map {
-            $0.obj
+            $0.obj!
         })
     }
 }

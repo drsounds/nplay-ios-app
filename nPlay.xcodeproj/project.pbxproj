@@ -15,8 +15,8 @@
 		DA4F44792721ADF20036B3B5 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F44772721ADF20036B3B5 /* BrowseView.swift */; };
 		DA4F447B2721B0650036B3B5 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F447A2721B0650036B3B5 /* BlockView.swift */; };
 		DA4F447C2721B0650036B3B5 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F447A2721B0650036B3B5 /* BlockView.swift */; };
-		DA4F447E2721C3400036B3B5 /* EntityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F447D2721C3400036B3B5 /* EntityRepository.swift */; };
-		DA4F447F2721C3400036B3B5 /* EntityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F447D2721C3400036B3B5 /* EntityRepository.swift */; };
+		DA4F447E2721C3400036B3B5 /* CollectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F447D2721C3400036B3B5 /* CollectionRepository.swift */; };
+		DA4F447F2721C3400036B3B5 /* CollectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F447D2721C3400036B3B5 /* CollectionRepository.swift */; };
 		DA4F44812721C38C0036B3B5 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F44802721C38C0036B3B5 /* Show.swift */; };
 		DA4F44822721C38C0036B3B5 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F44802721C38C0036B3B5 /* Show.swift */; };
 		DA7D0B0C271F391300D19006 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D0B0B271F391300D19006 /* Tests_iOS.swift */; };
@@ -67,6 +67,8 @@
 		DAEDC85527244097001555BF /* BrowsePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC85327244097001555BF /* BrowsePage.swift */; };
 		DAEDC85C272445AB001555BF /* BlockItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC85B272445AB001555BF /* BlockItem.swift */; };
 		DAEDC85D272445AB001555BF /* BlockItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC85B272445AB001555BF /* BlockItem.swift */; };
+		DAEDC85F27245D6E001555BF /* DocumentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC85E27245D6E001555BF /* DocumentRepository.swift */; };
+		DAEDC86027245D6E001555BF /* DocumentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC85E27245D6E001555BF /* DocumentRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +98,7 @@
 		DA4F44742721AD970036B3B5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DA4F44772721ADF20036B3B5 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		DA4F447A2721B0650036B3B5 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
-		DA4F447D2721C3400036B3B5 /* EntityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityRepository.swift; sourceTree = "<group>"; };
+		DA4F447D2721C3400036B3B5 /* CollectionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRepository.swift; sourceTree = "<group>"; };
 		DA4F44802721C38C0036B3B5 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		DA7D0AF1271F391200D19006 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		DA7D0AF2271F391200D19006 /* nPlayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nPlayApp.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		DAEDC85027243FF7001555BF /* ShowPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPage.swift; sourceTree = "<group>"; };
 		DAEDC85327244097001555BF /* BrowsePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsePage.swift; sourceTree = "<group>"; };
 		DAEDC85B272445AB001555BF /* BlockItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockItem.swift; sourceTree = "<group>"; };
+		DAEDC85E27245D6E001555BF /* DocumentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,12 +215,13 @@
 				DA7D0AF5271F391300D19006 /* Assets.xcassets */,
 				DA7D0AF0271F391200D19006 /* nPlay.xcdatamodeld */,
 				DA4F44742721AD970036B3B5 /* MainView.swift */,
-				DA4F447D2721C3400036B3B5 /* EntityRepository.swift */,
+				DA4F447D2721C3400036B3B5 /* CollectionRepository.swift */,
 				DAEDC8382721D817001555BF /* EntityViewModel.swift */,
 				DAEDC83B2721D90B001555BF /* EntityListViewModel.swift */,
 				DAEDC83E2724313A001555BF /* HexColor.swift */,
 				DAEDC84727243A59001555BF /* EntityListViewLoader.swift */,
 				DAEDC84A27243AD1001555BF /* EntityViewLoader.swift */,
+				DAEDC85E27245D6E001555BF /* DocumentRepository.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -543,6 +547,7 @@
 				DAEDC8302721C698001555BF /* Episode.swift in Sources */,
 				DAEDC84827243A59001555BF /* EntityListViewLoader.swift in Sources */,
 				DAEDC84B27243AD1001555BF /* EntityViewLoader.swift in Sources */,
+				DAEDC85F27245D6E001555BF /* DocumentRepository.swift in Sources */,
 				DAEDC8362721D687001555BF /* Entity.swift in Sources */,
 				DAEDC85427244097001555BF /* BrowsePage.swift in Sources */,
 				DA7D0B37271F3A4B00D19006 /* ImageView.swift in Sources */,
@@ -557,7 +562,7 @@
 				DAEDC8332721C6BE001555BF /* Season.swift in Sources */,
 				DA4F447B2721B0650036B3B5 /* BlockView.swift in Sources */,
 				DAEDC8392721D817001555BF /* EntityViewModel.swift in Sources */,
-				DA4F447E2721C3400036B3B5 /* EntityRepository.swift in Sources */,
+				DA4F447E2721C3400036B3B5 /* CollectionRepository.swift in Sources */,
 				DAEDC84E27243D5B001555BF /* GenericHeader.swift in Sources */,
 				DA7D0B1F271F391300D19006 /* ContentView.swift in Sources */,
 				DA4F44812721C38C0036B3B5 /* Show.swift in Sources */,
@@ -574,6 +579,7 @@
 				DAEDC8312721C698001555BF /* Episode.swift in Sources */,
 				DAEDC84927243A59001555BF /* EntityListViewLoader.swift in Sources */,
 				DAEDC84C27243AD1001555BF /* EntityViewLoader.swift in Sources */,
+				DAEDC86027245D6E001555BF /* DocumentRepository.swift in Sources */,
 				DAEDC8372721D687001555BF /* Entity.swift in Sources */,
 				DAEDC85527244097001555BF /* BrowsePage.swift in Sources */,
 				DA7D0B38271F3A4B00D19006 /* ImageView.swift in Sources */,
@@ -588,7 +594,7 @@
 				DAEDC8342721C6BE001555BF /* Season.swift in Sources */,
 				DA4F447C2721B0650036B3B5 /* BlockView.swift in Sources */,
 				DAEDC83A2721D817001555BF /* EntityViewModel.swift in Sources */,
-				DA4F447F2721C3400036B3B5 /* EntityRepository.swift in Sources */,
+				DA4F447F2721C3400036B3B5 /* CollectionRepository.swift in Sources */,
 				DAEDC84F27243D5B001555BF /* GenericHeader.swift in Sources */,
 				DA7D0B20271F391300D19006 /* ContentView.swift in Sources */,
 				DA4F44822721C38C0036B3B5 /* Show.swift in Sources */,
