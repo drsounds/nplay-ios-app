@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ShowPage: View {
     @ObservedObject var showViewLoader : EntityViewLoader<Show>
+    @State var show : Show? = nil
     var id : String = ""
     init(id: String) {
         self.id = id
@@ -16,15 +18,18 @@ struct ShowPage: View {
     }
     var body: some View {
         ZStack {
-            if showViewLoader.obj.obj != nil {
-                ShowView(show: showViewLoader.obj.obj!)
+            if show != nil {
+                ShowView(show: show!)
             } else {
                 Text("Loading")
             }
         }.onAppear(perform: {
             print(id)
             self.showViewLoader.setPath("shows/\(id)")
-            self.showViewLoader.get();
+            self.showViewLoader.get() {
+                show in
+                self.show = show
+            }
         })
     }
 }

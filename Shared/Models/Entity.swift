@@ -9,7 +9,7 @@ import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-class Entity : Identifiable, Codable {
+class Entity : ObservableObject, Identifiable, Codable {
     @DocumentID var id: String? = ""
     var name : String = ""
     var description : String = ""

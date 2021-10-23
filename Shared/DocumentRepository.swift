@@ -19,7 +19,7 @@ class DocumentRepository<T : Entity>: ObservableObject {
   init(path: String) {
      self.path = path
   }
-    func get() {
+    func get(_ finished: @escaping (T?) -> Void) {
    store.document(path)
     .addSnapshotListener { querySnapshot, error in
       if let error = error {
@@ -28,6 +28,7 @@ class DocumentRepository<T : Entity>: ObservableObject {
       }
         let obj = try! querySnapshot!.data(as: T.self)
         self.obj = obj
+        finished(obj)
     }
    }
 }

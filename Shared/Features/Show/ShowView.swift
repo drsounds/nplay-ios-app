@@ -17,22 +17,25 @@ struct ShowView: View {
                     label: "show",
                     imageUrl: ""
                 )
-            }.background(
-                LinearGradient(
-                    colors: [
-                        Color(
-                            hex: show.color,
-                            alpha: 0.8
-                        ),
-                        Color(
-                            hex: show.color,
-                            alpha: 0.0
-                        )
-                    ],
-                    startPoint: .top, endPoint: .bottom
-                )
+                Button("Subscribe") {
+                    print("Subscribed")
+                }.buttonStyle(PrimaryButton())
+            }
+        }.background(
+            LinearGradient(
+                colors: [
+                    Color(
+                        hex: show.color,
+                        alpha: 0.8
+                    ),
+                    Color(
+                        hex: show.color,
+                        alpha: 0.0
+                    )
+                ],
+                startPoint: .top, endPoint: .bottom
             )
-        }
+        )
     }
 }
  

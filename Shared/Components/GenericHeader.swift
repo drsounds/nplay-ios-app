@@ -12,15 +12,15 @@ struct GenericHeader: View {
     var label : String = "label";
     var imageUrl : String = "";
     var body: some View {
-        ZStack {
+        ZStack(alignment: .top) {
             Circle()
-                .fill(Color(hex: "#ffffff", alpha: 0.2))
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .position(x: 0, y: 50)
-            VStack {
-                Text(title)
+                .fill(Color(hex: "#ffffff", alpha: 0.1))
+                .frame(width: UIScreen.main.bounds.width * 2, height: UIScreen.main.bounds.width * 2)
+                .position(x: UIScreen.main.bounds.width / 2, y:  UIScreen.main.bounds.width * -0.5)
+            VStack(alignment: .leading, spacing: 10) {
+                Text(title).font(.system(size: 60, weight: .bold))
                 ImageView(url: imageUrl)
-            }.padding(20)
+            }
         }
     }
 }
