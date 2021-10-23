@@ -10,11 +10,11 @@ import SwiftUI
 struct MainView : View {
     var body : some View {
         TabView {
-            BrowseView()
+            BrowsePage()
                 .tabItem {
                     Label("Browse", systemImage: "house.dash")
                 }
-            BrowseView()
+            BrowsePage()
                 .tabItem {
                     Label("Browse", systemImage: "list.dash")
                 }

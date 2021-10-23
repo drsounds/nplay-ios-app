@@ -29,8 +29,8 @@ struct BlurbView: View {
             LinearGradient(
                 gradient: Gradient(
                     colors: [
-                        Color.init(hex: color),
-                        Color.init(hex: color + "00"),
+                        Color.init(hex: color, alpha: 0.9   ),
+                        Color.init(hex: color, alpha: 0.0),
                     ]
                 ),
                 startPoint: .top, endPoint: .bottom

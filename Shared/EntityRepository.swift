@@ -34,5 +34,5 @@ class EntityRepository<T : Entity>: ObservableObject {
         try? document.data(as: T.self)
       } ?? []
     }
-   }
+   } 
 }
