@@ -20,22 +20,25 @@ struct ShowView: View {
                 Button("Subscribe") {
                     print("Subscribed")
                 }.buttonStyle(PrimaryButton())
-            }
-        }.background(
-            LinearGradient(
-                colors: [
-                    Color(
-                        hex: show.color,
-                        alpha: 0.8
-                    ),
-                    Color(
-                        hex: show.color,
-                        alpha: 0.0
-                    )
-                ],
-                startPoint: .top, endPoint: .bottom
+            }.frame(
+                minWidth: UIScreen.main.bounds.width,
+                minHeight: UIScreen.main.bounds.height
+            ).background(
+                LinearGradient(
+                    colors: [
+                        Color(
+                            hex: show.color,
+                            alpha: 0.8
+                        ),
+                        Color(
+                            hex: show.color,
+                            alpha: 0.0
+                        )
+                    ],
+                    startPoint: .top, endPoint: .bottom
+                )
             )
-        )
+        }
     }
 }
  

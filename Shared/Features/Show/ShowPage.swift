@@ -24,7 +24,6 @@ struct ShowPage: View {
                 Text("Loading")
             }
         }.onAppear(perform: {
-            print(id)
             self.showViewLoader.setPath("shows/\(id)")
             self.showViewLoader.get() {
                 show in

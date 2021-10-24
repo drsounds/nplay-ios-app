@@ -21,7 +21,7 @@ struct GenericHeader: View {
                 Text(title).font(.system(size: 60, weight: .bold))
                 ImageView(url: imageUrl)
             }
-        }
+        }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 5, alignment: .top)
     }
 }
 

@@ -11,8 +11,8 @@ struct PrimaryButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
-            .background(Color(UIColor.systemFill))
-            .foregroundColor(Color(UIColor.systemBackground))
+            .background(Color(UIColor.white))
+            .foregroundColor(Color(UIColor.black))
             .clipShape(Capsule())
     }
 }
