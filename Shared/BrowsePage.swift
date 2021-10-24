@@ -12,7 +12,9 @@ struct BrowsePage: View {
         path: "shows"
     )
     init() {
-        self.showListViewLoader.load()
+        self.showListViewLoader.get(nil) {
+            objects in
+        }
     }
 
     var body : some View {

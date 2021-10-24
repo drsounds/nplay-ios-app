@@ -43,6 +43,12 @@
 		DA7D0B3E271F3EA600D19006 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7D0B3A271F3EA600D19006 /* GoogleService-Info.plist */; };
 		DABE40E22724781A00F8151A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E12724781A00F8151A /* PrimaryButton.swift */; };
 		DABE40E32724781A00F8151A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E12724781A00F8151A /* PrimaryButton.swift */; };
+		DABE40E5272596C200F8151A /* EpisodeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E4272596C200F8151A /* EpisodeRow.swift */; };
+		DABE40E6272596C200F8151A /* EpisodeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E4272596C200F8151A /* EpisodeRow.swift */; };
+		DABE40EA2725C68E00F8151A /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E92725980600F8151A /* EpisodeView.swift */; };
+		DABE40EB2725C68E00F8151A /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E92725980600F8151A /* EpisodeView.swift */; };
+		DABE40EC2725C68E00F8151A /* EpisodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E82725980400F8151A /* EpisodePage.swift */; };
+		DABE40ED2725C68E00F8151A /* EpisodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E82725980400F8151A /* EpisodePage.swift */; };
 		DAEDC8302721C698001555BF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC82F2721C698001555BF /* Episode.swift */; };
 		DAEDC8312721C698001555BF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC82F2721C698001555BF /* Episode.swift */; };
 		DAEDC8332721C6BE001555BF /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC8322721C6BE001555BF /* Season.swift */; };
@@ -121,6 +127,9 @@
 		DA7D0B39271F3B8000D19006 /* nPlay (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "nPlay (iOS).entitlements"; sourceTree = "<group>"; };
 		DA7D0B3A271F3EA600D19006 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DABE40E12724781A00F8151A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		DABE40E4272596C200F8151A /* EpisodeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRow.swift; sourceTree = "<group>"; };
+		DABE40E82725980400F8151A /* EpisodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodePage.swift; sourceTree = "<group>"; };
+		DABE40E92725980600F8151A /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 		DAEDC82F2721C698001555BF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		DAEDC8322721C6BE001555BF /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		DAEDC8352721D687001555BF /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -209,6 +218,23 @@
 		DA7D0AEF271F391200D19006 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DAEDC85027243FF7001555BF /* ShowPage.swift */,
+				DAEDC84127243908001555BF /* ShowView.swift */,
+				DABE40E82725980400F8151A /* EpisodePage.swift */,
+				DABE40E92725980600F8151A /* EpisodeView.swift */,
+				DAEDC82F2721C698001555BF /* Episode.swift */,
+				DAEDC8322721C6BE001555BF /* Season.swift */,
+				DA4F44802721C38C0036B3B5 /* Show.swift */,
+				DAEDC8352721D687001555BF /* Entity.swift */,
+				DAEDC85B272445AB001555BF /* BlockItem.swift */,
+				DA4F447A2721B0650036B3B5 /* BlockView.swift */,
+				DAEDC84D27243D5B001555BF /* GenericHeader.swift */,
+				DA7D0B33271F394A00D19006 /* BlurbView.swift */,
+				DA7D0B36271F3A4B00D19006 /* ImageView.swift */,
+				DABE40E12724781A00F8151A /* PrimaryButton.swift */,
+				DABE40E4272596C200F8151A /* EpisodeRow.swift */,
+				DA4F44772721ADF20036B3B5 /* BrowseView.swift */,
+				DAEDC85327244097001555BF /* BrowsePage.swift */,
 				DAEDC85A272441BA001555BF /* Components */,
 				DAEDC8592724419D001555BF /* Models */,
 				DAEDC8562724414B001555BF /* Features */,
@@ -266,9 +292,17 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		DABE40E7272597FA00F8151A /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Episode;
+			sourceTree = "<group>";
+		};
 		DAEDC8562724414B001555BF /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				DABE40E7272597FA00F8151A /* Episode */,
 				DAEDC8582724417E001555BF /* Show */,
 				DAEDC85727244152001555BF /* Browse */,
 			);
@@ -278,8 +312,6 @@
 		DAEDC85727244152001555BF /* Browse */ = {
 			isa = PBXGroup;
 			children = (
-				DA4F44772721ADF20036B3B5 /* BrowseView.swift */,
-				DAEDC85327244097001555BF /* BrowsePage.swift */,
 			);
 			path = Browse;
 			sourceTree = "<group>";
@@ -287,8 +319,6 @@
 		DAEDC8582724417E001555BF /* Show */ = {
 			isa = PBXGroup;
 			children = (
-				DAEDC85027243FF7001555BF /* ShowPage.swift */,
-				DAEDC84127243908001555BF /* ShowView.swift */,
 			);
 			path = Show;
 			sourceTree = "<group>";
@@ -296,11 +326,6 @@
 		DAEDC8592724419D001555BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DAEDC82F2721C698001555BF /* Episode.swift */,
-				DAEDC8322721C6BE001555BF /* Season.swift */,
-				DA4F44802721C38C0036B3B5 /* Show.swift */,
-				DAEDC8352721D687001555BF /* Entity.swift */,
-				DAEDC85B272445AB001555BF /* BlockItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -308,11 +333,6 @@
 		DAEDC85A272441BA001555BF /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				DA4F447A2721B0650036B3B5 /* BlockView.swift */,
-				DAEDC84D27243D5B001555BF /* GenericHeader.swift */,
-				DA7D0B33271F394A00D19006 /* BlurbView.swift */,
-				DA7D0B36271F3A4B00D19006 /* ImageView.swift */,
-				DABE40E12724781A00F8151A /* PrimaryButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -551,12 +571,15 @@
 				DAEDC8302721C698001555BF /* Episode.swift in Sources */,
 				DAEDC84827243A59001555BF /* EntityListViewLoader.swift in Sources */,
 				DAEDC84B27243AD1001555BF /* EntityViewLoader.swift in Sources */,
+				DABE40EC2725C68E00F8151A /* EpisodePage.swift in Sources */,
 				DAEDC85F27245D6E001555BF /* DocumentRepository.swift in Sources */,
 				DAEDC8362721D687001555BF /* Entity.swift in Sources */,
 				DAEDC85427244097001555BF /* BrowsePage.swift in Sources */,
 				DA7D0B37271F3A4B00D19006 /* ImageView.swift in Sources */,
 				DAEDC85127243FF7001555BF /* ShowPage.swift in Sources */,
+				DABE40E5272596C200F8151A /* EpisodeRow.swift in Sources */,
 				DA4F44752721AD970036B3B5 /* MainView.swift in Sources */,
+				DABE40EA2725C68E00F8151A /* EpisodeView.swift in Sources */,
 				DA7D0B34271F394A00D19006 /* BlurbView.swift in Sources */,
 				DA7D0B1D271F391300D19006 /* nPlayApp.swift in Sources */,
 				DAEDC85C272445AB001555BF /* BlockItem.swift in Sources */,
@@ -584,12 +607,15 @@
 				DAEDC8312721C698001555BF /* Episode.swift in Sources */,
 				DAEDC84927243A59001555BF /* EntityListViewLoader.swift in Sources */,
 				DAEDC84C27243AD1001555BF /* EntityViewLoader.swift in Sources */,
+				DABE40ED2725C68E00F8151A /* EpisodePage.swift in Sources */,
 				DAEDC86027245D6E001555BF /* DocumentRepository.swift in Sources */,
 				DAEDC8372721D687001555BF /* Entity.swift in Sources */,
 				DAEDC85527244097001555BF /* BrowsePage.swift in Sources */,
 				DA7D0B38271F3A4B00D19006 /* ImageView.swift in Sources */,
 				DAEDC85227243FF7001555BF /* ShowPage.swift in Sources */,
+				DABE40E6272596C200F8151A /* EpisodeRow.swift in Sources */,
 				DA4F44762721AD970036B3B5 /* MainView.swift in Sources */,
+				DABE40EB2725C68E00F8151A /* EpisodeView.swift in Sources */,
 				DA7D0B35271F394A00D19006 /* BlurbView.swift in Sources */,
 				DA7D0B1E271F391300D19006 /* nPlayApp.swift in Sources */,
 				DAEDC85D272445AB001555BF /* BlockItem.swift in Sources */,

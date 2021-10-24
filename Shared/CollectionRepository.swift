@@ -19,9 +19,15 @@ class CollectionRepository<T : Entity>: ObservableObject {
   init(path: String) {
      self.path = path
   }
-  func get() {
-   store.collection(path)
-    .addSnapshotListener { querySnapshot, error in
+    func get(_ filter: [String:Any]?, finished: @escaping ([T]) -> Void) {
+        let q = store.collection(path)
+        if filter != nil {
+            filter!.forEach {
+                q.whereField($0, isEqualTo: $1)
+            }
+        }
+        
+    q.addSnapshotListener { querySnapshot, error in
       // 4
       if let error = error {
           print("Error when retrieving \(self.path): \(error.localizedDescription)")
@@ -33,6 +39,7 @@ class CollectionRepository<T : Entity>: ObservableObject {
         // 6
         try? document.data(as: T.self)
       } ?? []
+        finished(self.objects)
     }
    } 
 }

@@ -16,8 +16,14 @@ class EntityListViewLoader<T : Entity> : ObservableObject {
     init(path: String) {
         objectRepository = CollectionRepository<T>(path: path)
     }
-    func load() {
-        objectRepository.get()
+    func setPath(_ path: String) {
+        objectRepository = CollectionRepository<T>(path: path)
+    }
+    func get(_ filter: [String:Any]?, finished: @escaping ([T]) -> Void) {
+      objectRepository.get(filter) {
+            objects in
+            finished(objects)
+      }
       objectRepository.$objects.map { cards in
         cards.map(EntityViewModel.init)
       }
