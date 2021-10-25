@@ -18,6 +18,9 @@ class DocumentRepository<T : Entity>: ObservableObject {
   private let store = Firestore.firestore()
   init(path: String) {
      self.path = path
+      let settings = FirestoreSettings()
+      settings.isPersistenceEnabled = true
+      store.settings = settings
   }
     func get(_ finished: @escaping (T?) -> Void) {
    store.document(path)

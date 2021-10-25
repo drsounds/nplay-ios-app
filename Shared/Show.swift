@@ -10,5 +10,4 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 class Show : Entity {
-
 }

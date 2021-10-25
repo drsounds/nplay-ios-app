@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct EpisodePage: View {
+struct ShowEpisodeListPage: View {
     @ObservedObject var showViewLoader : EntityViewLoader<Show>
     @ObservedObject var seasonListViewLoader : EntityListViewLoader<Season>
     @ObservedObject var episodeListViewLoader : EntityListViewLoader<Episode>
@@ -34,16 +34,8 @@ struct EpisodePage: View {
             self.seasons = seasons
         }
     }
-    func loadEpisode(_ finished : @escaping (Episode?) -> Void) {
-        self.episodeViewLoader.setPath("episodes")
-        self.episodeViewLoader.get() {
-            episode in
-            self.episode = episode
-            finished(episode)
-        }
-    }
     func loadShow(_ showId: String, finished : @escaping (Show?) -> Void) {
-        self.showViewLoader.setPath("shows")
+        self.showViewLoader.setPath("shows/\(showId)")
         self.showViewLoader.get() {
             show in
             self.show = show
@@ -52,18 +44,15 @@ struct EpisodePage: View {
     }
     func loadEpisodes(_ seasonId: String, finished: @escaping ([Episode]) -> Void) {
         self.episodeListViewLoader.setPath("episodes")
-        self.episodeListViewLoader.get(["showId": seasonId]) {
+        self.episodeListViewLoader.get(["seasonId": seasonId]) {
             episodes in
             self.episodes = episodes
         }
     }
     var body: some View {
         ZStack {
-            if show != nil && season != nil && episode != nil {
-                EpisodeView(
-                    show: show!,
-                    episode: episode!,
-                    season: season!,
+            if season != nil && episode != nil {
+                ShowEpisodeListView(
                     seasons: seasons,
                     episodes: episodes,
                     seasonId: seasonId,
@@ -78,17 +67,12 @@ struct EpisodePage: View {
                 Text("Loading")
             }
         }.onAppear(perform: {
-            loadEpisode() {
-                episode in
-                if episode != nil {
-                    loadShow(episode!.showId) {
-                        show in
-                        if show != nil {
-                            loadSeasons(show!.id!) {
-                                seasons in
-                                
-                            }
-                        }
+            loadShow(id) {
+                show in
+                if show != nil {
+                    loadSeasons(show!.id!) {
+                        seasons in
+                        
                     }
                 }
             }

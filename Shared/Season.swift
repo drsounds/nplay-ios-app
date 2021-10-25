@@ -11,4 +11,5 @@ import FirebaseFirestoreSwift
 
 class Season : Entity { 
     var number : Int = 0
+    var showId : String = ""
 }

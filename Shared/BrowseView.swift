@@ -20,7 +20,7 @@ struct BrowseView : View {
                         title: "Shows",
                         destination: {
                             item in
-                            ShowPage(id: item.id!)
+                            ShowDetailPage(id: item.id!)
                         }
                     )
                 }

@@ -53,20 +53,4 @@ struct EpisodeView: View {
             )
         }
     }
-}
- 
-struct ShowView_Previews : PreviewProvider {
-    static var previews : some View {
-        ShowView(
-            show: Show(
-                id: "1",
-                name: "Test",
-                description: "Tet",
-                imageUrl: ""
-            ),
-            seasonChanged: {
-                seasonId in
-            }
-        )
-    }
-}
+} 
