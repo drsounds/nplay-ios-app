@@ -34,7 +34,7 @@ struct BlockView<T : Entity, D : View> : View {
                             color: item.color,
                             imageUrl: item.imageUrl
                         )
-                    }
+                    }.buttonStyle(.plain)
                 }
             }
         }

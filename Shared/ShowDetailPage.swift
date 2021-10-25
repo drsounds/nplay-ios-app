@@ -46,21 +46,7 @@ struct ShowDetailPage: View {
             loadShowDetail() {
                 show in
             }
-        }).background(
-            LinearGradient(
-                colors: [
-                    Color(
-                        hex: show != nil ? show!.color : "#555555",
-                        alpha: 0.8
-                    ),
-                    Color(
-                        hex: show != nil ? show!.color : "#555555",
-                        alpha: 0.0
-                    )
-                ],
-                startPoint: .top, endPoint: .center
-            )
-        )
+        })
     }
 }
  

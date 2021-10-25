@@ -16,7 +16,7 @@ struct EpisodeRow: View {
             HStack(alignment: .center, spacing: 1) {
                 ImageView(
                     url: episode.imageUrl
-                )
+                ).aspectRatio(contentMode: .fit).frame(width: 300, height: 300)
                 VStack {
                     Text(episode.name).bold()
                 }
@@ -24,7 +24,7 @@ struct EpisodeRow: View {
                     onMenuClicked(episode)
                 }
             }
-        }
+        }.buttonStyle(.plain)
     }
 }
  

@@ -12,7 +12,7 @@ struct EpisodeView: View {
     var episode : Episode
     var seasonId = "" 
     var body: some View {
-        ScrollView {
+        GenericView(color: Color(hex: episode.color), imageUrl: episode.imageUrl) {
             VStack {
                 GenericHeader(
                     title: episode.name,
@@ -26,20 +26,6 @@ struct EpisodeView: View {
             }.frame(
                 minWidth: UIScreen.main.bounds.width,
                 minHeight: UIScreen.main.bounds.height
-            ).background(
-                LinearGradient(
-                    colors: [
-                        Color(
-                            hex: show.color,
-                            alpha: 0.8
-                        ),
-                        Color(
-                            hex: show.color,
-                            alpha: 0.0
-                        )
-                    ],
-                    startPoint: .top, endPoint: .bottom
-                )
             )
         }
     }

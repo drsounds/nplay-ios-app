@@ -27,6 +27,7 @@ struct GenericView<Content : View>: View {
             ZStack {
                 if imageUrl != nil {
                     ImageView(url: imageUrl!)
+                        .aspectRatio(contentMode: .fill)
                 } else {
                     Rectangle().background(
                         color

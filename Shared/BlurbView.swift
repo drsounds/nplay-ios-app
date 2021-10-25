@@ -17,6 +17,8 @@ struct BlurbView: View {
     var body: some View {
         VStack() {
             ImageView(url: imageUrl)
+                .aspectRatio(16/9, contentMode: .fit)
+                    .frame(maxWidth: 300, maxHeight: 300)
             VStack {
                 Text(label.uppercased()).opacity(0.2)
                 Text(name).bold()
@@ -29,15 +31,14 @@ struct BlurbView: View {
             LinearGradient(
                 gradient: Gradient(
                     colors: [
-                        Color.init(hex: color, alpha: 0.9   ),
+                        Color.init(hex: color, alpha: 0.5   ),
                         Color.init(hex: color, alpha: 0.0),
                     ]
                 ),
                 startPoint: .top, endPoint: .bottom
             )
         )
-        .frame(maxWidth:.infinity)
-        .cornerRadius(12.0)
+        .frame(maxWidth:.infinity) 
     }
 }
 

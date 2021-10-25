@@ -16,8 +16,6 @@ struct ImageView : View {
             )
         ) {  image in
                 image.resizable()
-                .aspectRatio(16/9, contentMode: .fit)
-                    .frame(maxWidth: 300, maxHeight: 300)
         } placeholder: {
             Image("")
         }
