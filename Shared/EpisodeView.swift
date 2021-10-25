@@ -22,7 +22,7 @@ struct EpisodeView: View {
                 Button("Play") {
                     print("Play")
                 }.buttonStyle(PrimaryButton())
-                ShowEpisodeListPage(id: show.id!)
+                ShowEpisodeListPage(id: show.id!).frame(width: UIScreen.main.bounds.width)
             }.frame(
                 minWidth: UIScreen.main.bounds.width,
                 minHeight: UIScreen.main.bounds.height

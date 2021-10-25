@@ -20,25 +20,34 @@ struct ShowEpisodeListView: View {
         self.seasonId = seasonId
         self.selectedSeasonId = seasonId
         self.seasonChanged = seasonChanged
+        print("Number of seasons \(self.seasons.count)")
     } 
     var body: some View {
-        ScrollView {
-            VStack {
-                Picker("Seasons", selection: $selectedSeasonId) {
+        VStack {
+            /*Picker("Seasons", selection: $selectedSeasonId) {
+                ForEach(seasons, id: \.id) {
+                    Text($0.name).tag($0.id)
+                }
+            }.onChange(of: selectedSeasonId, perform: seasonChanged)
+                .background(Color.black).padding(5.0).cornerRadius(25.0).border(Color.white).foregroundColor(Color.white)*/
+            
+                Text("Season")
+            
+                HStack(alignment: .center, spacing: 5) {
                     ForEach(seasons, id: \.id) {
-                        Text($0.name).tag($0.id)
-                    }
-                }.onChange(of: selectedSeasonId, perform: seasonChanged)
-                    .background(Color.black).padding(5.0).cornerRadius(25.0)
-                Text("Episodes").opacity(0.5)
-                VStack {
-                    ForEach(episodes) {
-                        EpisodeRow(episode: $0, onMenuClicked: {
-                            episode in
-                        })
+                        season in
+                        Button(season.name, action: {
+                            seasonChanged(season.id!)
+                        }).padding(10).cornerRadius(10.0).background(Color.black).border(Color.white)
                     }
                 }
-                
+            Text("Episodes").opacity(0.5)
+            VStack {
+                ForEach(episodes) {
+                    EpisodeRow(episode: $0, onMenuClicked: {
+                        episode in
+                    })
+                }
             }
         }
     }

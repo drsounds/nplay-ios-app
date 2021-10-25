@@ -20,9 +20,15 @@ struct BlurbView: View {
                 .aspectRatio(16/9, contentMode: .fit)
                     .frame(maxWidth: 300, maxHeight: 300)
             VStack {
+                if(label.count > 0) {
                 Text(label.uppercased()).opacity(0.2)
+                }
+                if (name.count > 0) {
                 Text(name).bold()
-                Text(description).opacity(0.8)
+                }
+                if (description.count > 0) {
+                    Text(description).opacity(0.8)
+                }
             }
             .frame(maxWidth: .infinity)
             .padding(10)

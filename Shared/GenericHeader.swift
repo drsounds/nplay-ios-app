@@ -23,6 +23,7 @@ struct GenericHeader: View {
             }
         }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3, alignment: .top)*/
         VStack(alignment: .center, spacing: 1) {
+            Rectangle().size(width: 0, height: 32)
             ImageView(url: imageUrl)
             Text(title).font(.system(size: 30, weight: .bold))
         }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 2.3)

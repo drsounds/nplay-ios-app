@@ -16,7 +16,7 @@ struct EpisodeRow: View {
             HStack(alignment: .center, spacing: 1) {
                 ImageView(
                     url: episode.imageUrl
-                ).aspectRatio(contentMode: .fit).frame(width: 300, height: 300)
+                ).aspectRatio(contentMode: .fit).frame(width: 110, height: 80)
                 VStack {
                     Text(episode.name).bold()
                 }

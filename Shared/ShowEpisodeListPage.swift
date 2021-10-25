@@ -81,6 +81,7 @@ struct ShowEpisodeListPage: View {
                 if show != nil {
                     loadSeasons(show!.id!) {
                         seasons in
+                        print("Season count \(seasons.count)")
                         if seasons.count > 0 {
                             loadEpisodes(seasons[0].id!) {
                                 episodes in

@@ -29,11 +29,10 @@ struct ShowDetailPage: View {
                 GenericView(
                     color: Color(hex: show!.color),
                     imageUrl: show!.imageUrl
-                ) { 
+                ) {
+                    
                     ShowView(show: show!)
-                    Button("Subscribe") {
-                        print("Subscribed")
-                    }.buttonStyle(PrimaryButton())
+                     
                     ShowEpisodeListPage(id: id)
                 }.frame(
                     minWidth: UIScreen.main.bounds.width,
