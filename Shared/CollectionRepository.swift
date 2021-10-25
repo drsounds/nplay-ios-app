@@ -19,6 +19,23 @@ class CollectionRepository<T : Entity>: ObservableObject {
   init(path: String) {
      self.path = path
   }
+    func get(_ finished: @escaping ([T]) -> Void) {
+        var  q : Query = store.collection(path)
+        q.addSnapshotListener { querySnapshot, error in
+          // 4
+          if let error = error {
+              print("Error when retrieving \(self.path): \(error.localizedDescription)")
+            return
+          }
+          // 5
+          self.objects = querySnapshot?.documents.compactMap { document in
+            // 6
+            try? document.data(as: T.self)
+          } ?? []
+            print(self.objects)
+            finished(self.objects)
+        }
+   }
     func get(_ filter: [String:Any]?, finished: @escaping ([T]) -> Void) {
         var  q : Query = store.collection(path)
         print(path)
@@ -43,5 +60,34 @@ class CollectionRepository<T : Entity>: ObservableObject {
             print(self.objects)
             finished(self.objects)
         }
-   } 
+   }
+    func get(_ filter: [String:Any]?, orderBy: [String:Bool]?, finished: @escaping ([T]) -> Void) {
+        var  q : Query = store.collection(path)
+        print(path)
+        if filter != nil {
+            filter!.forEach {
+                q = q.whereField($0, isEqualTo: $1)
+                print("\(path) \($0) \($1)")
+            }
+        }
+        if (orderBy != nil) {
+            orderBy!.forEach {
+                q = q.order(by: $0, descending: $1)
+            }
+        }
+        q.addSnapshotListener { querySnapshot, error in
+          // 4
+          if let error = error {
+              print("Error when retrieving \(self.path): \(error.localizedDescription)")
+            return
+          }
+          // 5
+          self.objects = querySnapshot?.documents.compactMap { document in
+            // 6
+            try? document.data(as: T.self)
+          } ?? []
+            print(self.objects)
+            finished(self.objects)
+        }
+   }
 }

@@ -31,5 +31,6 @@ class Episode : Entity {
         number = try values.decode(Int.self, forKey: .number)
         showId = try values.decode(String.self, forKey: .showId)
         seasonId = try values.decode(String.self, forKey: .seasonId)
+        published = try values.decode(Date.self, forKey: .published)
     }
 }

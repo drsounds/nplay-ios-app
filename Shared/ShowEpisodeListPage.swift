@@ -53,7 +53,7 @@ struct ShowEpisodeListPage: View {
     }
     func loadEpisodes(_ seasonId: String, finished: @escaping ([Episode]) -> Void) {
         self.episodeListViewLoader.setPath("episodes")
-        self.episodeListViewLoader.get(["seasonId": seasonId]) {
+        self.episodeListViewLoader.get(["seasonId": seasonId], orderBy: ["published": true]) {
             episodes in
             self.episodes = episodes
         }

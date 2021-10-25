@@ -29,6 +29,7 @@ struct BlurbView: View {
                 if (description.count > 0) {
                     Text(description).opacity(0.8)
                 }
+                
             }
             .frame(maxWidth: .infinity)
             .padding(10)

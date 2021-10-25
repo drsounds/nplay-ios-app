@@ -11,6 +11,12 @@ import SwiftUI
 struct EpisodeRow: View {
     var episode : Episode
     var onMenuClicked : (Episode) -> Void
+    func formattedDate() -> String {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "nl")
+        formatter.setLocalizedDateFormatFromTemplate("dd MMMM")
+        return formatter.string(from: episode.published)
+    }
     var body: some View {
         NavigationLink(destination: EpisodePage(id: episode.id!)) {
             HStack(alignment: .center, spacing: 1) {
@@ -19,6 +25,7 @@ struct EpisodeRow: View {
                 ).aspectRatio(contentMode: .fit).frame(width: 110, height: 80)
                 VStack {
                     Text(episode.name).bold()
+                    Text(formattedDate()).opacity(0.8)
                 }
                 Button("..") {
                     onMenuClicked(episode)
