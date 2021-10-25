@@ -18,8 +18,8 @@ struct GenericHeader: View {
                 .frame(width: UIScreen.main.bounds.width * 2, height: UIScreen.main.bounds.width * 2)
                 .position(x: UIScreen.main.bounds.width / 2, y:  UIScreen.main.bounds.width * -0.5)
             VStack(alignment: .leading, spacing: 10) {
-                Text(title).font(.system(size: 60, weight: .bold))
                 ImageView(url: imageUrl)
+                Text(title).font(.system(size: 30, weight: .bold))
             }
         }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 5, alignment: .top)
     }

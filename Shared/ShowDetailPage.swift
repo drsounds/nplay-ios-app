@@ -24,9 +24,12 @@ struct ShowDetailPage: View {
         }
     }
     var body : some View {
-        ScrollView {
+        ZStack {
             if show != nil {
-                VStack {
+                GenericView(
+                    color: Color(hex: show!.color),
+                    imageUrl: show!.imageUrl
+                ) { 
                     ShowView(show: show!)
                     Button("Subscribe") {
                         print("Subscribed")
@@ -35,20 +38,6 @@ struct ShowDetailPage: View {
                 }.frame(
                     minWidth: UIScreen.main.bounds.width,
                     minHeight: UIScreen.main.bounds.height
-                ).background(
-                    LinearGradient(
-                        colors: [
-                            Color(
-                                hex: show!.color,
-                                alpha: 0.8
-                            ),
-                            Color(
-                                hex: show!.color,
-                                alpha: 0.0
-                            )
-                        ],
-                        startPoint: .top, endPoint: .bottom
-                    )
                 )
             } else {
                 Text("Show not found")
@@ -57,7 +46,21 @@ struct ShowDetailPage: View {
             loadShowDetail() {
                 show in
             }
-        })
+        }).background(
+            LinearGradient(
+                colors: [
+                    Color(
+                        hex: show != nil ? show!.color : "#555555",
+                        alpha: 0.8
+                    ),
+                    Color(
+                        hex: show != nil ? show!.color : "#555555",
+                        alpha: 0.0
+                    )
+                ],
+                startPoint: .top, endPoint: .center
+            )
+        )
     }
 }
  

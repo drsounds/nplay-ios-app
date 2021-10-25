@@ -27,11 +27,20 @@ struct ShowEpisodeListPage: View {
         episodeListViewLoader = EntityListViewLoader(path: "")
         episodeViewLoader = EntityViewLoader(path: "")
     }
+    init(id: String, defaultSeasonId: String) {
+        self.id = id
+        showViewLoader = EntityViewLoader(path: "")
+        seasonListViewLoader = EntityListViewLoader(path: "")
+        episodeListViewLoader = EntityListViewLoader(path: "")
+        episodeViewLoader = EntityViewLoader(path: "")
+        seasonId = defaultSeasonId
+    }
     func loadSeasons(_ showId: String, _ finished: @escaping ([Season]) -> Void) {
         self.seasonListViewLoader.setPath("seasons")
         self.seasonListViewLoader.get(["showId": id]) {
             seasons in
             self.seasons = seasons
+            finished(seasons)
         }
     }
     func loadShow(_ showId: String, finished : @escaping (Show?) -> Void) {
@@ -51,7 +60,7 @@ struct ShowEpisodeListPage: View {
     }
     var body: some View {
         ZStack {
-            if season != nil && episode != nil {
+            if show != nil {
                 ShowEpisodeListView(
                     seasons: seasons,
                     episodes: episodes,
@@ -72,7 +81,11 @@ struct ShowEpisodeListPage: View {
                 if show != nil {
                     loadSeasons(show!.id!) {
                         seasons in
-                        
+                        if seasons.count > 0 {
+                            loadEpisodes(seasons[0].id!) {
+                                episodes in
+                            }
+                        }
                     }
                 }
             }

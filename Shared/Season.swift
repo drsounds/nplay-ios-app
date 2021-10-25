@@ -12,4 +12,8 @@ import FirebaseFirestoreSwift
 class Season : Entity { 
     var number : Int = 0
     var showId : String = ""
+    enum CodingKeys: String, CodingKey {
+        case number = "numeber"
+        case showId = "showId"
+    }
 }

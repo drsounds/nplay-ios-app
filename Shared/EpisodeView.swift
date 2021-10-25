@@ -10,11 +10,7 @@ import SwiftUI
 struct EpisodeView: View {
     var show : Show
     var episode : Episode
-    var season : Season
-    var seasons : [Season] = []
-    var episodes : [Episode] = []
-    @State var seasonId = ""
-    var seasonChanged: (_ seasonId: String) -> Void 
+    var seasonId = "" 
     var body: some View {
         ScrollView {
             VStack {
@@ -26,13 +22,7 @@ struct EpisodeView: View {
                 Button("Play") {
                     print("Play")
                 }.buttonStyle(PrimaryButton())
-                Picker("Seasons", selection: $seasonId) {
-                    ForEach(seasons, id: \.id) {
-                        Text($0.name)
-                    }
-                }.onChange(of: seasonId, perform: seasonChanged)
-                Text("Episodes").opacity(0.5)
-                
+                ShowEpisodeListPage(id: show.id!)
             }.frame(
                 minWidth: UIScreen.main.bounds.width,
                 minHeight: UIScreen.main.bounds.height

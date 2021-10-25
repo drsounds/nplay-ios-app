@@ -27,9 +27,7 @@ struct ShowPage: View {
         }
     }
     var body: some View {
-        ScrollView {
-            
-            ZStack {
+            VStack {
                 if show != nil {
                     ShowView(
                         show: show!
@@ -42,7 +40,6 @@ struct ShowPage: View {
                     show in
                 }
             })
-        }
     }
 }
  

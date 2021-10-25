@@ -55,6 +55,8 @@
 		DABE40F32726A64100F8151A /* ShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40F12726A64100F8151A /* ShowView.swift */; };
 		DABE40F52726A82000F8151A /* ShowDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40F42726A82000F8151A /* ShowDetailPage.swift */; };
 		DABE40F62726A82000F8151A /* ShowDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40F42726A82000F8151A /* ShowDetailPage.swift */; };
+		DABE40FB2726ED6B00F8151A /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40FA2726ED6B00F8151A /* GenericView.swift */; };
+		DABE40FC2726ED6B00F8151A /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40FA2726ED6B00F8151A /* GenericView.swift */; };
 		DAEDC8302721C698001555BF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC82F2721C698001555BF /* Episode.swift */; };
 		DAEDC8312721C698001555BF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC82F2721C698001555BF /* Episode.swift */; };
 		DAEDC8332721C6BE001555BF /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC8322721C6BE001555BF /* Season.swift */; };
@@ -139,6 +141,7 @@
 		DABE40EE2726A63800F8151A /* ShowEpisodeListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShowEpisodeListPage.swift; path = /Users/buddhalow/Documents/nPlay/Shared/ShowEpisodeListPage.swift; sourceTree = "<absolute>"; };
 		DABE40F12726A64100F8151A /* ShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowView.swift; sourceTree = "<group>"; };
 		DABE40F42726A82000F8151A /* ShowDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailPage.swift; sourceTree = "<group>"; };
+		DABE40FA2726ED6B00F8151A /* GenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
 		DAEDC82F2721C698001555BF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		DAEDC8322721C6BE001555BF /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		DAEDC8352721D687001555BF /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -263,6 +266,7 @@
 				DAEDC85E27245D6E001555BF /* DocumentRepository.swift */,
 				DABE40F12726A64100F8151A /* ShowView.swift */,
 				DABE40F42726A82000F8151A /* ShowDetailPage.swift */,
+				DABE40FA2726ED6B00F8151A /* GenericView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -584,6 +588,7 @@
 				DAEDC8302721C698001555BF /* Episode.swift in Sources */,
 				DABE40F02726A63800F8151A /* ShowEpisodeListPage.swift in Sources */,
 				DAEDC84827243A59001555BF /* EntityListViewLoader.swift in Sources */,
+				DABE40FB2726ED6B00F8151A /* GenericView.swift in Sources */,
 				DAEDC84B27243AD1001555BF /* EntityViewLoader.swift in Sources */,
 				DABE40EC2725C68E00F8151A /* EpisodePage.swift in Sources */,
 				DAEDC85F27245D6E001555BF /* DocumentRepository.swift in Sources */,
@@ -623,6 +628,7 @@
 				DAEDC8312721C698001555BF /* Episode.swift in Sources */,
 				DABE40EF2726A63800F8151A /* ShowEpisodeListPage.swift in Sources */,
 				DAEDC84927243A59001555BF /* EntityListViewLoader.swift in Sources */,
+				DABE40FC2726ED6B00F8151A /* GenericView.swift in Sources */,
 				DAEDC84C27243AD1001555BF /* EntityViewLoader.swift in Sources */,
 				DABE40ED2725C68E00F8151A /* EpisodePage.swift in Sources */,
 				DAEDC86027245D6E001555BF /* DocumentRepository.swift in Sources */,
