@@ -27,6 +27,7 @@ struct EpisodeRow: View {
                     Text(episode.name).bold()
                     Text(formattedDate()).opacity(0.8)
                 }
+                Spacer()
                 Button("..") {
                     onMenuClicked(episode)
                 }

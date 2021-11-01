@@ -23,7 +23,7 @@ struct ShowEpisodeListView: View {
         print("Number of seasons \(self.seasons.count)")
     } 
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 4) {
             /*Picker("Seasons", selection: $selectedSeasonId) {
                 ForEach(seasons, id: \.id) {
                     Text($0.name).tag($0.id)
@@ -33,21 +33,21 @@ struct ShowEpisodeListView: View {
             VStack(alignment: .trailing, spacing: 0) {
                 HStack {
                     Text("Season")
-                
+                    Spacer()
                     ForEach(seasons, id: \.id) {
                         season in
                         Button(season.name, action: {
                             seasonChanged(season.id!)
                         }).buttonStyle(BorderedButtonStyle())
                     }
-                }
+                }.padding(30)
             }
-            Text("Episodes").opacity(0.5)
+            Text("Episodes").opacity(0.5).padding(30)
             VStack {
                 ForEach(episodes) {
                     EpisodeRow(episode: $0, onMenuClicked: {
                         episode in
-                    })
+                    }).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
                 }
             }
         }
