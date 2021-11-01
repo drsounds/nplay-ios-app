@@ -30,17 +30,18 @@ struct ShowEpisodeListView: View {
                 }
             }.onChange(of: selectedSeasonId, perform: seasonChanged)
                 .background(Color.black).padding(5.0).cornerRadius(25.0).border(Color.white).foregroundColor(Color.white)*/
-            
-                Text("Season")
-            
-                HStack(alignment: .center, spacing: 5) {
+            VStack(alignment: .trailing, spacing: 0) {
+                HStack {
+                    Text("Season")
+                
                     ForEach(seasons, id: \.id) {
                         season in
                         Button(season.name, action: {
                             seasonChanged(season.id!)
-                        }).padding(10).cornerRadius(10.0).background(Color.black).border(Color.white)
+                        }).buttonStyle(BorderedButtonStyle())
                     }
                 }
+            }
             Text("Episodes").opacity(0.5)
             VStack {
                 ForEach(episodes) {

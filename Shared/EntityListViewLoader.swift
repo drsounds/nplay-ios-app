@@ -19,6 +19,19 @@ class EntityListViewLoader<T : Entity> : ObservableObject {
     func setPath(_ path: String) {
         objectRepository = CollectionRepository<T>(path: path)
     }
+    
+    func get(_ filter: [String:Any]?, orderBy: [String:Bool]?, finished: @escaping ([T]) -> Void) {
+      objectRepository.get(filter, orderBy: orderBy) {
+            objects in
+            finished(objects)
+      }
+      objectRepository.$objects.map { cards in
+        cards.map(EntityViewModel.init)
+      }
+      .assign(to: \.objectViewModels, on: self)
+      // 3
+      .store(in: &cancellables)
+    }
     func get(_ filter: [String:Any]?, finished: @escaping ([T]) -> Void) {
       objectRepository.get(filter) {
             objects in

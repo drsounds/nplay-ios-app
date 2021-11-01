@@ -12,12 +12,12 @@ struct EpisodeView: View {
     var episode : Episode
     var seasonId = "" 
     var body: some View {
-        GenericView(color: Color(hex: episode.color), imageUrl: episode.imageUrl) {
+        GenericView(color: Color(hex: episode.color), imageUrl: nil, height: .bottom) {
             VStack {
                 GenericHeader(
                     title: episode.name,
                     label: "episode",
-                    imageUrl: ""
+                    imageUrl: episode.imageUrl
                 )
                 Button("Play") {
                     print("Play")

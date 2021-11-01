@@ -53,10 +53,10 @@ struct ShowEpisodeListPage: View {
     }
     func loadEpisodes(_ seasonId: String, finished: @escaping ([Episode]) -> Void) {
         self.episodeListViewLoader.setPath("episodes")
-        self.episodeListViewLoader.get(["seasonId": seasonId], orderBy: ["published": true]) {
+        self.episodeListViewLoader.get(["seasonId": seasonId], orderBy: ["published": true], finished: {
             episodes in
             self.episodes = episodes
-        }
+        })
     }
     var body: some View {
         ZStack {
