@@ -18,7 +18,7 @@ struct ShowView: View {
         GenericHeader(
             title: show.name,
             label: "show",
-            imageUrl: ""
+            imageUrl: nil
         )
     }
 }

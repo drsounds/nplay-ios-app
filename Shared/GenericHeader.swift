@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct GenericHeader: View {
-    var title : String = "Title";
-    var label : String = "label";
-    var imageUrl : String = "";
+    var title : String? = nil;
+    var label : String? = nil;
+    var imageUrl : String? = nil;
     var body: some View {
        /* VStack(alignment: .trailing) {
             /*Circle()
@@ -23,10 +23,18 @@ struct GenericHeader: View {
             }
         }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3, alignment: .top)*/
         VStack(alignment: .center, spacing: 1) {
-            Rectangle().size(width: 0, height: 32)
-            ImageView(url: imageUrl)
-            Text(title).font(.system(size: 30, weight: .bold))
-        }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 2.3)
+            Spacer(minLength: 140)
+            if (imageUrl != nil) {
+                HStack {
+                    ImageView(url: imageUrl!).aspectRatio(16/9, contentMode: .fill).frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width - 60, minHeight: 0, maxHeight: .infinity)
+                }
+            } else {
+                Spacer(minLength: 70)
+            }
+            if title != nil {
+            Text(title!).font(.system(size: 30, weight: .bold))
+            }
+        }.frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: .infinity).padding(5)
     }
 }
 

@@ -59,7 +59,7 @@ struct ShowEpisodeListPage: View {
         })
     }
     var body: some View {
-        ZStack {
+        ZStack(alignment: .topLeading) {
             if show != nil {
                 ShowEpisodeListView(
                     seasons: seasons,

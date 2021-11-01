@@ -14,15 +14,21 @@ struct GenericView<Content : View>: View {
     
     init(color: Color, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
+        print(color)
+        print(imageUrl)
         self.content = content
     }
     init(color: Color, imageUrl: String?, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
+        print(color)
+        print(imageUrl)
         self.imageUrl = imageUrl
         self.content = content
     }
     init(color: Color, imageUrl: String?, height: UnitPoint, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
+        print(color)
+        print(imageUrl)
         self.imageUrl = imageUrl
         self.content = content
         self.height = height
@@ -32,14 +38,13 @@ struct GenericView<Content : View>: View {
     var body: some View {
         ScrollView {
             ZStack(alignment: .topLeading) {
-                ZStack(alignment: .topLeading) {
+                ZStack(alignment: .top) {
                     if imageUrl != nil {
-                        ImageView(url: imageUrl!)
-                            .aspectRatio(contentMode: .fill)
+                        ImageView(url: imageUrl!).aspectRatio(contentMode: .fill)
                     } else {
-                        Rectangle().background(
+                        Rectangle().fill(
                             color
-                        )
+                        ).frame(minWidth: UIScreen.main.bounds.width, minHeight: UIScreen.main.bounds.height)
                     }
                 }.mask(
                     LinearGradient(

@@ -13,19 +13,21 @@ struct EpisodeView: View {
     var seasonId = "" 
     var body: some View {
         GenericView(color: Color(hex: episode.color), imageUrl: nil, height: .bottom) {
-            VStack {
+            VStack(alignment: .leading) {
                 GenericHeader(
-                    title: episode.name,
-                    label: "episode",
+                    title: nil,
                     imageUrl: episode.imageUrl
                 )
+                Spacer(minLength: 30)
                 Button("Play") {
                     print("Play")
-                }.buttonStyle(PrimaryButton())
-                ShowEpisodeListPage(id: show.id!).frame(width: UIScreen.main.bounds.width)
+                }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50, alignment: .center).buttonStyle(PlainButtonStyle()).background(RoundedRectangle(cornerRadius: 8).fill(Color.white)).padding(30).foregroundColor(Color.black)
+                Text(episode.name).opacity(1).padding(30).font(.system(size: 30, weight: .bold))
+                Text(episode.description).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center).padding(30)
+                Spacer(minLength: 10)
+                ShowEpisodeListPage(id: show.id!)
             }.frame(
-                minWidth: UIScreen.main.bounds.width,
-                minHeight: UIScreen.main.bounds.height
+                minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading
             )
         }
     }

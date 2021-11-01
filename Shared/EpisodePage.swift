@@ -40,7 +40,7 @@ struct EpisodePage: View {
         }
     }
     var body: some View {
-        ZStack {
+        ZStack(alignment: .topLeading) {
             if show != nil && episode != nil {
                 EpisodeView(
                     show: show!,
