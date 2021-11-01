@@ -41,6 +41,12 @@
 		DA7D0B3C271F3EA600D19006 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7D0B3A271F3EA600D19006 /* GoogleService-Info.plist */; };
 		DA7D0B3D271F3EA600D19006 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7D0B3A271F3EA600D19006 /* GoogleService-Info.plist */; };
 		DA7D0B3E271F3EA600D19006 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7D0B3A271F3EA600D19006 /* GoogleService-Info.plist */; };
+		DAB4951F273044660014C4C3 /* BundlePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB4951E273044660014C4C3 /* BundlePlayer.swift */; };
+		DAB49520273044660014C4C3 /* BundlePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB4951E273044660014C4C3 /* BundlePlayer.swift */; };
+		DAB49522273044DC0014C4C3 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB49521273044DC0014C4C3 /* WebViewModel.swift */; };
+		DAB49523273044DC0014C4C3 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB49521273044DC0014C4C3 /* WebViewModel.swift */; };
+		DAB49525273045340014C4C3 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB49524273045340014C4C3 /* WebView.swift */; };
+		DAB49526273045340014C4C3 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB49524273045340014C4C3 /* WebView.swift */; };
 		DABE40E22724781A00F8151A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E12724781A00F8151A /* PrimaryButton.swift */; };
 		DABE40E32724781A00F8151A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E12724781A00F8151A /* PrimaryButton.swift */; };
 		DABE40E5272596C200F8151A /* EpisodeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E4272596C200F8151A /* EpisodeRow.swift */; };
@@ -134,6 +140,9 @@
 		DA7D0B36271F3A4B00D19006 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		DA7D0B39271F3B8000D19006 /* nPlay (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "nPlay (iOS).entitlements"; sourceTree = "<group>"; };
 		DA7D0B3A271F3EA600D19006 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DAB4951E273044660014C4C3 /* BundlePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundlePlayer.swift; sourceTree = "<group>"; };
+		DAB49521273044DC0014C4C3 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		DAB49524273045340014C4C3 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		DABE40E12724781A00F8151A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		DABE40E4272596C200F8151A /* EpisodeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRow.swift; sourceTree = "<group>"; };
 		DABE40E82725980400F8151A /* EpisodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodePage.swift; sourceTree = "<group>"; };
@@ -231,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				DABE40EE2726A63800F8151A /* ShowEpisodeListPage.swift */,
+				DAB4951E273044660014C4C3 /* BundlePlayer.swift */,
 				DAEDC85027243FF7001555BF /* ShowPage.swift */,
 				DAEDC84127243908001555BF /* ShowEpisodeListView.swift */,
 				DABE40E82725980400F8151A /* EpisodePage.swift */,
@@ -267,6 +277,8 @@
 				DABE40F12726A64100F8151A /* ShowView.swift */,
 				DABE40F42726A82000F8151A /* ShowDetailPage.swift */,
 				DABE40FA2726ED6B00F8151A /* GenericView.swift */,
+				DAB49521273044DC0014C4C3 /* WebViewModel.swift */,
+				DAB49524273045340014C4C3 /* WebView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -595,6 +607,7 @@
 				DAEDC8362721D687001555BF /* Entity.swift in Sources */,
 				DAEDC85427244097001555BF /* BrowsePage.swift in Sources */,
 				DA7D0B37271F3A4B00D19006 /* ImageView.swift in Sources */,
+				DAB49522273044DC0014C4C3 /* WebViewModel.swift in Sources */,
 				DAEDC85127243FF7001555BF /* ShowPage.swift in Sources */,
 				DABE40F22726A64100F8151A /* ShowView.swift in Sources */,
 				DABE40E5272596C200F8151A /* EpisodeRow.swift in Sources */,
@@ -602,6 +615,7 @@
 				DABE40EA2725C68E00F8151A /* EpisodeView.swift in Sources */,
 				DA7D0B34271F394A00D19006 /* BlurbView.swift in Sources */,
 				DA7D0B1D271F391300D19006 /* nPlayApp.swift in Sources */,
+				DAB4951F273044660014C4C3 /* BundlePlayer.swift in Sources */,
 				DAEDC85C272445AB001555BF /* BlockItem.swift in Sources */,
 				DA7D0B21271F391300D19006 /* Persistence.swift in Sources */,
 				DA7D0B1B271F391300D19006 /* nPlay.xcdatamodeld in Sources */,
@@ -613,6 +627,7 @@
 				DA4F447E2721C3400036B3B5 /* CollectionRepository.swift in Sources */,
 				DAEDC84E27243D5B001555BF /* GenericHeader.swift in Sources */,
 				DA7D0B1F271F391300D19006 /* ContentView.swift in Sources */,
+				DAB49525273045340014C4C3 /* WebView.swift in Sources */,
 				DA4F44812721C38C0036B3B5 /* Show.swift in Sources */,
 				DAEDC84227243908001555BF /* ShowEpisodeListView.swift in Sources */,
 			);
@@ -635,6 +650,7 @@
 				DAEDC8372721D687001555BF /* Entity.swift in Sources */,
 				DAEDC85527244097001555BF /* BrowsePage.swift in Sources */,
 				DA7D0B38271F3A4B00D19006 /* ImageView.swift in Sources */,
+				DAB49523273044DC0014C4C3 /* WebViewModel.swift in Sources */,
 				DAEDC85227243FF7001555BF /* ShowPage.swift in Sources */,
 				DABE40F32726A64100F8151A /* ShowView.swift in Sources */,
 				DABE40E6272596C200F8151A /* EpisodeRow.swift in Sources */,
@@ -642,6 +658,7 @@
 				DABE40EB2725C68E00F8151A /* EpisodeView.swift in Sources */,
 				DA7D0B35271F394A00D19006 /* BlurbView.swift in Sources */,
 				DA7D0B1E271F391300D19006 /* nPlayApp.swift in Sources */,
+				DAB49520273044660014C4C3 /* BundlePlayer.swift in Sources */,
 				DAEDC85D272445AB001555BF /* BlockItem.swift in Sources */,
 				DA7D0B22271F391300D19006 /* Persistence.swift in Sources */,
 				DA7D0B1C271F391300D19006 /* nPlay.xcdatamodeld in Sources */,
@@ -653,6 +670,7 @@
 				DA4F447F2721C3400036B3B5 /* CollectionRepository.swift in Sources */,
 				DAEDC84F27243D5B001555BF /* GenericHeader.swift in Sources */,
 				DA7D0B20271F391300D19006 /* ContentView.swift in Sources */,
+				DAB49526273045340014C4C3 /* WebView.swift in Sources */,
 				DA4F44822721C38C0036B3B5 /* Show.swift in Sources */,
 				DAEDC84327243908001555BF /* ShowEpisodeListView.swift in Sources */,
 			);
