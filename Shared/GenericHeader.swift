@@ -10,7 +10,7 @@ import SwiftUI
 struct GenericHeader: View {
     var title : String? = nil;
     var label : String? = nil;
-    var imageUrl : String? = nil;
+    var imageUrl : String? = nil; 
     var body: some View {
        /* VStack(alignment: .trailing) {
             /*Circle()
@@ -26,7 +26,8 @@ struct GenericHeader: View {
             Spacer(minLength: 140)
             if (imageUrl != nil) {
                 HStack {
-                    ImageView(url: imageUrl!).aspectRatio(16/9, contentMode: .fill).frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width - 60, minHeight: 0, maxHeight: .infinity)
+                    ImageView(url: imageUrl!).aspectRatio(16/9, contentMode: .fill).frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width - 60, minHeight: 0, maxHeight: .infinity).shadow(color: Color.black
+                                                                                                                                                                                             , radius: 7, x: 0, y: 5)
                 }
             } else {
                 Spacer(minLength: 70)
