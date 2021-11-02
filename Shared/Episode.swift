@@ -25,8 +25,8 @@ class Episode : Entity {
         case seasonId = "seasonId"
         case published = "published"
     }
-    init(id: String, number: Int, name: String, description: String, imageUrl: String, color: String, season: Season) {
-        super.init(name: name, description: description, imageUrl: imageUrl, color: color)
+    init(id: String?, number: Int, name: String, description: String, imageUrl: String?, color: String, season: Season) {
+        super.init(id: id, name: name, description: description, imageUrl: imageUrl, color: color)
         self.number = number
         self.season = season
     }

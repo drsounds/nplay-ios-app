@@ -13,17 +13,17 @@ class Entity : ObservableObject, Identifiable, Codable {
     @DocumentID var id: String? = ""
     var name : String = ""
     var description : String = ""
-    var imageUrl : String = ""
+    var imageUrl : String? = nil
     var color : String = "#88888855"
     init() {
     }
-    init(id: String?, name: String, description: String, imageUrl: String) {
+    init(id: String?, name: String, description: String, imageUrl: String?) {
         self.id = id
         self.name = name
         self.description = description
         self.imageUrl = imageUrl
     }
-    init(id: String?, name: String, description: String, imageUrl: String, color: String) {
+    init(id: String?, name: String, description: String, imageUrl: String?, color: String) {
         self.id = id
         self.name = name
         self.description = description

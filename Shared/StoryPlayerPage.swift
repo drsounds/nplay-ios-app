@@ -8,15 +8,6 @@
 import SwiftUI
 
 struct StoryPlayerPage: View {
-    var episodeEntityViewLoader : EntityViewLoader<Episode>? = nil
-    mutating func loadStory() {
-        self.episodeEntityViewLoader = EntityViewLoader<Episode>(path: "episodes/\(storyId)")
-        self.episodeEntityViewLoader?.get(finished: {
-            e in
-            episode = e
-              
-        })
-    }
     var storyId: String = ""
     @State var storylet : Storylet? = nil
     @State var episode : Episode? = nil
@@ -34,11 +25,5 @@ struct StoryPlayerPage: View {
             })/*
         }*/
     
-    }
-}
-
-struct StoryPlayerPage_Previews: PreviewProvider {
-    static var previews: some View {
-        StoryPlayerPage()
     }
 }

@@ -21,15 +21,14 @@ struct PodcastPage: View {
         self.parser = FeedParser(URL: self.feedURL)
     }
     
-    func loadPodcast(_ finished : @escaping (Show?) -> Void) {
+    func loadShow(_ finished : @escaping (Show?) -> Void) {
         parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
             // Do your thing, then back to the Main thread
             switch result {
             case .success(let feed):
                 
                 // Grab the parsed feed directly as an optional rss, atom or json feed object
-                feed.rssFeed
-                
+              
                 // Or alternatively...
                 switch feed {
                 case let .atom(feed):       // Atom Syndication Format Feed Model
@@ -40,43 +39,48 @@ struct PodcastPage: View {
                         imageUrl: "",
                         color: "#888888"
                     )
-                    let season = Season(number: 0, show: show!)
-                    for episode in feed!.entries {
+                    let season : Season = Season(number: 0, show: show!)
+                    for episode in feed.entries ?? [] {
                         season.episodes.append(
                             Episode(
                                 id: "",
-                                number: episode.number!,
+                                number: 1,
                                 name: episode.title!,
-                                description: episode.description!,
-                                imageUrl: episode.imageUrl!
+                                description: episode.summary?.value ?? "",
+                                imageUrl: nil,
+                                color: "#777777",
+                                season: season
                             )
                         )
                     }
-                    self.show.seasons.append(season)
+                    show!.seasons.append(season)
                             
                 case let .rss(feed):        // Really Simple Syndication Feed Model
                     self.show = Show(
                         id: "",
-                        name: feed.name,
-                        description: feed.description,
-                        imageUrl: feed.imageUrl,
+                        name: feed.title!,
+                        description: "",
+                        imageUrl: nil,
                         color: "#888888"
                     )
-                    let season = Season(number: 0, show: self.show)
-                    for episode in feed?.items:
+                    let season = Season(number: 0, show: show!)
+                    for episode in feed.items ?? [] {
                         season.episodes.append(
                             Episode(
                                 id: "",
-                                number: episode?.number,
-                                name: episode?.name,
-                                description: episode?.description,
-                                imageUrl: episode?.imageUrl,
+                                number:1,
+                                name: episode.title!,
+                                description: episode.description!,
+                                imageUrl: nil,
+                                color: "#888888",
+                                season: season
                             )
                         )
-                        self.show.seasons.append(season)
+                    }
+                    show!.seasons.append(season)
                             
                 case let .json(feed):       // JSON Feed Model
-                    
+                    return
                 }
                 
             case .failure(let error):
