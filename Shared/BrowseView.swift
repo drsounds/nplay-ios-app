@@ -11,6 +11,8 @@ import SwiftUI
 struct BrowseView : View {          
     
     var shows : [Show] = [];
+    @State var browseUrl : String? = nil
+    @State var isActive : Bool = false
     var body: some View {
         NavigationView {
             ScrollView {
@@ -25,8 +27,17 @@ struct BrowseView : View {
                     )
                 }
                 .padding(5)
+                if browseUrl != nil {
+                    NavigationLink(destination: PodcastPage(url: browseUrl!), isActive: $isActive) {
+                        Text("")
+                    }
+                }
             }
-        }
+        }.onOpenURL(perform: {
+            url in
+            self.browseUrl = url.absoluteString
+            self.isActive = true
+        })
     }
     
 }

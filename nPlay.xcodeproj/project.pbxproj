@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1F658D8547B0D41AE69B49DF /* Pods_nPlay__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5150923A8DDFC475C2C9923 /* Pods_nPlay__iOS_.framework */; };
-		46FD6BF3616DF23DBAC5A975 /* Pods_nPlay__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B4C7DEB1F958DB5DC5A728 /* Pods_nPlay__macOS_.framework */; };
 		DA06F7D027318DC90035FEE9 /* EpisodePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7CF27318DC90035FEE9 /* EpisodePlayerView.swift */; };
 		DA06F7D127318DC90035FEE9 /* EpisodePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7CF27318DC90035FEE9 /* EpisodePlayerView.swift */; };
 		DA06F7D327318E960035FEE9 /* Storylet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D227318E960035FEE9 /* Storylet.swift */; };
@@ -99,6 +98,8 @@
 		DAEDC85D272445AB001555BF /* BlockItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC85B272445AB001555BF /* BlockItem.swift */; };
 		DAEDC85F27245D6E001555BF /* DocumentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC85E27245D6E001555BF /* DocumentRepository.swift */; };
 		DAEDC86027245D6E001555BF /* DocumentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC85E27245D6E001555BF /* DocumentRepository.swift */; };
+		DAF54C142731A9A300DB669F /* PodcastPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF54C132731A9A300DB669F /* PodcastPage.swift */; };
+		DAF54C152731A9A300DB669F /* PodcastPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF54C132731A9A300DB669F /* PodcastPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,10 +121,7 @@
 
 /* Begin PBXFileReference section */
 		110F4EAAB11EC7BBF0C20C25 /* Pods-nPlay (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nPlay (iOS).release.xcconfig"; path = "Target Support Files/Pods-nPlay (iOS)/Pods-nPlay (iOS).release.xcconfig"; sourceTree = "<group>"; };
-		63E708C5E7CD5CEA47C5359E /* Pods-nPlay (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nPlay (macOS).debug.xcconfig"; path = "Target Support Files/Pods-nPlay (macOS)/Pods-nPlay (macOS).debug.xcconfig"; sourceTree = "<group>"; };
-		91AE6214C9FD627367BA840A /* Pods-nPlay (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nPlay (macOS).release.xcconfig"; path = "Target Support Files/Pods-nPlay (macOS)/Pods-nPlay (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		A4E5CDB9387B08EB6B614F0E /* Pods-nPlay (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nPlay (iOS).debug.xcconfig"; path = "Target Support Files/Pods-nPlay (iOS)/Pods-nPlay (iOS).debug.xcconfig"; sourceTree = "<group>"; };
-		B4B4C7DEB1F958DB5DC5A728 /* Pods_nPlay__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nPlay__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5150923A8DDFC475C2C9923 /* Pods_nPlay__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nPlay__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA06F7CF27318DC90035FEE9 /* EpisodePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodePlayerView.swift; sourceTree = "<group>"; };
 		DA06F7D227318E960035FEE9 /* Storylet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storylet.swift; sourceTree = "<group>"; };
@@ -152,6 +150,7 @@
 		DA7D0B36271F3A4B00D19006 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		DA7D0B39271F3B8000D19006 /* nPlay (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "nPlay (iOS).entitlements"; sourceTree = "<group>"; };
 		DA7D0B3A271F3EA600D19006 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DA950F022731AF92008E6845 /* nPlay--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "nPlay--iOS--Info.plist"; sourceTree = "<group>"; };
 		DAB4951E273044660014C4C3 /* BundlePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundlePlayer.swift; sourceTree = "<group>"; };
 		DAB49521273044DC0014C4C3 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		DAB49524273045340014C4C3 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -177,6 +176,7 @@
 		DAEDC85327244097001555BF /* BrowsePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsePage.swift; sourceTree = "<group>"; };
 		DAEDC85B272445AB001555BF /* BlockItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockItem.swift; sourceTree = "<group>"; };
 		DAEDC85E27245D6E001555BF /* DocumentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentRepository.swift; sourceTree = "<group>"; };
+		DAF54C132731A9A300DB669F /* PodcastPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,7 +192,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46FD6BF3616DF23DBAC5A975 /* Pods_nPlay__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +217,6 @@
 			children = (
 				A4E5CDB9387B08EB6B614F0E /* Pods-nPlay (iOS).debug.xcconfig */,
 				110F4EAAB11EC7BBF0C20C25 /* Pods-nPlay (iOS).release.xcconfig */,
-				63E708C5E7CD5CEA47C5359E /* Pods-nPlay (macOS).debug.xcconfig */,
-				91AE6214C9FD627367BA840A /* Pods-nPlay (macOS).release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -228,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				C5150923A8DDFC475C2C9923 /* Pods_nPlay__iOS_.framework */,
-				B4B4C7DEB1F958DB5DC5A728 /* Pods_nPlay__macOS_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -236,6 +232,7 @@
 		DA7D0AEA271F391100D19006 = {
 			isa = PBXGroup;
 			children = (
+				DA950F022731AF92008E6845 /* nPlay--iOS--Info.plist */,
 				DA7D0B3A271F3EA600D19006 /* GoogleService-Info.plist */,
 				DA7D0B39271F3B8000D19006 /* nPlay (iOS).entitlements */,
 				DA7D0AEF271F391200D19006 /* Shared */,
@@ -295,6 +292,7 @@
 				DA06F7D227318E960035FEE9 /* Storylet.swift */,
 				DA06F7D827318EFA0035FEE9 /* StoryPlayerPage.swift */,
 				DA06F7D527318EC40035FEE9 /* StoryObject.swift */,
+				DAF54C132731A9A300DB669F /* PodcastPage.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -407,7 +405,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA7D0B2A271F391300D19006 /* Build configuration list for PBXNativeTarget "nPlay (macOS)" */;
 			buildPhases = (
-				D3EA00FE4C25100E91E8D6A5 /* [CP] Check Pods Manifest.lock */,
 				DA7D0AFC271F391300D19006 /* Sources */,
 				DA7D0AFD271F391300D19006 /* Frameworks */,
 				DA7D0AFE271F391300D19006 /* Resources */,
@@ -581,28 +578,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nPlay (iOS)/Pods-nPlay (iOS)-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3EA00FE4C25100E91E8D6A5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-nPlay (macOS)-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -617,6 +592,7 @@
 				DABE40F02726A63800F8151A /* ShowEpisodeListPage.swift in Sources */,
 				DAEDC84827243A59001555BF /* EntityListViewLoader.swift in Sources */,
 				DABE40FB2726ED6B00F8151A /* GenericView.swift in Sources */,
+				DAF54C142731A9A300DB669F /* PodcastPage.swift in Sources */,
 				DAEDC84B27243AD1001555BF /* EntityViewLoader.swift in Sources */,
 				DABE40EC2725C68E00F8151A /* EpisodePage.swift in Sources */,
 				DAEDC85F27245D6E001555BF /* DocumentRepository.swift in Sources */,
@@ -664,6 +640,7 @@
 				DABE40EF2726A63800F8151A /* ShowEpisodeListPage.swift in Sources */,
 				DAEDC84927243A59001555BF /* EntityListViewLoader.swift in Sources */,
 				DABE40FC2726ED6B00F8151A /* GenericView.swift in Sources */,
+				DAF54C152731A9A300DB669F /* PodcastPage.swift in Sources */,
 				DAEDC84C27243AD1001555BF /* EntityViewLoader.swift in Sources */,
 				DABE40ED2725C68E00F8151A /* EpisodePage.swift in Sources */,
 				DAEDC86027245D6E001555BF /* DocumentRepository.swift in Sources */,
@@ -857,6 +834,7 @@
 				DEVELOPMENT_TEAM = P46STHG8JL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "nPlay--iOS--Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -892,6 +870,7 @@
 				DEVELOPMENT_TEAM = P46STHG8JL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "nPlay--iOS--Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -918,7 +897,6 @@
 		};
 		DA7D0B2B271F391300D19006 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63E708C5E7CD5CEA47C5359E /* Pods-nPlay (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -947,7 +925,6 @@
 		};
 		DA7D0B2C271F391300D19006 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91AE6214C9FD627367BA840A /* Pods-nPlay (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

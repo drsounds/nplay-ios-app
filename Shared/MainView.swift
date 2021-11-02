@@ -8,16 +8,17 @@
 import Foundation
 import SwiftUI
 struct MainView : View {
+    @State var activeTab : String = ""
     var body : some View {
-        TabView {
+        TabView(selection: $activeTab) {
             BrowsePage()
                 .tabItem {
                     Label("Browse", systemImage: "house.dash")
                 }
-            BrowsePage()
-                .tabItem {
-                    Label("Browse", systemImage: "list.dash")
-                }
+                .tag("browsePage")
+        }.onOpenURL {
+            url in
+            activeTab = "browsePage"
         }
     }
 }

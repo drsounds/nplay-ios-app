@@ -23,4 +23,11 @@ class Entity : ObservableObject, Identifiable, Codable {
         self.description = description
         self.imageUrl = imageUrl
     }
+    init(id: String?, name: String, description: String, imageUrl: String, color: String) {
+        self.id = id
+        self.name = name
+        self.description = description
+        self.imageUrl = imageUrl
+        self.color = color
+    }
 }

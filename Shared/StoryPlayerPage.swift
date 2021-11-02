@@ -12,27 +12,27 @@ struct StoryPlayerPage: View {
     mutating func loadStory() {
         self.episodeEntityViewLoader = EntityViewLoader<Episode>(path: "episodes/\(storyId)")
         self.episodeEntityViewLoader?.get(finished: {
-            episode in
-            self.episode = episode
+            e in
+            episode = e
               
         })
     }
     var storyId: String = ""
-    var storylet : Storylet? = nil
-    var episode : Episode? = nil
+    @State var storylet : Storylet? = nil
+    @State var episode : Episode? = nil
     var body: some View {
-        if storylet != nil {
+        /*if storylet != nil {
             EpisodePlayerView(
-                episode: episode,
-                storylet: storylet
+                episode: episode!,
+                storylet: storylet!
             ) {
                 
             }
-        } else {
+        } else {*/
             Text("Test").onAppear(perform: {
                 
-            })
-        }
+            })/*
+        }*/
     
     }
 }
