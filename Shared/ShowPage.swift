@@ -33,7 +33,7 @@ struct ShowPage: View {
                         show: show!
                     )
                 } else {
-                    Text("Loading")
+                    ProgressView()
                 }
             }.onAppear(perform: {
                 loadShow() {

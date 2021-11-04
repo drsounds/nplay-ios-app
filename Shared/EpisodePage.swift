@@ -48,7 +48,7 @@ struct EpisodePage: View {
                     seasonId: episode!.seasonId
                 )
             } else {
-                Text("Loading")
+                ProgressView()
             }
         }.onAppear(perform: {
             loadEpisode() {

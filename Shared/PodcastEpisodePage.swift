@@ -10,109 +10,35 @@ import Combine
 import FeedKit
 
 struct PodcastEpisodePage: View {
-    var feedURL : URL
-    var parser : FeedParser
+    var parser : PodcastParser
     var url : String = ""
-    var args : [URLQueryItem]
+    var args : [String: String]
     var realURL : String
     @State var show : Show? = nil
     @State var episode : Episode? = nil
     @State var season : Season? = nil
     init(url: String) {
-        self.feedURL = URL(string: self.url.components(separatedBy: ["#"]).first!)!
+        self.url = url.components(separatedBy: ["#"])[0].replacingOccurrences(of: "stadius:", with: "http:")
         self.realURL = url;
-        let urlComponent = URLComponents(string: url) 
-        self.parser = FeedParser(URL: self.feedURL)
+        self.args = url.components(separatedBy: ["#"])[1].query
+        self.parser = PodcastParser()
     }
     func loadEpisode() {
-        parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
-            // Do your thing, then back to the Main thread
-            switch result {
-            case .success(let feed):
-                
-                // Grab the parsed feed directly as an optional rss, atom or json feed object
-              
-                // Or alternatively...
-                switch feed {
-                case let .atom(feed):       // Atom Syndication Format Feed Model
-                    show = Show(
-                        id: "",
-                        name: feed.title!,
-                        description: "",
-                        imageUrl: "",
-                        color: "#888888",
-                        url: realURL
-                    )
-                    let season : Season = Season(id: self.url + "#season:1", number: 0, show: show!)
-                    var number : Int = 1
-                    for episode in feed.entries ?? [] {
-                        season.episodes.append(
-                            Episode(
-                                id: episode.id!,
-                                number: number,
-                                name: episode.title!,
-                                description: episode.summary?.value ?? "",
-                                imageUrl: nil,
-                                color: "#777777",
-                                season: season,
-                                url: "\(realURL)#episode=\(episode.id)"
-                            )
-                        )
-                        number += 1
+        self.parser.loadFeed(string: self.url) {
+            show in
+            if show != nil {
+                let seasonValue = self.args["season"]
+                let episodeValue = self.args["episode"]
+                for season in show!.seasons {
+                    if seasonValue != nil && season.id! == seasonValue {
+                        self.season = season
                     }
-                    show!.seasons.append(season)
-                            
-                case let .rss(feed):        // Really Simple Syndication Feed Model
-                    self.show = Show(
-                        id: "",
-                        name: feed.title!,
-                        description: "",
-                        imageUrl: nil,
-                        color: "#888888",
-                        url: realURL
-                    )
-                    let season = Season(id: self.url + "#season:0", number: 0, show: show!)
-                    self.season = season
-                    var number : Int = 1
-                    for episode in feed.items ?? [] {
-                        season.episodes.append(
-                            Episode(
-                                id: episode.guid!.value!,
-                                number:number,
-                                name: episode.title!,
-                                description: episode.description!,
-                                imageUrl: nil,
-                                color: "#888888",
-                                season: season,
-                                url: "\(realURL)#episode=\(episode.guid!.value!)"
-                            )
-                        )
-                        number += 1
-                    }
-                    show!.seasons.append(season)
-                            
-                case let .json(feed):       // JSON Feed Model
-                    return
-                }
-                
-            case .failure(let error):
-                print(error)
-            }
-        }
-        if show != nil {
-            let seasonValue = self.args.first(
-                where: {$0.name == "season"}
-            )?.value
-            let episodeValue = self.args.first(
-                where: {$0.name == "episode"}
-            )?.value
-            for season in show!.seasons {
-                if season.number == NSString(string: seasonValue!).integerValue {
-                    self.season = season
-                }
-                for episode in season.episodes {
-                    if episode.number == NSString(string: episodeValue!).integerValue {
-                        self.episode = episode
+                    for episode in season.episodes {
+                        if episode.id! == episodeValue! {
+                            self.episode = episode
+                            self.season = season
+                            self.show = show
+                        }
                     }
                 }
             }
@@ -127,7 +53,7 @@ struct PodcastEpisodePage: View {
                     episode: episode!
                 )
             } else {
-                Text("Loading")
+                ProgressView()
             }
         }.onAppear(perform: {
             loadEpisode()
