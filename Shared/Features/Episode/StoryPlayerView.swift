@@ -9,21 +9,20 @@ import SwiftUI
 
 struct StoryPlayerView: View {
     var storylet : Storylet
-    @State var selection : String = ""
+    @State var selection : Int = 0
     var body: some View {
         GenericView(color: Color(hex: storylet.color, alpha: 0.5)) {
             TabView(selection: $selection) {
-                ForEach(storylet.objects) {
-                    storyObject in
-                    if storyObject.type == "video" {
-                        HTML5StoryCard(url: storyObject.url)
-                    }
-                    if storyObject.type == "camera" {
-                        CameraStoryCard(url: storyObject.url)
-                    }
-                    if storyObject.type == "bundle" {
-                        HTML5StoryCard(url: storyObject.url)
-                    }
+                ForEach(0..<storylet.segments.count) {
+                    i in
+                    let storySegment = storylet.segments[i]
+                    StorySegmentView(storySegment: storySegment, onBeforeStart: {
+                        selection -= 1
+                    },onEnd: {
+                        selection += 1
+                    }, onIndexChanged: {
+                        index in
+                    }).tag(i)
                 }
             }.tabViewStyle(PageTabViewStyle())
         }

@@ -46,7 +46,6 @@
 		DA3B993D273464BF00C97952 /* HCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B993B273464BF00C97952 /* HCamView.swift */; };
 		DA3B993F2734660F00C97952 /* StadiusCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B993E2734660F00C97952 /* StadiusCamView.swift */; };
 		DA3B99402734660F00C97952 /* StadiusCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B993E2734660F00C97952 /* StadiusCamView.swift */; };
-		DA3B99492734686400C97952 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = DA7D0AF5271F391300D19006 /* Assets.xcassets */; };
 		DA3B99812734695B00C97952 /* CustomCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B997F2734695B00C97952 /* CustomCamView.swift */; };
 		DA3B99822734695B00C97952 /* CustomCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B997F2734695B00C97952 /* CustomCamView.swift */; };
 		DA3B99832734695B00C97952 /* CustomProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99802734695B00C97952 /* CustomProcessView.swift */; };
@@ -151,6 +150,12 @@
 		DA7D0B3C271F3EA600D19006 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7D0B3A271F3EA600D19006 /* GoogleService-Info.plist */; };
 		DA7D0B3D271F3EA600D19006 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7D0B3A271F3EA600D19006 /* GoogleService-Info.plist */; };
 		DA7D0B3E271F3EA600D19006 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7D0B3A271F3EA600D19006 /* GoogleService-Info.plist */; };
+		DAAA5CF2273474580076D86F /* StorySegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA5CF1273474580076D86F /* StorySegment.swift */; };
+		DAAA5CF3273474580076D86F /* StorySegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA5CF1273474580076D86F /* StorySegment.swift */; };
+		DAAA5CF52734752F0076D86F /* StorySegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA5CF42734752F0076D86F /* StorySegmentView.swift */; };
+		DAAA5CF62734752F0076D86F /* StorySegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA5CF42734752F0076D86F /* StorySegmentView.swift */; };
+		DAAA5CF8273477FA0076D86F /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA5CF7273477FA0076D86F /* With.swift */; };
+		DAAA5CF9273477FA0076D86F /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA5CF7273477FA0076D86F /* With.swift */; };
 		DAB4951F273044660014C4C3 /* BundlePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB4951E273044660014C4C3 /* BundlePlayer.swift */; };
 		DAB49520273044660014C4C3 /* BundlePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB4951E273044660014C4C3 /* BundlePlayer.swift */; };
 		DAB49522273044DC0014C4C3 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB49521273044DC0014C4C3 /* WebViewModel.swift */; };
@@ -304,6 +309,9 @@
 		DA7D0B39271F3B8000D19006 /* nPlay (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "nPlay (iOS).entitlements"; sourceTree = "<group>"; };
 		DA7D0B3A271F3EA600D19006 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA950F022731AF92008E6845 /* nPlay--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "nPlay--iOS--Info.plist"; sourceTree = "<group>"; };
+		DAAA5CF1273474580076D86F /* StorySegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorySegment.swift; sourceTree = "<group>"; };
+		DAAA5CF42734752F0076D86F /* StorySegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorySegmentView.swift; sourceTree = "<group>"; };
+		DAAA5CF7273477FA0076D86F /* With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
 		DAB4951E273044660014C4C3 /* BundlePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundlePlayer.swift; sourceTree = "<group>"; };
 		DAB49521273044DC0014C4C3 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		DAB49524273045340014C4C3 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -741,6 +749,7 @@
 				DAEDC8322721C6BE001555BF /* Season.swift */,
 				DA4F44802721C38C0036B3B5 /* Show.swift */,
 				DAEDC82F2721C698001555BF /* Episode.swift */,
+				DAAA5CF1273474580076D86F /* StorySegment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -759,6 +768,8 @@
 				DABE40FA2726ED6B00F8151A /* GenericView.swift */,
 				DABE40E4272596C200F8151A /* EpisodeRow.swift */,
 				DA7D0B33271F394A00D19006 /* BlurbView.swift */,
+				DAAA5CF42734752F0076D86F /* StorySegmentView.swift */,
+				DAAA5CF7273477FA0076D86F /* With.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -850,7 +861,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					DA7D0AF9271F391300D19006 = {
 						CreatedOnToolsVersion = 13.0;
@@ -977,7 +988,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA3B99492734686400C97952 /* Assets.xcassets in Sources */,
 				DA3B99F82734696800C97952 /* TopBar+Create.swift in Sources */,
 				DABE40F52726A82000F8151A /* ShowDetailPage.swift in Sources */,
 				DAEDC83F2724313A001555BF /* HexColor.swift in Sources */,
@@ -1027,14 +1037,17 @@
 				DA7D0B34271F394A00D19006 /* BlurbView.swift in Sources */,
 				DA7D0B1D271F391300D19006 /* nPlayApp.swift in Sources */,
 				DA3B99E02734696800C97952 /* ZoomSwitcerBtn.swift in Sources */,
+				DAAA5CF2273474580076D86F /* StorySegment.swift in Sources */,
 				DA06F7D027318DC90035FEE9 /* EpisodePlayerView.swift in Sources */,
 				DA3B99DE2734696800C97952 /* RoundButton+Event.swift in Sources */,
 				DA3B993C273464BF00C97952 /* HCamView.swift in Sources */,
+				DAAA5CF52734752F0076D86F /* StorySegmentView.swift in Sources */,
 				DA3B99B82734696800C97952 /* RecordButton+Event.swift in Sources */,
 				DAB4951F273044660014C4C3 /* BundlePlayer.swift in Sources */,
 				DAEDC85C272445AB001555BF /* BlockItem.swift in Sources */,
 				DA7D0B21271F391300D19006 /* Persistence.swift in Sources */,
 				DA3809D62733E07500F6DCB8 /* PodcastEpisodeView.swift in Sources */,
+				DAAA5CF8273477FA0076D86F /* With.swift in Sources */,
 				DA3B99CE2734696800C97952 /* ShareButton+Style.swift in Sources */,
 				DA3B99CA2734696800C97952 /* RecordButton.swift in Sources */,
 				DA3B99D62734696800C97952 /* ClickButton.swift in Sources */,
@@ -1077,6 +1090,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DABE40F62726A82000F8151A /* ShowDetailPage.swift in Sources */,
+				DAAA5CF3273474580076D86F /* StorySegment.swift in Sources */,
 				DAEDC8402724313A001555BF /* HexColor.swift in Sources */,
 				DA3B99F12734696800C97952 /* FlipButton+Const.swift in Sources */,
 				DA4F44792721ADF20036B3B5 /* BrowseView.swift in Sources */,
@@ -1092,9 +1106,11 @@
 				DAF54C152731A9A300DB669F /* PodcastPage.swift in Sources */,
 				DA3B99282734512F00C97952 /* VideoStoryCard.swift in Sources */,
 				DA3B99C92734696800C97952 /* RecordButton+Create.swift in Sources */,
+				DAAA5CF9273477FA0076D86F /* With.swift in Sources */,
 				DAEDC84C27243AD1001555BF /* EntityViewLoader.swift in Sources */,
 				DABE40ED2725C68E00F8151A /* EpisodePage.swift in Sources */,
 				DAEDC86027245D6E001555BF /* DocumentRepository.swift in Sources */,
+				DAAA5CF62734752F0076D86F /* StorySegmentView.swift in Sources */,
 				DAEDC8372721D687001555BF /* Entity.swift in Sources */,
 				DA3B99D92734696800C97952 /* ToggleButton+Event.swift in Sources */,
 				DA3B992E2734532B00C97952 /* StoryletTestView.swift in Sources */,
@@ -1400,6 +1416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1428,6 +1445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
