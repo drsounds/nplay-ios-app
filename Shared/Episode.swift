@@ -16,6 +16,7 @@ class Episode : Entity {
     var published : Date = Date()
     var season : Season? = nil
     var url : String? = nil
+    var enclosures : [Enclosure] = []
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case description = "description"

@@ -7,8 +7,10 @@
 
 import Foundation
 
-struct Storylet : Codable {
+struct Storylet : Codable, Identifiable {
+    var id : String? = ""
     var name : String = ""
     var description : String = ""
     var objects : [StoryObject] = []
+    var color : String = "#888888"
 }

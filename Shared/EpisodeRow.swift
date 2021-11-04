@@ -29,7 +29,7 @@ struct EpisodeRow: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(episode.name).bold().lineLimit(1)
                 Text(formattedDate()).opacity(0.8)
-            }
+            }.padding(13)
             Spacer()
             Button("..") {
                 onMenuClicked(episode)

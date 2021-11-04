@@ -21,15 +21,11 @@ struct GenericView<Content : View>: View {
     }
     init(color: Color, imageUrl: String?, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
-        print(color)
-        print(imageUrl)
         self.imageUrl = imageUrl
         self.content = content
     }
     init(color: Color, imageUrl: String?, height: UnitPoint, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
-        print(color)
-        print(imageUrl)
         self.imageUrl = imageUrl
         self.content = content
         self.height = height
@@ -37,7 +33,6 @@ struct GenericView<Content : View>: View {
     init(color: Color, imageUrl: String?, height: UnitPoint, showCircle: Bool, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
         print(color)
-        print(imageUrl)
         self.imageUrl = imageUrl
         self.content = content
         self.showCircle = showCircle

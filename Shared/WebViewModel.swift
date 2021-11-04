@@ -18,11 +18,18 @@ class WebViewModel: ObservableObject {
 
     init() {
         webView = WKWebView(frame: .zero)
-        url = URL(string: "")!
-        loadUrl()
+        url = URL(string: "https://svt.se")!
     }
     // actions
     func loadUrl() {
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        
+        webView.load(URLRequest(url: url))
+    }
+    // actions
+    func loadUrl(_ urlString: String) {
         guard let url = URL(string: urlString) else {
             return
         }

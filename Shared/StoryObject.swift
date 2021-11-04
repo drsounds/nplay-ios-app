@@ -7,8 +7,15 @@
 
 import Foundation
 
-class StoryObject : Codable {
+class StoryObject : Codable, Identifiable {
     var name : String
-    var type : String
     var description : String
+    var type : String
+    var url : String
+    init(name: String, description: String, type: String, url: String) {
+        self.name = name
+        self.description = description
+        self.type = type
+        self.url = url
+    } 
 }

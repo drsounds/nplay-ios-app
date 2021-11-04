@@ -14,8 +14,8 @@
 		DA06F7D427318E960035FEE9 /* Storylet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D227318E960035FEE9 /* Storylet.swift */; };
 		DA06F7D627318EC40035FEE9 /* StoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D527318EC40035FEE9 /* StoryObject.swift */; };
 		DA06F7D727318EC40035FEE9 /* StoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D527318EC40035FEE9 /* StoryObject.swift */; };
-		DA06F7D927318EFA0035FEE9 /* StoryPlayerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D827318EFA0035FEE9 /* StoryPlayerPage.swift */; };
-		DA06F7DA27318EFA0035FEE9 /* StoryPlayerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D827318EFA0035FEE9 /* StoryPlayerPage.swift */; };
+		DA06F7D927318EFA0035FEE9 /* StoryPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D827318EFA0035FEE9 /* StoryPlayerView.swift */; };
+		DA06F7DA27318EFA0035FEE9 /* StoryPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D827318EFA0035FEE9 /* StoryPlayerView.swift */; };
 		DA3809D02733CF2900F6DCB8 /* PodcastEpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */; };
 		DA3809D12733CF2900F6DCB8 /* PodcastEpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */; };
 		DA3809D32733DDE300F6DCB8 /* PodcastEpisodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3809D22733DDE300F6DCB8 /* PodcastEpisodePage.swift */; };
@@ -28,6 +28,14 @@
 		DA3B991F2734262400C97952 /* QueryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B991D2734262400C97952 /* QueryParser.swift */; };
 		DA3B9921273428B600C97952 /* PodcastParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9920273428B600C97952 /* PodcastParser.swift */; };
 		DA3B9922273428B600C97952 /* PodcastParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9920273428B600C97952 /* PodcastParser.swift */; };
+		DA3B992427344F4900C97952 /* Enclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B992327344F4900C97952 /* Enclosure.swift */; };
+		DA3B992527344F4900C97952 /* Enclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B992327344F4900C97952 /* Enclosure.swift */; };
+		DA3B99272734512F00C97952 /* VideoStoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99262734512F00C97952 /* VideoStoryCard.swift */; };
+		DA3B99282734512F00C97952 /* VideoStoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99262734512F00C97952 /* VideoStoryCard.swift */; };
+		DA3B992A2734514700C97952 /* HTML5StoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99292734514600C97952 /* HTML5StoryCard.swift */; };
+		DA3B992B2734514700C97952 /* HTML5StoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99292734514600C97952 /* HTML5StoryCard.swift */; };
+		DA3B992D2734532B00C97952 /* StoryletTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B992C2734532B00C97952 /* StoryletTestView.swift */; };
+		DA3B992E2734532B00C97952 /* StoryletTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B992C2734532B00C97952 /* StoryletTestView.swift */; };
 		DA4F44752721AD970036B3B5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F44742721AD970036B3B5 /* MainView.swift */; };
 		DA4F44762721AD970036B3B5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F44742721AD970036B3B5 /* MainView.swift */; };
 		DA4F44782721ADF20036B3B5 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F44772721ADF20036B3B5 /* BrowseView.swift */; };
@@ -138,13 +146,17 @@
 		DA06F7CF27318DC90035FEE9 /* EpisodePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodePlayerView.swift; sourceTree = "<group>"; };
 		DA06F7D227318E960035FEE9 /* Storylet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storylet.swift; sourceTree = "<group>"; };
 		DA06F7D527318EC40035FEE9 /* StoryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryObject.swift; sourceTree = "<group>"; };
-		DA06F7D827318EFA0035FEE9 /* StoryPlayerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPlayerPage.swift; sourceTree = "<group>"; };
+		DA06F7D827318EFA0035FEE9 /* StoryPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPlayerView.swift; sourceTree = "<group>"; };
 		DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastEpisodeListView.swift; sourceTree = "<group>"; };
 		DA3809D22733DDE300F6DCB8 /* PodcastEpisodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastEpisodePage.swift; sourceTree = "<group>"; };
 		DA3809D52733E07500F6DCB8 /* PodcastEpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastEpisodeView.swift; sourceTree = "<group>"; };
 		DA3809D82733E33A00F6DCB8 /* PodcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastView.swift; sourceTree = "<group>"; };
 		DA3B991D2734262400C97952 /* QueryParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParser.swift; sourceTree = "<group>"; };
 		DA3B9920273428B600C97952 /* PodcastParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastParser.swift; sourceTree = "<group>"; };
+		DA3B992327344F4900C97952 /* Enclosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enclosure.swift; sourceTree = "<group>"; };
+		DA3B99262734512F00C97952 /* VideoStoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStoryCard.swift; sourceTree = "<group>"; };
+		DA3B99292734514600C97952 /* HTML5StoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTML5StoryCard.swift; sourceTree = "<group>"; };
+		DA3B992C2734532B00C97952 /* StoryletTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryletTestView.swift; sourceTree = "<group>"; };
 		DA4F44742721AD970036B3B5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DA4F44772721ADF20036B3B5 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		DA4F447A2721B0650036B3B5 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
@@ -308,7 +320,7 @@
 				DAB49524273045340014C4C3 /* WebView.swift */,
 				DA06F7CF27318DC90035FEE9 /* EpisodePlayerView.swift */,
 				DA06F7D227318E960035FEE9 /* Storylet.swift */,
-				DA06F7D827318EFA0035FEE9 /* StoryPlayerPage.swift */,
+				DA06F7D827318EFA0035FEE9 /* StoryPlayerView.swift */,
 				DA06F7D527318EC40035FEE9 /* StoryObject.swift */,
 				DAF54C132731A9A300DB669F /* PodcastPage.swift */,
 				DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */,
@@ -317,6 +329,10 @@
 				DA3809D82733E33A00F6DCB8 /* PodcastView.swift */,
 				DA3B991D2734262400C97952 /* QueryParser.swift */,
 				DA3B9920273428B600C97952 /* PodcastParser.swift */,
+				DA3B992327344F4900C97952 /* Enclosure.swift */,
+				DA3B99262734512F00C97952 /* VideoStoryCard.swift */,
+				DA3B99292734514600C97952 /* HTML5StoryCard.swift */,
+				DA3B992C2734532B00C97952 /* StoryletTestView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -618,10 +634,12 @@
 				DAEDC84827243A59001555BF /* EntityListViewLoader.swift in Sources */,
 				DABE40FB2726ED6B00F8151A /* GenericView.swift in Sources */,
 				DAF54C142731A9A300DB669F /* PodcastPage.swift in Sources */,
+				DA3B99272734512F00C97952 /* VideoStoryCard.swift in Sources */,
 				DAEDC84B27243AD1001555BF /* EntityViewLoader.swift in Sources */,
 				DABE40EC2725C68E00F8151A /* EpisodePage.swift in Sources */,
 				DAEDC85F27245D6E001555BF /* DocumentRepository.swift in Sources */,
 				DAEDC8362721D687001555BF /* Entity.swift in Sources */,
+				DA3B992D2734532B00C97952 /* StoryletTestView.swift in Sources */,
 				DA06F7D327318E960035FEE9 /* Storylet.swift in Sources */,
 				DAEDC85427244097001555BF /* BrowsePage.swift in Sources */,
 				DA3809D32733DDE300F6DCB8 /* PodcastEpisodePage.swift in Sources */,
@@ -632,6 +650,7 @@
 				DABE40F22726A64100F8151A /* ShowView.swift in Sources */,
 				DA3809D92733E33A00F6DCB8 /* PodcastView.swift in Sources */,
 				DABE40E5272596C200F8151A /* EpisodeRow.swift in Sources */,
+				DA3B992A2734514700C97952 /* HTML5StoryCard.swift in Sources */,
 				DA4F44752721AD970036B3B5 /* MainView.swift in Sources */,
 				DABE40EA2725C68E00F8151A /* EpisodeView.swift in Sources */,
 				DA7D0B34271F394A00D19006 /* BlurbView.swift in Sources */,
@@ -650,7 +669,8 @@
 				DAEDC8392721D817001555BF /* EntityViewModel.swift in Sources */,
 				DA4F447E2721C3400036B3B5 /* CollectionRepository.swift in Sources */,
 				DAEDC84E27243D5B001555BF /* GenericHeader.swift in Sources */,
-				DA06F7D927318EFA0035FEE9 /* StoryPlayerPage.swift in Sources */,
+				DA06F7D927318EFA0035FEE9 /* StoryPlayerView.swift in Sources */,
+				DA3B992427344F4900C97952 /* Enclosure.swift in Sources */,
 				DA7D0B1F271F391300D19006 /* ContentView.swift in Sources */,
 				DAB49525273045340014C4C3 /* WebView.swift in Sources */,
 				DA4F44812721C38C0036B3B5 /* Show.swift in Sources */,
@@ -672,10 +692,12 @@
 				DAEDC84927243A59001555BF /* EntityListViewLoader.swift in Sources */,
 				DABE40FC2726ED6B00F8151A /* GenericView.swift in Sources */,
 				DAF54C152731A9A300DB669F /* PodcastPage.swift in Sources */,
+				DA3B99282734512F00C97952 /* VideoStoryCard.swift in Sources */,
 				DAEDC84C27243AD1001555BF /* EntityViewLoader.swift in Sources */,
 				DABE40ED2725C68E00F8151A /* EpisodePage.swift in Sources */,
 				DAEDC86027245D6E001555BF /* DocumentRepository.swift in Sources */,
 				DAEDC8372721D687001555BF /* Entity.swift in Sources */,
+				DA3B992E2734532B00C97952 /* StoryletTestView.swift in Sources */,
 				DA06F7D427318E960035FEE9 /* Storylet.swift in Sources */,
 				DAEDC85527244097001555BF /* BrowsePage.swift in Sources */,
 				DA3809D42733DDE300F6DCB8 /* PodcastEpisodePage.swift in Sources */,
@@ -686,6 +708,7 @@
 				DABE40F32726A64100F8151A /* ShowView.swift in Sources */,
 				DA3809DA2733E33A00F6DCB8 /* PodcastView.swift in Sources */,
 				DABE40E6272596C200F8151A /* EpisodeRow.swift in Sources */,
+				DA3B992B2734514700C97952 /* HTML5StoryCard.swift in Sources */,
 				DA4F44762721AD970036B3B5 /* MainView.swift in Sources */,
 				DABE40EB2725C68E00F8151A /* EpisodeView.swift in Sources */,
 				DA7D0B35271F394A00D19006 /* BlurbView.swift in Sources */,
@@ -704,7 +727,8 @@
 				DAEDC83A2721D817001555BF /* EntityViewModel.swift in Sources */,
 				DA4F447F2721C3400036B3B5 /* CollectionRepository.swift in Sources */,
 				DAEDC84F27243D5B001555BF /* GenericHeader.swift in Sources */,
-				DA06F7DA27318EFA0035FEE9 /* StoryPlayerPage.swift in Sources */,
+				DA06F7DA27318EFA0035FEE9 /* StoryPlayerView.swift in Sources */,
+				DA3B992527344F4900C97952 /* Enclosure.swift in Sources */,
 				DA7D0B20271F391300D19006 /* ContentView.swift in Sources */,
 				DAB49526273045340014C4C3 /* WebView.swift in Sources */,
 				DA4F44822721C38C0036B3B5 /* Show.swift in Sources */,
