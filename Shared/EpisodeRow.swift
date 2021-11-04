@@ -18,25 +18,23 @@ struct EpisodeRow: View {
         return formatter.string(from: episode.published)
     }
     var body: some View {
-        NavigationLink(destination: EpisodePage(id: episode.id!)) {
-            HStack(alignment: .center, spacing: 3) {
-                if episode.imageUrl != nil {
-                ImageView(
-                    url: episode.imageUrl!
-                ).aspectRatio(contentMode: .fit).frame(minWidth: 0, maxWidth: 30, minHeight: 0, maxHeight: 30)
-                } else {
-                    Rectangle().frame(width: 110,  height: 80)
-                }
-                VStack(alignment: .leading, spacing: 3) {
-                    Text(episode.name).bold()
-                    Text(formattedDate()).opacity(0.8)
-                }
-                Spacer()
-                Button("..") {
-                    onMenuClicked(episode)
-                }
+        HStack(alignment: .top, spacing: 3) {
+            /*if episode.imageUrl != nil && episode.imageUrl! != "" {
+            ImageView(
+                url: episode.imageUrl!
+            ).aspectRatio(contentMode: .fit).frame(minWidth: 0, maxWidth: 30, minHeight: 0, maxHeight: 30)
+            } else {
+                Spacer(minLength: 03)
+            }*/
+            VStack(alignment: .leading, spacing: 2) {
+                Text(episode.name).bold().lineLimit(1)
+                Text(formattedDate()).opacity(0.8)
             }
-        }.buttonStyle(.plain)
+            Spacer()
+            Button("..") {
+                onMenuClicked(episode)
+            }
+        }.padding(3)
     }
 }
  

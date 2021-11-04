@@ -15,6 +15,7 @@ class Episode : Entity {
     var seasonId : String = ""
     var published : Date = Date()
     var season : Season? = nil
+    var url : String? = nil
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case description = "description"
@@ -29,6 +30,12 @@ class Episode : Entity {
         super.init(id: id, name: name, description: description, imageUrl: imageUrl, color: color)
         self.number = number
         self.season = season
+    }
+    init(id: String?, number: Int, name: String, description: String, imageUrl: String?, color: String, season: Season, url: String?) {
+        super.init(id: id, name: name, description: description, imageUrl: imageUrl, color: color)
+        self.number = number
+        self.season = season
+        self.url = url
     }
     required init(from decoder: Decoder) throws {
         try super.init(from: decoder)

@@ -18,6 +18,12 @@
 		DA06F7DA27318EFA0035FEE9 /* StoryPlayerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D827318EFA0035FEE9 /* StoryPlayerPage.swift */; };
 		DA3809D02733CF2900F6DCB8 /* PodcastEpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */; };
 		DA3809D12733CF2900F6DCB8 /* PodcastEpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */; };
+		DA3809D32733DDE300F6DCB8 /* PodcastEpisodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3809D22733DDE300F6DCB8 /* PodcastEpisodePage.swift */; };
+		DA3809D42733DDE300F6DCB8 /* PodcastEpisodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3809D22733DDE300F6DCB8 /* PodcastEpisodePage.swift */; };
+		DA3809D62733E07500F6DCB8 /* PodcastEpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3809D52733E07500F6DCB8 /* PodcastEpisodeView.swift */; };
+		DA3809D72733E07500F6DCB8 /* PodcastEpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3809D52733E07500F6DCB8 /* PodcastEpisodeView.swift */; };
+		DA3809D92733E33A00F6DCB8 /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3809D82733E33A00F6DCB8 /* PodcastView.swift */; };
+		DA3809DA2733E33A00F6DCB8 /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3809D82733E33A00F6DCB8 /* PodcastView.swift */; };
 		DA4F44752721AD970036B3B5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F44742721AD970036B3B5 /* MainView.swift */; };
 		DA4F44762721AD970036B3B5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F44742721AD970036B3B5 /* MainView.swift */; };
 		DA4F44782721ADF20036B3B5 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F44772721ADF20036B3B5 /* BrowseView.swift */; };
@@ -130,6 +136,9 @@
 		DA06F7D527318EC40035FEE9 /* StoryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryObject.swift; sourceTree = "<group>"; };
 		DA06F7D827318EFA0035FEE9 /* StoryPlayerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPlayerPage.swift; sourceTree = "<group>"; };
 		DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastEpisodeListView.swift; sourceTree = "<group>"; };
+		DA3809D22733DDE300F6DCB8 /* PodcastEpisodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastEpisodePage.swift; sourceTree = "<group>"; };
+		DA3809D52733E07500F6DCB8 /* PodcastEpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastEpisodeView.swift; sourceTree = "<group>"; };
+		DA3809D82733E33A00F6DCB8 /* PodcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastView.swift; sourceTree = "<group>"; };
 		DA4F44742721AD970036B3B5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DA4F44772721ADF20036B3B5 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		DA4F447A2721B0650036B3B5 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
@@ -297,6 +306,9 @@
 				DA06F7D527318EC40035FEE9 /* StoryObject.swift */,
 				DAF54C132731A9A300DB669F /* PodcastPage.swift */,
 				DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */,
+				DA3809D22733DDE300F6DCB8 /* PodcastEpisodePage.swift */,
+				DA3809D52733E07500F6DCB8 /* PodcastEpisodeView.swift */,
+				DA3809D82733E33A00F6DCB8 /* PodcastView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -604,10 +616,12 @@
 				DAEDC8362721D687001555BF /* Entity.swift in Sources */,
 				DA06F7D327318E960035FEE9 /* Storylet.swift in Sources */,
 				DAEDC85427244097001555BF /* BrowsePage.swift in Sources */,
+				DA3809D32733DDE300F6DCB8 /* PodcastEpisodePage.swift in Sources */,
 				DA7D0B37271F3A4B00D19006 /* ImageView.swift in Sources */,
 				DAB49522273044DC0014C4C3 /* WebViewModel.swift in Sources */,
 				DAEDC85127243FF7001555BF /* ShowPage.swift in Sources */,
 				DABE40F22726A64100F8151A /* ShowView.swift in Sources */,
+				DA3809D92733E33A00F6DCB8 /* PodcastView.swift in Sources */,
 				DABE40E5272596C200F8151A /* EpisodeRow.swift in Sources */,
 				DA4F44752721AD970036B3B5 /* MainView.swift in Sources */,
 				DABE40EA2725C68E00F8151A /* EpisodeView.swift in Sources */,
@@ -617,6 +631,7 @@
 				DAB4951F273044660014C4C3 /* BundlePlayer.swift in Sources */,
 				DAEDC85C272445AB001555BF /* BlockItem.swift in Sources */,
 				DA7D0B21271F391300D19006 /* Persistence.swift in Sources */,
+				DA3809D62733E07500F6DCB8 /* PodcastEpisodeView.swift in Sources */,
 				DA06F7D627318EC40035FEE9 /* StoryObject.swift in Sources */,
 				DA7D0B1B271F391300D19006 /* nPlay.xcdatamodeld in Sources */,
 				DAEDC83C2721D90B001555BF /* EntityListViewModel.swift in Sources */,
@@ -653,10 +668,12 @@
 				DAEDC8372721D687001555BF /* Entity.swift in Sources */,
 				DA06F7D427318E960035FEE9 /* Storylet.swift in Sources */,
 				DAEDC85527244097001555BF /* BrowsePage.swift in Sources */,
+				DA3809D42733DDE300F6DCB8 /* PodcastEpisodePage.swift in Sources */,
 				DA7D0B38271F3A4B00D19006 /* ImageView.swift in Sources */,
 				DAB49523273044DC0014C4C3 /* WebViewModel.swift in Sources */,
 				DAEDC85227243FF7001555BF /* ShowPage.swift in Sources */,
 				DABE40F32726A64100F8151A /* ShowView.swift in Sources */,
+				DA3809DA2733E33A00F6DCB8 /* PodcastView.swift in Sources */,
 				DABE40E6272596C200F8151A /* EpisodeRow.swift in Sources */,
 				DA4F44762721AD970036B3B5 /* MainView.swift in Sources */,
 				DABE40EB2725C68E00F8151A /* EpisodeView.swift in Sources */,
@@ -666,6 +683,7 @@
 				DAB49520273044660014C4C3 /* BundlePlayer.swift in Sources */,
 				DAEDC85D272445AB001555BF /* BlockItem.swift in Sources */,
 				DA7D0B22271F391300D19006 /* Persistence.swift in Sources */,
+				DA3809D72733E07500F6DCB8 /* PodcastEpisodeView.swift in Sources */,
 				DA06F7D727318EC40035FEE9 /* StoryObject.swift in Sources */,
 				DA7D0B1C271F391300D19006 /* nPlay.xcdatamodeld in Sources */,
 				DAEDC83D2721D90B001555BF /* EntityListViewModel.swift in Sources */,

@@ -7,34 +7,42 @@
 
 import SwiftUI
 
-struct ShowEpisodeListView: View {
-    var seasons : [Season] = []
-    var episodes : [Episode] = []
-    var seasonId = ""
-    @State var selectedSeasonId : String
-     
-    var seasonChanged: (_ seasonId: String) -> Void
-    init(seasons: [Season], episodes: [Episode], seasonId: String, seasonChanged: @escaping (String) -> Void) {
-        self.seasons = seasons
-        self.episodes = episodes
-        self.seasonId = seasonId
-        self.selectedSeasonId = seasonId
-        self.seasonChanged = seasonChanged
-        print("Number of seasons \(self.seasons.count)")
+struct PodcastEpisodeListView: View {
+    var show : Show
+    var season : Season
+    var episode : Episode
+    @State var selectedSeason : Season? = nil
+    func seasonChanged (_ seasonId: String?) {
+        if seasonId != nil {
+            for season in show.seasons {
+                if season.id == seasonId! {
+                    _selectedSeason.wrappedValue = season
+                }
+            }
+        }
     }
+    init(show: Show, season: Season?, episode: Episode?) {
+        self.show = show
+        if season != nil {
+            self.season = season!
+        } else {
+            self.season = self.show.seasons[0]
+        }
+        if episode != nil {
+            self.episode = episode!
+        } else {
+            self.episode = show.seasons.first!.episodes.first!
+        }
+        _selectedSeason = State(wrappedValue: self.season)
+    }
+   
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            /*Picker("Seasons", selection: $selectedSeasonId) {
-                ForEach(seasons, id: \.id) {
-                    Text($0.name).tag($0.id)
-                }
-            }.onChange(of: selectedSeasonId, perform: seasonChanged)
-                .background(Color.black).padding(5.0).cornerRadius(25.0).border(Color.white).foregroundColor(Color.white)*/
             VStack(alignment: .trailing, spacing: 0) {
                 HStack {
                     Text("Season")
                     Spacer()
-                    ForEach(seasons, id: \.id) {
+                    ForEach(show.seasons, id: \.id) {
                         season in
                         Button(season.name, action: {
                             seasonChanged(season.id!)
@@ -43,11 +51,16 @@ struct ShowEpisodeListView: View {
                 }.padding(30)
             }
             Text("Episodes").opacity(0.5).padding(30)
-            VStack {
-                ForEach(episodes) {
-                    EpisodeRow(episode: $0, onMenuClicked: {
+            VStack(alignment: .leading, spacing: 13) {
+                if selectedSeason != nil {
+                    ForEach(selectedSeason!.episodes) {
                         episode in
-                    }).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
+                        NavigationLink(destination: PodcastEpisodePage(url: "\(show.url!)?episode=\(episode.number)")) {
+                            EpisodeRow(episode: episode, onMenuClicked: {
+                                episode in
+                            })
+                        }.buttonStyle(.plain)
+                    }
                 }
             }
         }

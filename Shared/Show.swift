@@ -11,8 +11,10 @@ import FirebaseFirestoreSwift
 
 class Show : Entity {
     var seasons : [Season] = []
-    override init(id: String?, name: String, description: String, imageUrl: String?, color: String) {
+    var url : String? = nil
+    override init(id: String?, name: String, description: String, imageUrl: String?, color: String, url: String?) {
         super.init(id: id, name: name, description: description, imageUrl: imageUrl, color: color);
+        self.url = url
     } 
     required init(from decoder: Decoder) throws {
         try super.init(from: decoder)

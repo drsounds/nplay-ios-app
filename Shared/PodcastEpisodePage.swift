@@ -1,5 +1,5 @@
 //
-//  ShowPage.swift
+//  EpisodePage.swift
 //  nPlay
 //
 //  Created by Alexander Forselius on 2021-10-23.
@@ -9,24 +9,22 @@ import SwiftUI
 import Combine
 import FeedKit
 
-struct PodcastPage: View {
-    
-    var url : String = ""
+struct PodcastEpisodePage: View {
     var feedURL : URL
-    var realURL : String = ""
-    @State var seasonId : String = ""
-    @State var season : Season? = nil
     var parser : FeedParser
+    var url : String = ""
+    var args : [URLQueryItem]
+    var realURL : String
     @State var show : Show? = nil
+    @State var episode : Episode? = nil
+    @State var season : Season? = nil
     init(url: String) {
-        self.realURL = url
-        self.url = url.replacingOccurrences(of: "stadius:", with: "https:")
-        print(self.url)     
-        self.feedURL = URL(string: self.url)!
+        self.feedURL = URL(string: self.url.components(separatedBy: ["#"]).first!)!
+        self.realURL = url;
+        let urlComponent = URLComponents(string: url) 
         self.parser = FeedParser(URL: self.feedURL)
     }
-    
-    func loadShow   (_ finished : @escaping (Show?) -> Void) {
+    func loadEpisode() {
         parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
             // Do your thing, then back to the Main thread
             switch result {
@@ -45,20 +43,22 @@ struct PodcastPage: View {
                         color: "#888888",
                         url: realURL
                     )
-                    let season : Season = Season(id: self.url + "#1", number: 0, show: show!)
-                    self.seasonId = season.id!
+                    let season : Season = Season(id: self.url + "#season:1", number: 0, show: show!)
+                    var number : Int = 1
                     for episode in feed.entries ?? [] {
                         season.episodes.append(
                             Episode(
                                 id: episode.id!,
-                                number: 1,
+                                number: number,
                                 name: episode.title!,
                                 description: episode.summary?.value ?? "",
                                 imageUrl: nil,
                                 color: "#777777",
-                                season: season
+                                season: season,
+                                url: "\(realURL)#episode=\(episode.id)"
                             )
                         )
+                        number += 1
                     }
                     show!.seasons.append(season)
                             
@@ -67,24 +67,27 @@ struct PodcastPage: View {
                         id: "",
                         name: feed.title!,
                         description: "",
-                        imageUrl: feed.image!.url,
+                        imageUrl: nil,
                         color: "#888888",
-                        url: self.realURL
+                        url: realURL
                     )
-                    let season = Season(id: self.url + "#0", number: 0, show: show!)
+                    let season = Season(id: self.url + "#season:0", number: 0, show: show!)
                     self.season = season
+                    var number : Int = 1
                     for episode in feed.items ?? [] {
                         season.episodes.append(
                             Episode(
                                 id: episode.guid!.value!,
-                                number:1,
+                                number:number,
                                 name: episode.title!,
                                 description: episode.description!,
                                 imageUrl: nil,
                                 color: "#888888",
-                                season: season
+                                season: season,
+                                url: "\(realURL)#episode=\(episode.guid!.value!)"
                             )
                         )
+                        number += 1
                     }
                     show!.seasons.append(season)
                             
@@ -96,23 +99,39 @@ struct PodcastPage: View {
                 print(error)
             }
         }
-
+        if show != nil {
+            let seasonValue = self.args.first(
+                where: {$0.name == "season"}
+            )?.value
+            let episodeValue = self.args.first(
+                where: {$0.name == "episode"}
+            )?.value
+            for season in show!.seasons {
+                if season.number == NSString(string: seasonValue!).integerValue {
+                    self.season = season
+                }
+                for episode in season.episodes {
+                    if episode.number == NSString(string: episodeValue!).integerValue {
+                        self.episode = episode
+                    }
+                }
+            }
+        }
     }
     var body: some View {
-            VStack {
-                if show != nil && season != nil  {
-                    PodcastView(
-                        show: show!
-                    )
-                    
-                } else {
-                    Text("Loading")
-                }
-            }.onAppear(perform: {
-                loadShow() {
-                    show in
-                }
-            })
+        ZStack(alignment: .topLeading) {
+            if show != nil && episode != nil {
+                PodcastEpisodeView(
+                    show: show!,
+                    season: season!,
+                    episode: episode!
+                )
+            } else {
+                Text("Loading")
+            }
+        }.onAppear(perform: {
+            loadEpisode()
+        })
     }
 }
  
