@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Camera-SwiftUI",
+        "repositoryURL": "https://github.com/rorodriguez116/Camera-SwiftUI.git",
+        "state": {
+          "branch": null,
+          "revision": "bec647c47f45cdfd588dd50e07571fb2642f4575",
+          "version": "0.0.5"
+        }
+      },
+      {
+        "package": "HybridCamera",
+        "repositoryURL": "https://github.com/eonist/HybridCamera.git",
+        "state": {
+          "branch": "master",
+          "revision": "a0f1f0f75c48c1d2d5e54600e21eefd82d044ebb",
+          "version": null
+        }
+      },
+      {
+        "package": "ResultSugar",
+        "repositoryURL": "https://github.com/eonist/ResultSugar.git",
+        "state": {
+          "branch": "master",
+          "revision": "2365f96ee9ab4d70108a1a1ac116179304ffb8a3",
+          "version": null
+        }
+      },
+      {
+        "package": "With",
+        "repositoryURL": "https://github.com/eonist/With.git",
+        "state": {
+          "branch": "master",
+          "revision": "4b4630c497dec4d665b26126e41a39d612ff644f",
+          "version": null
+        }
+      },
+      {
+        "package": "ZoomSwitcherKit",
+        "repositoryURL": "https://github.com/eonist/ZoomSwitcherKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "87039ba2d1ddc7856cdf179a74730de02b48dfe4",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

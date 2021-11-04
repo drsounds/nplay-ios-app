@@ -16,103 +16,38 @@ struct PodcastPage: View {
     var realURL : String = ""
     @State var seasonId : String = ""
     @State var season : Season? = nil
-    var parser : FeedParser
+    var parser : PodcastParser
     @State var show : Show? = nil
     init(url: String) {
         self.realURL = url
-        self.url = url.replacingOccurrences(of: "stadius:", with: "https:")
-        print(self.url)     
+        self.url = url.components(separatedBy: ["#"])[0].replacingOccurrences(of: "stadius:", with: "https:")
         self.feedURL = URL(string: self.url)!
-        self.parser = FeedParser(URL: self.feedURL)
+        self.parser = PodcastParser()
     }
     
-    func loadShow   (_ finished : @escaping (Show?) -> Void) {
-        parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
-            // Do your thing, then back to the Main thread
-            switch result {
-            case .success(let feed):
-                
-                // Grab the parsed feed directly as an optional rss, atom or json feed object
-              
-                // Or alternatively...
-                switch feed {
-                case let .atom(feed):       // Atom Syndication Format Feed Model
-                    show = Show(
-                        id: "",
-                        name: feed.title!,
-                        description: "",
-                        imageUrl: "",
-                        color: "#888888",
-                        url: realURL
-                    )
-                    let season : Season = Season(id: self.url + "#1", number: 0, show: show!)
-                    self.seasonId = season.id!
-                    for episode in feed.entries ?? [] {
-                        season.episodes.append(
-                            Episode(
-                                id: episode.id!,
-                                number: 1,
-                                name: episode.title!,
-                                description: episode.summary?.value ?? "",
-                                imageUrl: nil,
-                                color: "#777777",
-                                season: season
-                            )
-                        )
-                    }
-                    show!.seasons.append(season)
-                            
-                case let .rss(feed):        // Really Simple Syndication Feed Model
-                    self.show = Show(
-                        id: "",
-                        name: feed.title!,
-                        description: "",
-                        imageUrl: feed.image!.url,
-                        color: "#888888",
-                        url: self.realURL
-                    )
-                    let season = Season(id: self.url + "#0", number: 0, show: show!)
-                    self.season = season
-                    for episode in feed.items ?? [] {
-                        season.episodes.append(
-                            Episode(
-                                id: episode.guid!.value!,
-                                number:1,
-                                name: episode.title!,
-                                description: episode.description!,
-                                imageUrl: nil,
-                                color: "#888888",
-                                season: season
-                            )
-                        )
-                    }
-                    show!.seasons.append(season)
-                            
-                case let .json(feed):       // JSON Feed Model
-                    return
-                }
-                
-            case .failure(let error):
-                print(error)
-            }
+    func loadShow(_ finished : @escaping (Show?) -> Void) {
+        self.parser.loadFeed(self.feedURL) {
+            show in
+            self.show = show
+            self.season = self.show!.seasons.first!
+            finished(show)
         }
-
     }
     var body: some View {
-            VStack {
-                if show != nil && season != nil  {
-                    PodcastView(
-                        show: show!
-                    )
-                    
-                } else {
-                    Text("Loading")
-                }
-            }.onAppear(perform: {
-                loadShow() {
-                    show in
-                }
-            })
+        VStack {
+            if show != nil && season != nil  {
+                PodcastView(
+                    show: show!
+                )
+                
+            } else {
+                ProgressView()
+            }
+        }.onAppear(perform: {
+            loadShow() {
+                show in
+            }
+        })
     }
 }
  
