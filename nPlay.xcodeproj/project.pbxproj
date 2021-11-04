@@ -42,6 +42,83 @@
 		DA3B99372734592900C97952 /* HybridCamera in Frameworks */ = {isa = PBXBuildFile; productRef = DA3B99362734592900C97952 /* HybridCamera */; };
 		DA3B9939273459D600C97952 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9938273459D600C97952 /* CameraView.swift */; };
 		DA3B993A273459D600C97952 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9938273459D600C97952 /* CameraView.swift */; };
+		DA3B993C273464BF00C97952 /* HCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B993B273464BF00C97952 /* HCamView.swift */; };
+		DA3B993D273464BF00C97952 /* HCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B993B273464BF00C97952 /* HCamView.swift */; };
+		DA3B993F2734660F00C97952 /* StadiusCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B993E2734660F00C97952 /* StadiusCamView.swift */; };
+		DA3B99402734660F00C97952 /* StadiusCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B993E2734660F00C97952 /* StadiusCamView.swift */; };
+		DA3B99492734686400C97952 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = DA7D0AF5271F391300D19006 /* Assets.xcassets */; };
+		DA3B99812734695B00C97952 /* CustomCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B997F2734695B00C97952 /* CustomCamView.swift */; };
+		DA3B99822734695B00C97952 /* CustomCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B997F2734695B00C97952 /* CustomCamView.swift */; };
+		DA3B99832734695B00C97952 /* CustomProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99802734695B00C97952 /* CustomProcessView.swift */; };
+		DA3B99842734695B00C97952 /* CustomProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99802734695B00C97952 /* CustomProcessView.swift */; };
+		DA3B99B62734696800C97952 /* ZoomSwitcherKind+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99862734696700C97952 /* ZoomSwitcherKind+Extension.swift */; };
+		DA3B99B72734696800C97952 /* ZoomSwitcherKind+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99862734696700C97952 /* ZoomSwitcherKind+Extension.swift */; };
+		DA3B99B82734696800C97952 /* RecordButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99892734696700C97952 /* RecordButton+Event.swift */; };
+		DA3B99B92734696800C97952 /* RecordButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99892734696700C97952 /* RecordButton+Event.swift */; };
+		DA3B99BA2734696800C97952 /* RecordButton+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B998A2734696700C97952 /* RecordButton+Handler.swift */; };
+		DA3B99BB2734696800C97952 /* RecordButton+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B998A2734696700C97952 /* RecordButton+Handler.swift */; };
+		DA3B99BC2734696800C97952 /* RecordButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B998B2734696700C97952 /* RecordButton+Const.swift */; };
+		DA3B99BD2734696800C97952 /* RecordButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B998B2734696700C97952 /* RecordButton+Const.swift */; };
+		DA3B99BE2734696800C97952 /* Circle+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B998D2734696700C97952 /* Circle+Helper.swift */; };
+		DA3B99BF2734696800C97952 /* Circle+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B998D2734696700C97952 /* Circle+Helper.swift */; };
+		DA3B99C02734696800C97952 /* Circle+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B998E2734696700C97952 /* Circle+Const.swift */; };
+		DA3B99C12734696800C97952 /* Circle+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B998E2734696700C97952 /* Circle+Const.swift */; };
+		DA3B99C22734696800C97952 /* Circle+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B998F2734696700C97952 /* Circle+Create.swift */; };
+		DA3B99C32734696800C97952 /* Circle+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B998F2734696700C97952 /* Circle+Create.swift */; };
+		DA3B99C42734696800C97952 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99902734696700C97952 /* Circle.swift */; };
+		DA3B99C52734696800C97952 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99902734696700C97952 /* Circle.swift */; };
+		DA3B99C62734696800C97952 /* RecordButton+Anim.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99912734696700C97952 /* RecordButton+Anim.swift */; };
+		DA3B99C72734696800C97952 /* RecordButton+Anim.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99912734696700C97952 /* RecordButton+Anim.swift */; };
+		DA3B99C82734696800C97952 /* RecordButton+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99922734696700C97952 /* RecordButton+Create.swift */; };
+		DA3B99C92734696800C97952 /* RecordButton+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99922734696700C97952 /* RecordButton+Create.swift */; };
+		DA3B99CA2734696800C97952 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99932734696700C97952 /* RecordButton.swift */; };
+		DA3B99CB2734696800C97952 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99932734696700C97952 /* RecordButton.swift */; };
+		DA3B99CC2734696800C97952 /* ShareButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99952734696700C97952 /* ShareButton+Const.swift */; };
+		DA3B99CD2734696800C97952 /* ShareButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99952734696700C97952 /* ShareButton+Const.swift */; };
+		DA3B99CE2734696800C97952 /* ShareButton+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99962734696700C97952 /* ShareButton+Style.swift */; };
+		DA3B99CF2734696800C97952 /* ShareButton+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99962734696700C97952 /* ShareButton+Style.swift */; };
+		DA3B99D02734696800C97952 /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99972734696700C97952 /* ShareButton.swift */; };
+		DA3B99D12734696800C97952 /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99972734696700C97952 /* ShareButton.swift */; };
+		DA3B99D22734696800C97952 /* ShareButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99982734696700C97952 /* ShareButton+Event.swift */; };
+		DA3B99D32734696800C97952 /* ShareButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99982734696700C97952 /* ShareButton+Event.swift */; };
+		DA3B99D42734696800C97952 /* ClickButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B999B2734696700C97952 /* ClickButton+Event.swift */; };
+		DA3B99D52734696800C97952 /* ClickButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B999B2734696700C97952 /* ClickButton+Event.swift */; };
+		DA3B99D62734696800C97952 /* ClickButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B999C2734696700C97952 /* ClickButton.swift */; };
+		DA3B99D72734696800C97952 /* ClickButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B999C2734696700C97952 /* ClickButton.swift */; };
+		DA3B99D82734696800C97952 /* ToggleButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B999E2734696700C97952 /* ToggleButton+Event.swift */; };
+		DA3B99D92734696800C97952 /* ToggleButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B999E2734696700C97952 /* ToggleButton+Event.swift */; };
+		DA3B99DA2734696800C97952 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B999F2734696700C97952 /* ToggleButton.swift */; };
+		DA3B99DB2734696800C97952 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B999F2734696700C97952 /* ToggleButton.swift */; };
+		DA3B99DC2734696800C97952 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A12734696700C97952 /* RoundButton.swift */; };
+		DA3B99DD2734696800C97952 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A12734696700C97952 /* RoundButton.swift */; };
+		DA3B99DE2734696800C97952 /* RoundButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A22734696700C97952 /* RoundButton+Event.swift */; };
+		DA3B99DF2734696800C97952 /* RoundButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A22734696700C97952 /* RoundButton+Event.swift */; };
+		DA3B99E02734696800C97952 /* ZoomSwitcerBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A42734696700C97952 /* ZoomSwitcerBtn.swift */; };
+		DA3B99E12734696800C97952 /* ZoomSwitcerBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A42734696700C97952 /* ZoomSwitcerBtn.swift */; };
+		DA3B99E22734696800C97952 /* ZoomSwitcerBtn+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A52734696700C97952 /* ZoomSwitcerBtn+Handler.swift */; };
+		DA3B99E32734696800C97952 /* ZoomSwitcerBtn+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A52734696700C97952 /* ZoomSwitcerBtn+Handler.swift */; };
+		DA3B99E42734696800C97952 /* ZoomSwitcerBtn+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A62734696700C97952 /* ZoomSwitcerBtn+Style.swift */; };
+		DA3B99E52734696800C97952 /* ZoomSwitcerBtn+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A62734696700C97952 /* ZoomSwitcerBtn+Style.swift */; };
+		DA3B99E62734696800C97952 /* ZoomSwitcerBtn+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A72734696700C97952 /* ZoomSwitcerBtn+Const.swift */; };
+		DA3B99E72734696800C97952 /* ZoomSwitcerBtn+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A72734696700C97952 /* ZoomSwitcerBtn+Const.swift */; };
+		DA3B99E82734696800C97952 /* TopBar+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A92734696800C97952 /* TopBar+Const.swift */; };
+		DA3B99E92734696800C97952 /* TopBar+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99A92734696800C97952 /* TopBar+Const.swift */; };
+		DA3B99EA2734696800C97952 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99AA2734696800C97952 /* TopBar.swift */; };
+		DA3B99EB2734696800C97952 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99AA2734696800C97952 /* TopBar.swift */; };
+		DA3B99EC2734696800C97952 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99AD2734696800C97952 /* ExitButton.swift */; };
+		DA3B99ED2734696800C97952 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99AD2734696800C97952 /* ExitButton.swift */; };
+		DA3B99EE2734696800C97952 /* ExitButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99AE2734696800C97952 /* ExitButton+Const.swift */; };
+		DA3B99EF2734696800C97952 /* ExitButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99AE2734696800C97952 /* ExitButton+Const.swift */; };
+		DA3B99F02734696800C97952 /* FlipButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99B02734696800C97952 /* FlipButton+Const.swift */; };
+		DA3B99F12734696800C97952 /* FlipButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99B02734696800C97952 /* FlipButton+Const.swift */; };
+		DA3B99F22734696800C97952 /* FlipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99B12734696800C97952 /* FlipButton.swift */; };
+		DA3B99F32734696800C97952 /* FlipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99B12734696800C97952 /* FlipButton.swift */; };
+		DA3B99F42734696800C97952 /* FlashButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99B32734696800C97952 /* FlashButton+Const.swift */; };
+		DA3B99F52734696800C97952 /* FlashButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99B32734696800C97952 /* FlashButton+Const.swift */; };
+		DA3B99F62734696800C97952 /* FlashButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99B42734696800C97952 /* FlashButton.swift */; };
+		DA3B99F72734696800C97952 /* FlashButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99B42734696800C97952 /* FlashButton.swift */; };
+		DA3B99F82734696800C97952 /* TopBar+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99B52734696800C97952 /* TopBar+Create.swift */; };
+		DA3B99F92734696800C97952 /* TopBar+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B99B52734696800C97952 /* TopBar+Create.swift */; };
 		DA4F44752721AD970036B3B5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F44742721AD970036B3B5 /* MainView.swift */; };
 		DA4F44762721AD970036B3B5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F44742721AD970036B3B5 /* MainView.swift */; };
 		DA4F44782721ADF20036B3B5 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F44772721ADF20036B3B5 /* BrowseView.swift */; };
@@ -165,6 +242,44 @@
 		DA3B992C2734532B00C97952 /* StoryletTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryletTestView.swift; sourceTree = "<group>"; };
 		DA3B992F2734560400C97952 /* CameraStoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStoryCard.swift; sourceTree = "<group>"; };
 		DA3B9938273459D600C97952 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		DA3B993B273464BF00C97952 /* HCamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCamView.swift; sourceTree = "<group>"; };
+		DA3B993E2734660F00C97952 /* StadiusCamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiusCamView.swift; sourceTree = "<group>"; };
+		DA3B997F2734695B00C97952 /* CustomCamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCamView.swift; path = "Shared/HybridCamera-master/HybridCamera/ui/CustomCamView.swift"; sourceTree = SOURCE_ROOT; };
+		DA3B99802734695B00C97952 /* CustomProcessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomProcessView.swift; path = "Shared/HybridCamera-master/HybridCamera/ui/CustomProcessView.swift"; sourceTree = SOURCE_ROOT; };
+		DA3B99862734696700C97952 /* ZoomSwitcherKind+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcherKind+Extension.swift"; sourceTree = "<group>"; };
+		DA3B99892734696700C97952 /* RecordButton+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordButton+Event.swift"; sourceTree = "<group>"; };
+		DA3B998A2734696700C97952 /* RecordButton+Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordButton+Handler.swift"; sourceTree = "<group>"; };
+		DA3B998B2734696700C97952 /* RecordButton+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordButton+Const.swift"; sourceTree = "<group>"; };
+		DA3B998D2734696700C97952 /* Circle+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Circle+Helper.swift"; sourceTree = "<group>"; };
+		DA3B998E2734696700C97952 /* Circle+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Circle+Const.swift"; sourceTree = "<group>"; };
+		DA3B998F2734696700C97952 /* Circle+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Circle+Create.swift"; sourceTree = "<group>"; };
+		DA3B99902734696700C97952 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		DA3B99912734696700C97952 /* RecordButton+Anim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordButton+Anim.swift"; sourceTree = "<group>"; };
+		DA3B99922734696700C97952 /* RecordButton+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordButton+Create.swift"; sourceTree = "<group>"; };
+		DA3B99932734696700C97952 /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		DA3B99952734696700C97952 /* ShareButton+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShareButton+Const.swift"; sourceTree = "<group>"; };
+		DA3B99962734696700C97952 /* ShareButton+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShareButton+Style.swift"; sourceTree = "<group>"; };
+		DA3B99972734696700C97952 /* ShareButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareButton.swift; sourceTree = "<group>"; };
+		DA3B99982734696700C97952 /* ShareButton+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShareButton+Event.swift"; sourceTree = "<group>"; };
+		DA3B999B2734696700C97952 /* ClickButton+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClickButton+Event.swift"; sourceTree = "<group>"; };
+		DA3B999C2734696700C97952 /* ClickButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickButton.swift; sourceTree = "<group>"; };
+		DA3B999E2734696700C97952 /* ToggleButton+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleButton+Event.swift"; sourceTree = "<group>"; };
+		DA3B999F2734696700C97952 /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		DA3B99A12734696700C97952 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		DA3B99A22734696700C97952 /* RoundButton+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoundButton+Event.swift"; sourceTree = "<group>"; };
+		DA3B99A42734696700C97952 /* ZoomSwitcerBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomSwitcerBtn.swift; sourceTree = "<group>"; };
+		DA3B99A52734696700C97952 /* ZoomSwitcerBtn+Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcerBtn+Handler.swift"; sourceTree = "<group>"; };
+		DA3B99A62734696700C97952 /* ZoomSwitcerBtn+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcerBtn+Style.swift"; sourceTree = "<group>"; };
+		DA3B99A72734696700C97952 /* ZoomSwitcerBtn+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcerBtn+Const.swift"; sourceTree = "<group>"; };
+		DA3B99A92734696800C97952 /* TopBar+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopBar+Const.swift"; sourceTree = "<group>"; };
+		DA3B99AA2734696800C97952 /* TopBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		DA3B99AD2734696800C97952 /* ExitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
+		DA3B99AE2734696800C97952 /* ExitButton+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExitButton+Const.swift"; sourceTree = "<group>"; };
+		DA3B99B02734696800C97952 /* FlipButton+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlipButton+Const.swift"; sourceTree = "<group>"; };
+		DA3B99B12734696800C97952 /* FlipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipButton.swift; sourceTree = "<group>"; };
+		DA3B99B32734696800C97952 /* FlashButton+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlashButton+Const.swift"; sourceTree = "<group>"; };
+		DA3B99B42734696800C97952 /* FlashButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashButton.swift; sourceTree = "<group>"; };
+		DA3B99B52734696800C97952 /* TopBar+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopBar+Create.swift"; sourceTree = "<group>"; };
 		DA4F44742721AD970036B3B5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DA4F44772721ADF20036B3B5 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		DA4F447A2721B0650036B3B5 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
@@ -269,6 +384,230 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA3B99442734678F00C97952 /* HybridCamera */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B997E2734692D00C97952 /* ui */,
+			);
+			path = HybridCamera;
+			sourceTree = "<group>";
+		};
+		DA3B997E2734692D00C97952 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B99852734696700C97952 /* BottomBar */,
+				DA3B99872734696700C97952 /* button */,
+				DA3B99A82734696800C97952 /* topbar */,
+				DA3B997F2734695B00C97952 /* CustomCamView.swift */,
+				DA3B99802734695B00C97952 /* CustomProcessView.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		DA3B99852734696700C97952 /* BottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B99862734696700C97952 /* ZoomSwitcherKind+Extension.swift */,
+			);
+			name = BottomBar;
+			path = "Shared/HybridCamera-master/HybridCamera/ui/BottomBar";
+			sourceTree = SOURCE_ROOT;
+		};
+		DA3B99872734696700C97952 /* button */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B99882734696700C97952 /* RecordButton */,
+				DA3B99942734696700C97952 /* ShareButton */,
+				DA3B99992734696700C97952 /* helper */,
+				DA3B99A32734696700C97952 /* DEPRECATED */,
+			);
+			name = button;
+			path = "Shared/HybridCamera-master/HybridCamera/ui/button";
+			sourceTree = SOURCE_ROOT;
+		};
+		DA3B99882734696700C97952 /* RecordButton */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B99892734696700C97952 /* RecordButton+Event.swift */,
+				DA3B998A2734696700C97952 /* RecordButton+Handler.swift */,
+				DA3B998B2734696700C97952 /* RecordButton+Const.swift */,
+				DA3B998C2734696700C97952 /* Circle */,
+				DA3B99902734696700C97952 /* Circle.swift */,
+				DA3B99912734696700C97952 /* RecordButton+Anim.swift */,
+				DA3B99922734696700C97952 /* RecordButton+Create.swift */,
+				DA3B99932734696700C97952 /* RecordButton.swift */,
+			);
+			path = RecordButton;
+			sourceTree = "<group>";
+		};
+		DA3B998C2734696700C97952 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B998D2734696700C97952 /* Circle+Helper.swift */,
+				DA3B998E2734696700C97952 /* Circle+Const.swift */,
+				DA3B998F2734696700C97952 /* Circle+Create.swift */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		DA3B99942734696700C97952 /* ShareButton */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B99952734696700C97952 /* ShareButton+Const.swift */,
+				DA3B99962734696700C97952 /* ShareButton+Style.swift */,
+				DA3B99972734696700C97952 /* ShareButton.swift */,
+				DA3B99982734696700C97952 /* ShareButton+Event.swift */,
+			);
+			path = ShareButton;
+			sourceTree = "<group>";
+		};
+		DA3B99992734696700C97952 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B999A2734696700C97952 /* ClickButton */,
+				DA3B999D2734696700C97952 /* ToggleButton */,
+				DA3B99A02734696700C97952 /* RoundButton */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		DA3B999A2734696700C97952 /* ClickButton */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B999B2734696700C97952 /* ClickButton+Event.swift */,
+				DA3B999C2734696700C97952 /* ClickButton.swift */,
+			);
+			path = ClickButton;
+			sourceTree = "<group>";
+		};
+		DA3B999D2734696700C97952 /* ToggleButton */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B999E2734696700C97952 /* ToggleButton+Event.swift */,
+				DA3B999F2734696700C97952 /* ToggleButton.swift */,
+			);
+			path = ToggleButton;
+			sourceTree = "<group>";
+		};
+		DA3B99A02734696700C97952 /* RoundButton */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B99A12734696700C97952 /* RoundButton.swift */,
+				DA3B99A22734696700C97952 /* RoundButton+Event.swift */,
+			);
+			path = RoundButton;
+			sourceTree = "<group>";
+		};
+		DA3B99A32734696700C97952 /* DEPRECATED */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B99A42734696700C97952 /* ZoomSwitcerBtn.swift */,
+				DA3B99A52734696700C97952 /* ZoomSwitcerBtn+Handler.swift */,
+				DA3B99A62734696700C97952 /* ZoomSwitcerBtn+Style.swift */,
+				DA3B99A72734696700C97952 /* ZoomSwitcerBtn+Const.swift */,
+			);
+			path = DEPRECATED;
+			sourceTree = "<group>";
+		};
+		DA3B99A82734696800C97952 /* topbar */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B99A92734696800C97952 /* TopBar+Const.swift */,
+				DA3B99AA2734696800C97952 /* TopBar.swift */,
+				DA3B99AB2734696800C97952 /* button */,
+				DA3B99B52734696800C97952 /* TopBar+Create.swift */,
+			);
+			name = topbar;
+			path = "Shared/HybridCamera-master/HybridCamera/ui/topbar";
+			sourceTree = SOURCE_ROOT;
+		};
+		DA3B99AB2734696800C97952 /* button */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B99AC2734696800C97952 /* ExitButton */,
+				DA3B99AF2734696800C97952 /* FlipButton */,
+				DA3B99B22734696800C97952 /* FlashButton */,
+			);
+			path = button;
+			sourceTree = "<group>";
+		};
+		DA3B99AC2734696800C97952 /* ExitButton */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B99AD2734696800C97952 /* ExitButton.swift */,
+				DA3B99AE2734696800C97952 /* ExitButton+Const.swift */,
+			);
+			path = ExitButton;
+			sourceTree = "<group>";
+		};
+		DA3B99AF2734696800C97952 /* FlipButton */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B99B02734696800C97952 /* FlipButton+Const.swift */,
+				DA3B99B12734696800C97952 /* FlipButton.swift */,
+			);
+			path = FlipButton;
+			sourceTree = "<group>";
+		};
+		DA3B99B22734696800C97952 /* FlashButton */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B99B32734696800C97952 /* FlashButton+Const.swift */,
+				DA3B99B42734696800C97952 /* FlashButton.swift */,
+			);
+			path = FlashButton;
+			sourceTree = "<group>";
+		};
+		DA3B99FA2734698600C97952 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DA4F447D2721C3400036B3B5 /* CollectionRepository.swift */,
+				DAEDC85E27245D6E001555BF /* DocumentRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DA3B99FB27346A4000C97952 /* Podcast */ = {
+			isa = PBXGroup;
+			children = (
+				DAF54C132731A9A300DB669F /* PodcastPage.swift */,
+				DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */,
+				DA3809D22733DDE300F6DCB8 /* PodcastEpisodePage.swift */,
+				DA3809D52733E07500F6DCB8 /* PodcastEpisodeView.swift */,
+			);
+			path = Podcast;
+			sourceTree = "<group>";
+		};
+		DA3B99FC27346A6B00C97952 /* Storylet */ = {
+			isa = PBXGroup;
+			children = (
+				DAEDC8382721D817001555BF /* EntityViewModel.swift */,
+				DA3B99262734512F00C97952 /* VideoStoryCard.swift */,
+				DA3B992F2734560400C97952 /* CameraStoryCard.swift */,
+				DA3B99292734514600C97952 /* HTML5StoryCard.swift */,
+			);
+			path = Storylet;
+			sourceTree = "<group>";
+		};
+		DA3B99FD27346AB100C97952 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				DAEDC84727243A59001555BF /* EntityListViewLoader.swift */,
+				DAEDC84A27243AD1001555BF /* EntityViewLoader.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		DA3B99FE27346AF100C97952 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DAEDC83E2724313A001555BF /* HexColor.swift */,
+				DA3B991D2734262400C97952 /* QueryParser.swift */,
+				DA3B9920273428B600C97952 /* PodcastParser.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DA7D0AEA271F391100D19006 = {
 			isa = PBXGroup;
 			children = (
@@ -288,25 +627,10 @@
 		DA7D0AEF271F391200D19006 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				DABE40EE2726A63800F8151A /* ShowEpisodeListPage.swift */,
-				DAB4951E273044660014C4C3 /* BundlePlayer.swift */,
-				DAEDC85027243FF7001555BF /* ShowPage.swift */,
-				DAEDC84127243908001555BF /* ShowEpisodeListView.swift */,
-				DABE40E82725980400F8151A /* EpisodePage.swift */,
-				DABE40E92725980600F8151A /* EpisodeView.swift */,
-				DAEDC82F2721C698001555BF /* Episode.swift */,
-				DAEDC8322721C6BE001555BF /* Season.swift */,
-				DA4F44802721C38C0036B3B5 /* Show.swift */,
-				DAEDC8352721D687001555BF /* Entity.swift */,
-				DAEDC85B272445AB001555BF /* BlockItem.swift */,
-				DA4F447A2721B0650036B3B5 /* BlockView.swift */,
-				DAEDC84D27243D5B001555BF /* GenericHeader.swift */,
-				DA7D0B33271F394A00D19006 /* BlurbView.swift */,
-				DA7D0B36271F3A4B00D19006 /* ImageView.swift */,
-				DABE40E12724781A00F8151A /* PrimaryButton.swift */,
-				DABE40E4272596C200F8151A /* EpisodeRow.swift */,
-				DA4F44772721ADF20036B3B5 /* BrowseView.swift */,
-				DAEDC85327244097001555BF /* BrowsePage.swift */,
+				DA3B99FE27346AF100C97952 /* Services */,
+				DA3B99FD27346AB100C97952 /* Loaders */,
+				DA3B99FA2734698600C97952 /* Repositories */,
+				DA3B99442734678F00C97952 /* HybridCamera */,
 				DAEDC85A272441BA001555BF /* Components */,
 				DAEDC8592724419D001555BF /* Models */,
 				DAEDC8562724414B001555BF /* Features */,
@@ -315,36 +639,6 @@
 				DA7D0AF4271F391200D19006 /* Persistence.swift */,
 				DA7D0AF5271F391300D19006 /* Assets.xcassets */,
 				DA7D0AF0271F391200D19006 /* nPlay.xcdatamodeld */,
-				DA4F44742721AD970036B3B5 /* MainView.swift */,
-				DA4F447D2721C3400036B3B5 /* CollectionRepository.swift */,
-				DAEDC8382721D817001555BF /* EntityViewModel.swift */,
-				DAEDC83B2721D90B001555BF /* EntityListViewModel.swift */,
-				DAEDC83E2724313A001555BF /* HexColor.swift */,
-				DAEDC84727243A59001555BF /* EntityListViewLoader.swift */,
-				DAEDC84A27243AD1001555BF /* EntityViewLoader.swift */,
-				DAEDC85E27245D6E001555BF /* DocumentRepository.swift */,
-				DABE40F12726A64100F8151A /* ShowView.swift */,
-				DABE40F42726A82000F8151A /* ShowDetailPage.swift */,
-				DABE40FA2726ED6B00F8151A /* GenericView.swift */,
-				DAB49521273044DC0014C4C3 /* WebViewModel.swift */,
-				DAB49524273045340014C4C3 /* WebView.swift */,
-				DA06F7CF27318DC90035FEE9 /* EpisodePlayerView.swift */,
-				DA06F7D227318E960035FEE9 /* Storylet.swift */,
-				DA06F7D827318EFA0035FEE9 /* StoryPlayerView.swift */,
-				DA06F7D527318EC40035FEE9 /* StoryObject.swift */,
-				DAF54C132731A9A300DB669F /* PodcastPage.swift */,
-				DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */,
-				DA3809D22733DDE300F6DCB8 /* PodcastEpisodePage.swift */,
-				DA3809D52733E07500F6DCB8 /* PodcastEpisodeView.swift */,
-				DA3809D82733E33A00F6DCB8 /* PodcastView.swift */,
-				DA3B991D2734262400C97952 /* QueryParser.swift */,
-				DA3B9920273428B600C97952 /* PodcastParser.swift */,
-				DA3B992327344F4900C97952 /* Enclosure.swift */,
-				DA3B99262734512F00C97952 /* VideoStoryCard.swift */,
-				DA3B99292734514600C97952 /* HTML5StoryCard.swift */,
-				DA3B992C2734532B00C97952 /* StoryletTestView.swift */,
-				DA3B992F2734560400C97952 /* CameraStoryCard.swift */,
-				DA3B9938273459D600C97952 /* CameraView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -389,6 +683,17 @@
 		DABE40E7272597FA00F8151A /* Episode */ = {
 			isa = PBXGroup;
 			children = (
+				DAB4951E273044660014C4C3 /* BundlePlayer.swift */,
+				DAEDC84127243908001555BF /* ShowEpisodeListView.swift */,
+				DABE40E82725980400F8151A /* EpisodePage.swift */,
+				DABE40E92725980600F8151A /* EpisodeView.swift */,
+				DA06F7CF27318DC90035FEE9 /* EpisodePlayerView.swift */,
+				DA06F7D827318EFA0035FEE9 /* StoryPlayerView.swift */,
+				DA3B992C2734532B00C97952 /* StoryletTestView.swift */,
+				DA3B9938273459D600C97952 /* CameraView.swift */,
+				DA3B993B273464BF00C97952 /* HCamView.swift */,
+				DA3809D82733E33A00F6DCB8 /* PodcastView.swift */,
+				DA3B993E2734660F00C97952 /* StadiusCamView.swift */,
 			);
 			path = Episode;
 			sourceTree = "<group>";
@@ -396,6 +701,9 @@
 		DAEDC8562724414B001555BF /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				DA3B99FC27346A6B00C97952 /* Storylet */,
+				DA3B99FB27346A4000C97952 /* Podcast */,
+				DA4F44742721AD970036B3B5 /* MainView.swift */,
 				DABE40E7272597FA00F8151A /* Episode */,
 				DAEDC8582724417E001555BF /* Show */,
 				DAEDC85727244152001555BF /* Browse */,
@@ -406,6 +714,8 @@
 		DAEDC85727244152001555BF /* Browse */ = {
 			isa = PBXGroup;
 			children = (
+				DA4F44772721ADF20036B3B5 /* BrowseView.swift */,
+				DAEDC85327244097001555BF /* BrowsePage.swift */,
 			);
 			path = Browse;
 			sourceTree = "<group>";
@@ -413,6 +723,10 @@
 		DAEDC8582724417E001555BF /* Show */ = {
 			isa = PBXGroup;
 			children = (
+				DABE40EE2726A63800F8151A /* ShowEpisodeListPage.swift */,
+				DAEDC85027243FF7001555BF /* ShowPage.swift */,
+				DABE40F12726A64100F8151A /* ShowView.swift */,
+				DABE40F42726A82000F8151A /* ShowDetailPage.swift */,
 			);
 			path = Show;
 			sourceTree = "<group>";
@@ -420,6 +734,13 @@
 		DAEDC8592724419D001555BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DA06F7D527318EC40035FEE9 /* StoryObject.swift */,
+				DAEDC83B2721D90B001555BF /* EntityListViewModel.swift */,
+				DA3B992327344F4900C97952 /* Enclosure.swift */,
+				DA06F7D227318E960035FEE9 /* Storylet.swift */,
+				DAEDC8322721C6BE001555BF /* Season.swift */,
+				DA4F44802721C38C0036B3B5 /* Show.swift */,
+				DAEDC82F2721C698001555BF /* Episode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -427,6 +748,17 @@
 		DAEDC85A272441BA001555BF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DAEDC85B272445AB001555BF /* BlockItem.swift */,
+				DA4F447A2721B0650036B3B5 /* BlockView.swift */,
+				DABE40E12724781A00F8151A /* PrimaryButton.swift */,
+				DA7D0B36271F3A4B00D19006 /* ImageView.swift */,
+				DAEDC84D27243D5B001555BF /* GenericHeader.swift */,
+				DAEDC8352721D687001555BF /* Entity.swift */,
+				DAB49521273044DC0014C4C3 /* WebViewModel.swift */,
+				DAB49524273045340014C4C3 /* WebView.swift */,
+				DABE40FA2726ED6B00F8151A /* GenericView.swift */,
+				DABE40E4272596C200F8151A /* EpisodeRow.swift */,
+				DA7D0B33271F394A00D19006 /* BlurbView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -645,26 +977,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3B99492734686400C97952 /* Assets.xcassets in Sources */,
+				DA3B99F82734696800C97952 /* TopBar+Create.swift in Sources */,
 				DABE40F52726A82000F8151A /* ShowDetailPage.swift in Sources */,
 				DAEDC83F2724313A001555BF /* HexColor.swift in Sources */,
 				DA4F44782721ADF20036B3B5 /* BrowseView.swift in Sources */,
+				DA3B99EE2734696800C97952 /* ExitButton+Const.swift in Sources */,
 				DA3809D02733CF2900F6DCB8 /* PodcastEpisodeListView.swift in Sources */,
 				DAEDC8302721C698001555BF /* Episode.swift in Sources */,
+				DA3B99F22734696800C97952 /* FlipButton.swift in Sources */,
+				DA3B99F42734696800C97952 /* FlashButton+Const.swift in Sources */,
+				DA3B99DC2734696800C97952 /* RoundButton.swift in Sources */,
 				DABE40F02726A63800F8151A /* ShowEpisodeListPage.swift in Sources */,
 				DAEDC84827243A59001555BF /* EntityListViewLoader.swift in Sources */,
+				DA3B99EC2734696800C97952 /* ExitButton.swift in Sources */,
 				DABE40FB2726ED6B00F8151A /* GenericView.swift in Sources */,
 				DAF54C142731A9A300DB669F /* PodcastPage.swift in Sources */,
+				DA3B99BA2734696800C97952 /* RecordButton+Handler.swift in Sources */,
 				DA3B99272734512F00C97952 /* VideoStoryCard.swift in Sources */,
 				DAEDC84B27243AD1001555BF /* EntityViewLoader.swift in Sources */,
 				DABE40EC2725C68E00F8151A /* EpisodePage.swift in Sources */,
+				DA3B99D82734696800C97952 /* ToggleButton+Event.swift in Sources */,
 				DAEDC85F27245D6E001555BF /* DocumentRepository.swift in Sources */,
 				DAEDC8362721D687001555BF /* Entity.swift in Sources */,
 				DA3B992D2734532B00C97952 /* StoryletTestView.swift in Sources */,
+				DA3B99D22734696800C97952 /* ShareButton+Event.swift in Sources */,
+				DA3B99C42734696800C97952 /* Circle.swift in Sources */,
 				DA06F7D327318E960035FEE9 /* Storylet.swift in Sources */,
+				DA3B99E22734696800C97952 /* ZoomSwitcerBtn+Handler.swift in Sources */,
 				DAEDC85427244097001555BF /* BrowsePage.swift in Sources */,
+				DA3B99812734695B00C97952 /* CustomCamView.swift in Sources */,
 				DA3809D32733DDE300F6DCB8 /* PodcastEpisodePage.swift in Sources */,
 				DA7D0B37271F3A4B00D19006 /* ImageView.swift in Sources */,
+				DA3B99BC2734696800C97952 /* RecordButton+Const.swift in Sources */,
+				DA3B99832734695B00C97952 /* CustomProcessView.swift in Sources */,
 				DAB49522273044DC0014C4C3 /* WebViewModel.swift in Sources */,
+				DA3B99BE2734696800C97952 /* Circle+Helper.swift in Sources */,
+				DA3B99E62734696800C97952 /* ZoomSwitcerBtn+Const.swift in Sources */,
+				DA3B99F62734696800C97952 /* FlashButton.swift in Sources */,
+				DA3B99D02734696800C97952 /* ShareButton.swift in Sources */,
 				DA3B9921273428B600C97952 /* PodcastParser.swift in Sources */,
 				DAEDC85127243FF7001555BF /* ShowPage.swift in Sources */,
 				DABE40F22726A64100F8151A /* ShowView.swift in Sources */,
@@ -675,27 +1026,47 @@
 				DABE40EA2725C68E00F8151A /* EpisodeView.swift in Sources */,
 				DA7D0B34271F394A00D19006 /* BlurbView.swift in Sources */,
 				DA7D0B1D271F391300D19006 /* nPlayApp.swift in Sources */,
+				DA3B99E02734696800C97952 /* ZoomSwitcerBtn.swift in Sources */,
 				DA06F7D027318DC90035FEE9 /* EpisodePlayerView.swift in Sources */,
+				DA3B99DE2734696800C97952 /* RoundButton+Event.swift in Sources */,
+				DA3B993C273464BF00C97952 /* HCamView.swift in Sources */,
+				DA3B99B82734696800C97952 /* RecordButton+Event.swift in Sources */,
 				DAB4951F273044660014C4C3 /* BundlePlayer.swift in Sources */,
 				DAEDC85C272445AB001555BF /* BlockItem.swift in Sources */,
 				DA7D0B21271F391300D19006 /* Persistence.swift in Sources */,
 				DA3809D62733E07500F6DCB8 /* PodcastEpisodeView.swift in Sources */,
+				DA3B99CE2734696800C97952 /* ShareButton+Style.swift in Sources */,
+				DA3B99CA2734696800C97952 /* RecordButton.swift in Sources */,
+				DA3B99D62734696800C97952 /* ClickButton.swift in Sources */,
 				DA06F7D627318EC40035FEE9 /* StoryObject.swift in Sources */,
+				DA3B99C62734696800C97952 /* RecordButton+Anim.swift in Sources */,
 				DA3B99302734560400C97952 /* CameraStoryCard.swift in Sources */,
+				DA3B99E42734696800C97952 /* ZoomSwitcerBtn+Style.swift in Sources */,
+				DA3B99E82734696800C97952 /* TopBar+Const.swift in Sources */,
 				DA7D0B1B271F391300D19006 /* nPlay.xcdatamodeld in Sources */,
 				DAEDC83C2721D90B001555BF /* EntityListViewModel.swift in Sources */,
 				DAEDC8332721C6BE001555BF /* Season.swift in Sources */,
+				DA3B99C82734696800C97952 /* RecordButton+Create.swift in Sources */,
+				DA3B99F02734696800C97952 /* FlipButton+Const.swift in Sources */,
+				DA3B99D42734696800C97952 /* ClickButton+Event.swift in Sources */,
 				DABE40E22724781A00F8151A /* PrimaryButton.swift in Sources */,
+				DA3B99C02734696800C97952 /* Circle+Const.swift in Sources */,
 				DA4F447B2721B0650036B3B5 /* BlockView.swift in Sources */,
+				DA3B99B62734696800C97952 /* ZoomSwitcherKind+Extension.swift in Sources */,
+				DA3B99C22734696800C97952 /* Circle+Create.swift in Sources */,
+				DA3B99DA2734696800C97952 /* ToggleButton.swift in Sources */,
 				DAEDC8392721D817001555BF /* EntityViewModel.swift in Sources */,
 				DA4F447E2721C3400036B3B5 /* CollectionRepository.swift in Sources */,
 				DAEDC84E27243D5B001555BF /* GenericHeader.swift in Sources */,
 				DA06F7D927318EFA0035FEE9 /* StoryPlayerView.swift in Sources */,
 				DA3B992427344F4900C97952 /* Enclosure.swift in Sources */,
 				DA7D0B1F271F391300D19006 /* ContentView.swift in Sources */,
+				DA3B99EA2734696800C97952 /* TopBar.swift in Sources */,
+				DA3B99CC2734696800C97952 /* ShareButton+Const.swift in Sources */,
 				DA3B9939273459D600C97952 /* CameraView.swift in Sources */,
 				DAB49525273045340014C4C3 /* WebView.swift in Sources */,
 				DA4F44812721C38C0036B3B5 /* Show.swift in Sources */,
+				DA3B993F2734660F00C97952 /* StadiusCamView.swift in Sources */,
 				DAEDC84227243908001555BF /* ShowEpisodeListView.swift in Sources */,
 				DA3B991E2734262400C97952 /* QueryParser.swift in Sources */,
 			);
@@ -707,57 +1078,95 @@
 			files = (
 				DABE40F62726A82000F8151A /* ShowDetailPage.swift in Sources */,
 				DAEDC8402724313A001555BF /* HexColor.swift in Sources */,
+				DA3B99F12734696800C97952 /* FlipButton+Const.swift in Sources */,
 				DA4F44792721ADF20036B3B5 /* BrowseView.swift in Sources */,
 				DA3809D12733CF2900F6DCB8 /* PodcastEpisodeListView.swift in Sources */,
 				DAEDC8312721C698001555BF /* Episode.swift in Sources */,
+				DA3B99F52734696800C97952 /* FlashButton+Const.swift in Sources */,
+				DA3B99EF2734696800C97952 /* ExitButton+Const.swift in Sources */,
 				DABE40EF2726A63800F8151A /* ShowEpisodeListPage.swift in Sources */,
+				DA3B99D72734696800C97952 /* ClickButton.swift in Sources */,
+				DA3B99EB2734696800C97952 /* TopBar.swift in Sources */,
 				DAEDC84927243A59001555BF /* EntityListViewLoader.swift in Sources */,
 				DABE40FC2726ED6B00F8151A /* GenericView.swift in Sources */,
 				DAF54C152731A9A300DB669F /* PodcastPage.swift in Sources */,
 				DA3B99282734512F00C97952 /* VideoStoryCard.swift in Sources */,
+				DA3B99C92734696800C97952 /* RecordButton+Create.swift in Sources */,
 				DAEDC84C27243AD1001555BF /* EntityViewLoader.swift in Sources */,
 				DABE40ED2725C68E00F8151A /* EpisodePage.swift in Sources */,
 				DAEDC86027245D6E001555BF /* DocumentRepository.swift in Sources */,
 				DAEDC8372721D687001555BF /* Entity.swift in Sources */,
+				DA3B99D92734696800C97952 /* ToggleButton+Event.swift in Sources */,
 				DA3B992E2734532B00C97952 /* StoryletTestView.swift in Sources */,
 				DA06F7D427318E960035FEE9 /* Storylet.swift in Sources */,
+				DA3B99E12734696800C97952 /* ZoomSwitcerBtn.swift in Sources */,
 				DAEDC85527244097001555BF /* BrowsePage.swift in Sources */,
 				DA3809D42733DDE300F6DCB8 /* PodcastEpisodePage.swift in Sources */,
+				DA3B99CF2734696800C97952 /* ShareButton+Style.swift in Sources */,
 				DA7D0B38271F3A4B00D19006 /* ImageView.swift in Sources */,
+				DA3B99BF2734696800C97952 /* Circle+Helper.swift in Sources */,
 				DAB49523273044DC0014C4C3 /* WebViewModel.swift in Sources */,
+				DA3B99C12734696800C97952 /* Circle+Const.swift in Sources */,
 				DA3B9922273428B600C97952 /* PodcastParser.swift in Sources */,
 				DAEDC85227243FF7001555BF /* ShowPage.swift in Sources */,
 				DABE40F32726A64100F8151A /* ShowView.swift in Sources */,
 				DA3809DA2733E33A00F6DCB8 /* PodcastView.swift in Sources */,
 				DABE40E6272596C200F8151A /* EpisodeRow.swift in Sources */,
+				DA3B99CB2734696800C97952 /* RecordButton.swift in Sources */,
+				DA3B99B92734696800C97952 /* RecordButton+Event.swift in Sources */,
 				DA3B992B2734514700C97952 /* HTML5StoryCard.swift in Sources */,
+				DA3B99E72734696800C97952 /* ZoomSwitcerBtn+Const.swift in Sources */,
 				DA4F44762721AD970036B3B5 /* MainView.swift in Sources */,
 				DABE40EB2725C68E00F8151A /* EpisodeView.swift in Sources */,
 				DA7D0B35271F394A00D19006 /* BlurbView.swift in Sources */,
+				DA3B99DD2734696800C97952 /* RoundButton.swift in Sources */,
 				DA7D0B1E271F391300D19006 /* nPlayApp.swift in Sources */,
+				DA3B99842734695B00C97952 /* CustomProcessView.swift in Sources */,
 				DA06F7D127318DC90035FEE9 /* EpisodePlayerView.swift in Sources */,
+				DA3B99E32734696800C97952 /* ZoomSwitcerBtn+Handler.swift in Sources */,
+				DA3B99C52734696800C97952 /* Circle.swift in Sources */,
+				DA3B993D273464BF00C97952 /* HCamView.swift in Sources */,
+				DA3B99E92734696800C97952 /* TopBar+Const.swift in Sources */,
 				DAB49520273044660014C4C3 /* BundlePlayer.swift in Sources */,
 				DAEDC85D272445AB001555BF /* BlockItem.swift in Sources */,
+				DA3B99ED2734696800C97952 /* ExitButton.swift in Sources */,
 				DA7D0B22271F391300D19006 /* Persistence.swift in Sources */,
 				DA3809D72733E07500F6DCB8 /* PodcastEpisodeView.swift in Sources */,
+				DA3B99F72734696800C97952 /* FlashButton.swift in Sources */,
 				DA06F7D727318EC40035FEE9 /* StoryObject.swift in Sources */,
+				DA3B99822734695B00C97952 /* CustomCamView.swift in Sources */,
 				DA3B99312734560400C97952 /* CameraStoryCard.swift in Sources */,
+				DA3B99F32734696800C97952 /* FlipButton.swift in Sources */,
 				DA7D0B1C271F391300D19006 /* nPlay.xcdatamodeld in Sources */,
 				DAEDC83D2721D90B001555BF /* EntityListViewModel.swift in Sources */,
+				DA3B99D52734696800C97952 /* ClickButton+Event.swift in Sources */,
 				DAEDC8342721C6BE001555BF /* Season.swift in Sources */,
 				DABE40E32724781A00F8151A /* PrimaryButton.swift in Sources */,
+				DA3B99B72734696800C97952 /* ZoomSwitcherKind+Extension.swift in Sources */,
 				DA4F447C2721B0650036B3B5 /* BlockView.swift in Sources */,
+				DA3B99DF2734696800C97952 /* RoundButton+Event.swift in Sources */,
 				DAEDC83A2721D817001555BF /* EntityViewModel.swift in Sources */,
 				DA4F447F2721C3400036B3B5 /* CollectionRepository.swift in Sources */,
+				DA3B99BB2734696800C97952 /* RecordButton+Handler.swift in Sources */,
+				DA3B99F92734696800C97952 /* TopBar+Create.swift in Sources */,
+				DA3B99DB2734696800C97952 /* ToggleButton.swift in Sources */,
 				DAEDC84F27243D5B001555BF /* GenericHeader.swift in Sources */,
+				DA3B99D12734696800C97952 /* ShareButton.swift in Sources */,
 				DA06F7DA27318EFA0035FEE9 /* StoryPlayerView.swift in Sources */,
+				DA3B99C72734696800C97952 /* RecordButton+Anim.swift in Sources */,
 				DA3B992527344F4900C97952 /* Enclosure.swift in Sources */,
 				DA7D0B20271F391300D19006 /* ContentView.swift in Sources */,
+				DA3B99CD2734696800C97952 /* ShareButton+Const.swift in Sources */,
 				DA3B993A273459D600C97952 /* CameraView.swift in Sources */,
+				DA3B99BD2734696800C97952 /* RecordButton+Const.swift in Sources */,
 				DAB49526273045340014C4C3 /* WebView.swift in Sources */,
 				DA4F44822721C38C0036B3B5 /* Show.swift in Sources */,
+				DA3B99402734660F00C97952 /* StadiusCamView.swift in Sources */,
 				DAEDC84327243908001555BF /* ShowEpisodeListView.swift in Sources */,
 				DA3B991F2734262400C97952 /* QueryParser.swift in Sources */,
+				DA3B99D32734696800C97952 /* ShareButton+Event.swift in Sources */,
+				DA3B99E52734696800C97952 /* ZoomSwitcerBtn+Style.swift in Sources */,
+				DA3B99C32734696800C97952 /* Circle+Create.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,6 +1329,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "nPlay--iOS--Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -956,6 +1368,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "nPlay--iOS--Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

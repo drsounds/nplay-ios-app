@@ -17,7 +17,7 @@ class Show : Entity {
         self.url = url
     }
     override init(id: String?, name: String, description: String, imageUrl: String?, color: String) {
-        super.init(id: id, name: name, description: description, imageUrl: imageUrl, color: color);
+        super.init(id: id, name: name, description: description, imageUrl: imageUrl, color: color); 
     } 
     required init(from decoder: Decoder) throws {
         try super.init(from: decoder)

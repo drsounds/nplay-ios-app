@@ -1,0 +1,1111 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1059EE222EC36C6004A8346 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1059EE122EC36C6004A8346 /* ViewController+Extension.swift */; };
+		F13682812435011B00DDC072 /* ZoomSwitcherKit in Frameworks */ = {isa = PBXBuildFile; productRef = F13682802435011B00DDC072 /* ZoomSwitcherKit */; };
+		F13682842435019A00DDC072 /* ResultSugar in Frameworks */ = {isa = PBXBuildFile; productRef = F13682832435019A00DDC072 /* ResultSugar */; };
+		F13682872435023600DDC072 /* With in Frameworks */ = {isa = PBXBuildFile; productRef = F13682862435023600DDC072 /* With */; };
+		F13682BC2435027800DDC072 /* CustomProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682892435027800DDC072 /* CustomProcessView.swift */; };
+		F13682BD2435027800DDC072 /* CustomCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136828A2435027800DDC072 /* CustomCamView.swift */; };
+		F13682BE2435027800DDC072 /* RecordButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136828D2435027800DDC072 /* RecordButton+Event.swift */; };
+		F13682BF2435027800DDC072 /* RecordButton+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136828E2435027800DDC072 /* RecordButton+Handler.swift */; };
+		F13682C02435027800DDC072 /* RecordButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136828F2435027800DDC072 /* RecordButton+Const.swift */; };
+		F13682C12435027800DDC072 /* Circle+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682912435027800DDC072 /* Circle+Helper.swift */; };
+		F13682C22435027800DDC072 /* Circle+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682922435027800DDC072 /* Circle+Const.swift */; };
+		F13682C32435027800DDC072 /* Circle+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682932435027800DDC072 /* Circle+Create.swift */; };
+		F13682C42435027800DDC072 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682942435027800DDC072 /* Circle.swift */; };
+		F13682C52435027800DDC072 /* RecordButton+Anim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682952435027800DDC072 /* RecordButton+Anim.swift */; };
+		F13682C62435027800DDC072 /* RecordButton+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682962435027800DDC072 /* RecordButton+Create.swift */; };
+		F13682C72435027800DDC072 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682972435027800DDC072 /* RecordButton.swift */; };
+		F13682C82435027800DDC072 /* ShareButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682992435027800DDC072 /* ShareButton+Const.swift */; };
+		F13682C92435027800DDC072 /* ShareButton+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136829A2435027800DDC072 /* ShareButton+Style.swift */; };
+		F13682CA2435027800DDC072 /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136829B2435027800DDC072 /* ShareButton.swift */; };
+		F13682CB2435027800DDC072 /* ShareButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136829C2435027800DDC072 /* ShareButton+Event.swift */; };
+		F13682CC2435027800DDC072 /* ClickButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136829F2435027800DDC072 /* ClickButton+Event.swift */; };
+		F13682CD2435027800DDC072 /* ClickButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682A02435027800DDC072 /* ClickButton.swift */; };
+		F13682CE2435027800DDC072 /* ToggleButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682A22435027800DDC072 /* ToggleButton+Event.swift */; };
+		F13682CF2435027800DDC072 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682A32435027800DDC072 /* ToggleButton.swift */; };
+		F13682D02435027800DDC072 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682A52435027800DDC072 /* RoundButton.swift */; };
+		F13682D12435027800DDC072 /* RoundButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682A62435027800DDC072 /* RoundButton+Event.swift */; };
+		F13682D22435027800DDC072 /* ZoomSwitcerBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682A82435027800DDC072 /* ZoomSwitcerBtn.swift */; };
+		F13682D32435027800DDC072 /* ZoomSwitcerBtn+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682A92435027800DDC072 /* ZoomSwitcerBtn+Handler.swift */; };
+		F13682D42435027800DDC072 /* ZoomSwitcerBtn+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682AA2435027800DDC072 /* ZoomSwitcerBtn+Style.swift */; };
+		F13682D52435027800DDC072 /* ZoomSwitcerBtn+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682AB2435027800DDC072 /* ZoomSwitcerBtn+Const.swift */; };
+		F13682D62435027900DDC072 /* TopBar+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682AD2435027800DDC072 /* TopBar+Const.swift */; };
+		F13682D72435027900DDC072 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682AE2435027800DDC072 /* TopBar.swift */; };
+		F13682D82435027900DDC072 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682B12435027800DDC072 /* ExitButton.swift */; };
+		F13682D92435027900DDC072 /* ExitButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682B22435027800DDC072 /* ExitButton+Const.swift */; };
+		F13682DA2435027900DDC072 /* FlipButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682B42435027800DDC072 /* FlipButton+Const.swift */; };
+		F13682DB2435027900DDC072 /* FlipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682B52435027800DDC072 /* FlipButton.swift */; };
+		F13682DC2435027900DDC072 /* FlashButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682B72435027800DDC072 /* FlashButton+Const.swift */; };
+		F13682DD2435027900DDC072 /* FlashButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682B82435027800DDC072 /* FlashButton.swift */; };
+		F13682DE2435027900DDC072 /* TopBar+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682B92435027800DDC072 /* TopBar+Create.swift */; };
+		F13682DF2435027900DDC072 /* ZoomSwitcherKind+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682BB2435027800DDC072 /* ZoomSwitcherKind+Extension.swift */; };
+		F136832C2435054900DDC072 /* RecordButtonViewKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682E42435054900DDC072 /* RecordButtonViewKind.swift */; };
+		F136832D2435054900DDC072 /* TopBarViewKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682E52435054900DDC072 /* TopBarViewKind.swift */; };
+		F136832E2435054900DDC072 /* TopBarKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682E62435054900DDC072 /* TopBarKind.swift */; };
+		F136832F2435054900DDC072 /* ZoomSwitcherKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682E72435054900DDC072 /* ZoomSwitcherKind.swift */; };
+		F13683302435054900DDC072 /* ToggleButtonKind+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682EA2435054900DDC072 /* ToggleButtonKind+Const.swift */; };
+		F13683312435054900DDC072 /* ToggleButtonKind+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682EB2435054900DDC072 /* ToggleButtonKind+TypeAlias.swift */; };
+		F13683322435054900DDC072 /* ClickButtonKind+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682EC2435054900DDC072 /* ClickButtonKind+TypeAlias.swift */; };
+		F13683332435054900DDC072 /* ToggleButtonKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682ED2435054900DDC072 /* ToggleButtonKind.swift */; };
+		F13683342435054900DDC072 /* ClickButtonKind+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682EE2435054900DDC072 /* ClickButtonKind+Const.swift */; };
+		F13683352435054900DDC072 /* ClickButtonKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682F02435054900DDC072 /* ClickButtonKind.swift */; };
+		F13683362435054900DDC072 /* RecordButtonKind+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682F22435054900DDC072 /* RecordButtonKind+Const.swift */; };
+		F13683372435054900DDC072 /* RecordButtonKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682F32435054900DDC072 /* RecordButtonKind.swift */; };
+		F13683382435054900DDC072 /* RecordButtonKind+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682F42435054900DDC072 /* RecordButtonKind+TypeAlias.swift */; };
+		F13683392435054900DDC072 /* ZoomSwitchBtnKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682F62435054900DDC072 /* ZoomSwitchBtnKind.swift */; };
+		F136833A2435054900DDC072 /* ProcessView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682F82435054900DDC072 /* ProcessView+Create.swift */; };
+		F136833B2435054900DDC072 /* ProcessView+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682F92435054900DDC072 /* ProcessView+Const.swift */; };
+		F136833C2435054900DDC072 /* ProcessView+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682FA2435054900DDC072 /* ProcessView+Action.swift */; };
+		F136833D2435054900DDC072 /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682FC2435054900DDC072 /* ImageView+Extension.swift */; };
+		F136833E2435054900DDC072 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682FD2435054900DDC072 /* ImageView.swift */; };
+		F136833F2435054900DDC072 /* ProcessView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682FE2435054900DDC072 /* ProcessView+Helper.swift */; };
+		F13683402435054900DDC072 /* ProcessView+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13682FF2435054900DDC072 /* ProcessView+TypeAlias.swift */; };
+		F13683412435054900DDC072 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683012435054900DDC072 /* VideoPlayerView.swift */; };
+		F13683422435054900DDC072 /* VideoPlayerView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683022435054900DDC072 /* VideoPlayerView+Create.swift */; };
+		F13683432435054900DDC072 /* VideoPlayerView +Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683032435054900DDC072 /* VideoPlayerView +Event.swift */; };
+		F13683442435054900DDC072 /* VideoPlayerView+Close.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683042435054900DDC072 /* VideoPlayerView+Close.swift */; };
+		F13683452435054900DDC072 /* VideoPlayerView+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683052435054900DDC072 /* VideoPlayerView+Action.swift */; };
+		F13683462435054900DDC072 /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683062435054900DDC072 /* ProcessView.swift */; };
+		F13683472435054900DDC072 /* ProcessView+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683072435054900DDC072 /* ProcessView+Event.swift */; };
+		F13683482435054900DDC072 /* HybridCamView+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683092435054900DDC072 /* HybridCamView+Handler.swift */; };
+		F13683492435054900DDC072 /* HybridCamView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136830A2435054900DDC072 /* HybridCamView+Create.swift */; };
+		F136834A2435054900DDC072 /* HybridCamView+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136830B2435054900DDC072 /* HybridCamView+TypeAlias.swift */; };
+		F136834B2435054900DDC072 /* HybridCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136830C2435054900DDC072 /* HybridCamView.swift */; };
+		F136834C2435054900DDC072 /* FileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136830E2435054900DDC072 /* FileUtil.swift */; };
+		F136834D2435054900DDC072 /* CamView+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683102435054900DDC072 /* CamView+Const.swift */; };
+		F136834E2435054900DDC072 /* CamView+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683112435054900DDC072 /* CamView+Video.swift */; };
+		F136834F2435054900DDC072 /* CamView+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683122435054900DDC072 /* CamView+Gesture.swift */; };
+		F13683502435054900DDC072 /* CamView+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683132435054900DDC072 /* CamView+Setup.swift */; };
+		F13683512435054900DDC072 /* AVCaptureDevice+Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683152435054900DDC072 /* AVCaptureDevice+Feature.swift */; };
+		F13683522435054900DDC072 /* AVCapturePhotoOutput+Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683162435054900DDC072 /* AVCapturePhotoOutput+Feature.swift */; };
+		F13683532435054900DDC072 /* AVCaptureSession+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683172435054900DDC072 /* AVCaptureSession+Setup.swift */; };
+		F13683542435054900DDC072 /* AVCaptureDeviceInput+Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683182435054900DDC072 /* AVCaptureDeviceInput+Feature.swift */; };
+		F13683552435054900DDC072 /* CamUtil+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136831A2435054900DDC072 /* CamUtil+TypeAlias.swift */; };
+		F13683562435054900DDC072 /* CamUtil+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136831B2435054900DDC072 /* CamUtil+Error.swift */; };
+		F13683572435054900DDC072 /* CamUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136831C2435054900DDC072 /* CamUtil.swift */; };
+		F13683582435054900DDC072 /* CamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136831D2435054900DDC072 /* CamView.swift */; };
+		F13683592435054900DDC072 /* CamView+Getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136831E2435054900DDC072 /* CamView+Getter.swift */; };
+		F136835A2435054900DDC072 /* CamPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683202435054900DDC072 /* CamPreviewView.swift */; };
+		F136835B2435054900DDC072 /* CamPreviewView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683212435054900DDC072 /* CamPreviewView+Create.swift */; };
+		F136835C2435054900DDC072 /* CamView+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683222435054900DDC072 /* CamView+TypeAlias.swift */; };
+		F136835D2435054900DDC072 /* CamView+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683232435054900DDC072 /* CamView+Action.swift */; };
+		F136835E2435054900DDC072 /* CamView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683242435054900DDC072 /* CamView+Create.swift */; };
+		F136835F2435054900DDC072 /* CamView+Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683252435054900DDC072 /* CamView+Photo.swift */; };
+		F13683602435054900DDC072 /* CamView+GestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683262435054900DDC072 /* CamView+GestureHandler.swift */; };
+		F13683612435054900DDC072 /* CamView+ViewFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683272435054900DDC072 /* CamView+ViewFinder.swift */; };
+		F13683622435054900DDC072 /* CaptureError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13683292435054900DDC072 /* CaptureError.swift */; };
+		F13683632435054900DDC072 /* SetupError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136832A2435054900DDC072 /* SetupError.swift */; };
+		F13683642435054900DDC072 /* CamView+Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136832B2435054900DDC072 /* CamView+Feature.swift */; };
+		F16F61E22342786E00574EBE /* ViewController+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16F61E12342786E00574EBE /* ViewController+Const.swift */; };
+		F16F61E423427FC100574EBE /* ViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16F61E323427FC100574EBE /* ViewController+Create.swift */; };
+		F1ABBEA220D0798B008B13B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABBEA020D0798B008B13B5 /* LaunchScreen.storyboard */; };
+		F1ABBED620D07A12008B13B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABBEA920D07A11008B13B5 /* ViewController.swift */; };
+		F1ABBEF620D07A12008B13B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABBED420D07A11008B13B5 /* AppDelegate.swift */; };
+		F1ABBEF720D07A12008B13B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1ABBED520D07A12008B13B5 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F114ADB221A1C27F00942A28 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F1059EE122EC36C6004A8346 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		F13682892435027800DDC072 /* CustomProcessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomProcessView.swift; sourceTree = "<group>"; };
+		F136828A2435027800DDC072 /* CustomCamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCamView.swift; sourceTree = "<group>"; };
+		F136828D2435027800DDC072 /* RecordButton+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordButton+Event.swift"; sourceTree = "<group>"; };
+		F136828E2435027800DDC072 /* RecordButton+Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordButton+Handler.swift"; sourceTree = "<group>"; };
+		F136828F2435027800DDC072 /* RecordButton+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordButton+Const.swift"; sourceTree = "<group>"; };
+		F13682912435027800DDC072 /* Circle+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Circle+Helper.swift"; sourceTree = "<group>"; };
+		F13682922435027800DDC072 /* Circle+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Circle+Const.swift"; sourceTree = "<group>"; };
+		F13682932435027800DDC072 /* Circle+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Circle+Create.swift"; sourceTree = "<group>"; };
+		F13682942435027800DDC072 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		F13682952435027800DDC072 /* RecordButton+Anim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordButton+Anim.swift"; sourceTree = "<group>"; };
+		F13682962435027800DDC072 /* RecordButton+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordButton+Create.swift"; sourceTree = "<group>"; };
+		F13682972435027800DDC072 /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		F13682992435027800DDC072 /* ShareButton+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShareButton+Const.swift"; sourceTree = "<group>"; };
+		F136829A2435027800DDC072 /* ShareButton+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShareButton+Style.swift"; sourceTree = "<group>"; };
+		F136829B2435027800DDC072 /* ShareButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareButton.swift; sourceTree = "<group>"; };
+		F136829C2435027800DDC072 /* ShareButton+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShareButton+Event.swift"; sourceTree = "<group>"; };
+		F136829F2435027800DDC072 /* ClickButton+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClickButton+Event.swift"; sourceTree = "<group>"; };
+		F13682A02435027800DDC072 /* ClickButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickButton.swift; sourceTree = "<group>"; };
+		F13682A22435027800DDC072 /* ToggleButton+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleButton+Event.swift"; sourceTree = "<group>"; };
+		F13682A32435027800DDC072 /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		F13682A52435027800DDC072 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F13682A62435027800DDC072 /* RoundButton+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoundButton+Event.swift"; sourceTree = "<group>"; };
+		F13682A82435027800DDC072 /* ZoomSwitcerBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomSwitcerBtn.swift; sourceTree = "<group>"; };
+		F13682A92435027800DDC072 /* ZoomSwitcerBtn+Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcerBtn+Handler.swift"; sourceTree = "<group>"; };
+		F13682AA2435027800DDC072 /* ZoomSwitcerBtn+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcerBtn+Style.swift"; sourceTree = "<group>"; };
+		F13682AB2435027800DDC072 /* ZoomSwitcerBtn+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcerBtn+Const.swift"; sourceTree = "<group>"; };
+		F13682AD2435027800DDC072 /* TopBar+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopBar+Const.swift"; sourceTree = "<group>"; };
+		F13682AE2435027800DDC072 /* TopBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		F13682B12435027800DDC072 /* ExitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
+		F13682B22435027800DDC072 /* ExitButton+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExitButton+Const.swift"; sourceTree = "<group>"; };
+		F13682B42435027800DDC072 /* FlipButton+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlipButton+Const.swift"; sourceTree = "<group>"; };
+		F13682B52435027800DDC072 /* FlipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipButton.swift; sourceTree = "<group>"; };
+		F13682B72435027800DDC072 /* FlashButton+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlashButton+Const.swift"; sourceTree = "<group>"; };
+		F13682B82435027800DDC072 /* FlashButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashButton.swift; sourceTree = "<group>"; };
+		F13682B92435027800DDC072 /* TopBar+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopBar+Create.swift"; sourceTree = "<group>"; };
+		F13682BB2435027800DDC072 /* ZoomSwitcherKind+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcherKind+Extension.swift"; sourceTree = "<group>"; };
+		F13682E42435054900DDC072 /* RecordButtonViewKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButtonViewKind.swift; sourceTree = "<group>"; };
+		F13682E52435054900DDC072 /* TopBarViewKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarViewKind.swift; sourceTree = "<group>"; };
+		F13682E62435054900DDC072 /* TopBarKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarKind.swift; sourceTree = "<group>"; };
+		F13682E72435054900DDC072 /* ZoomSwitcherKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomSwitcherKind.swift; sourceTree = "<group>"; };
+		F13682EA2435054900DDC072 /* ToggleButtonKind+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleButtonKind+Const.swift"; sourceTree = "<group>"; };
+		F13682EB2435054900DDC072 /* ToggleButtonKind+TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleButtonKind+TypeAlias.swift"; sourceTree = "<group>"; };
+		F13682EC2435054900DDC072 /* ClickButtonKind+TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClickButtonKind+TypeAlias.swift"; sourceTree = "<group>"; };
+		F13682ED2435054900DDC072 /* ToggleButtonKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButtonKind.swift; sourceTree = "<group>"; };
+		F13682EE2435054900DDC072 /* ClickButtonKind+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClickButtonKind+Const.swift"; sourceTree = "<group>"; };
+		F13682F02435054900DDC072 /* ClickButtonKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickButtonKind.swift; sourceTree = "<group>"; };
+		F13682F22435054900DDC072 /* RecordButtonKind+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordButtonKind+Const.swift"; sourceTree = "<group>"; };
+		F13682F32435054900DDC072 /* RecordButtonKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButtonKind.swift; sourceTree = "<group>"; };
+		F13682F42435054900DDC072 /* RecordButtonKind+TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordButtonKind+TypeAlias.swift"; sourceTree = "<group>"; };
+		F13682F62435054900DDC072 /* ZoomSwitchBtnKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomSwitchBtnKind.swift; sourceTree = "<group>"; };
+		F13682F82435054900DDC072 /* ProcessView+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProcessView+Create.swift"; sourceTree = "<group>"; };
+		F13682F92435054900DDC072 /* ProcessView+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProcessView+Const.swift"; sourceTree = "<group>"; };
+		F13682FA2435054900DDC072 /* ProcessView+Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProcessView+Action.swift"; sourceTree = "<group>"; };
+		F13682FC2435054900DDC072 /* ImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageView+Extension.swift"; sourceTree = "<group>"; };
+		F13682FD2435054900DDC072 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		F13682FE2435054900DDC072 /* ProcessView+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProcessView+Helper.swift"; sourceTree = "<group>"; };
+		F13682FF2435054900DDC072 /* ProcessView+TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProcessView+TypeAlias.swift"; sourceTree = "<group>"; };
+		F13683012435054900DDC072 /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		F13683022435054900DDC072 /* VideoPlayerView+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VideoPlayerView+Create.swift"; sourceTree = "<group>"; };
+		F13683032435054900DDC072 /* VideoPlayerView +Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VideoPlayerView +Event.swift"; sourceTree = "<group>"; };
+		F13683042435054900DDC072 /* VideoPlayerView+Close.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VideoPlayerView+Close.swift"; sourceTree = "<group>"; };
+		F13683052435054900DDC072 /* VideoPlayerView+Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VideoPlayerView+Action.swift"; sourceTree = "<group>"; };
+		F13683062435054900DDC072 /* ProcessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
+		F13683072435054900DDC072 /* ProcessView+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProcessView+Event.swift"; sourceTree = "<group>"; };
+		F13683092435054900DDC072 /* HybridCamView+Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HybridCamView+Handler.swift"; sourceTree = "<group>"; };
+		F136830A2435054900DDC072 /* HybridCamView+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HybridCamView+Create.swift"; sourceTree = "<group>"; };
+		F136830B2435054900DDC072 /* HybridCamView+TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HybridCamView+TypeAlias.swift"; sourceTree = "<group>"; };
+		F136830C2435054900DDC072 /* HybridCamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HybridCamView.swift; sourceTree = "<group>"; };
+		F136830E2435054900DDC072 /* FileUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtil.swift; sourceTree = "<group>"; };
+		F13683102435054900DDC072 /* CamView+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamView+Const.swift"; sourceTree = "<group>"; };
+		F13683112435054900DDC072 /* CamView+Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamView+Video.swift"; sourceTree = "<group>"; };
+		F13683122435054900DDC072 /* CamView+Gesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamView+Gesture.swift"; sourceTree = "<group>"; };
+		F13683132435054900DDC072 /* CamView+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamView+Setup.swift"; sourceTree = "<group>"; };
+		F13683152435054900DDC072 /* AVCaptureDevice+Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Feature.swift"; sourceTree = "<group>"; };
+		F13683162435054900DDC072 /* AVCapturePhotoOutput+Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCapturePhotoOutput+Feature.swift"; sourceTree = "<group>"; };
+		F13683172435054900DDC072 /* AVCaptureSession+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureSession+Setup.swift"; sourceTree = "<group>"; };
+		F13683182435054900DDC072 /* AVCaptureDeviceInput+Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDeviceInput+Feature.swift"; sourceTree = "<group>"; };
+		F136831A2435054900DDC072 /* CamUtil+TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamUtil+TypeAlias.swift"; sourceTree = "<group>"; };
+		F136831B2435054900DDC072 /* CamUtil+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamUtil+Error.swift"; sourceTree = "<group>"; };
+		F136831C2435054900DDC072 /* CamUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamUtil.swift; sourceTree = "<group>"; };
+		F136831D2435054900DDC072 /* CamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamView.swift; sourceTree = "<group>"; };
+		F136831E2435054900DDC072 /* CamView+Getter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamView+Getter.swift"; sourceTree = "<group>"; };
+		F13683202435054900DDC072 /* CamPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamPreviewView.swift; sourceTree = "<group>"; };
+		F13683212435054900DDC072 /* CamPreviewView+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamPreviewView+Create.swift"; sourceTree = "<group>"; };
+		F13683222435054900DDC072 /* CamView+TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamView+TypeAlias.swift"; sourceTree = "<group>"; };
+		F13683232435054900DDC072 /* CamView+Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamView+Action.swift"; sourceTree = "<group>"; };
+		F13683242435054900DDC072 /* CamView+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamView+Create.swift"; sourceTree = "<group>"; };
+		F13683252435054900DDC072 /* CamView+Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamView+Photo.swift"; sourceTree = "<group>"; };
+		F13683262435054900DDC072 /* CamView+GestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamView+GestureHandler.swift"; sourceTree = "<group>"; };
+		F13683272435054900DDC072 /* CamView+ViewFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamView+ViewFinder.swift"; sourceTree = "<group>"; };
+		F13683292435054900DDC072 /* CaptureError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureError.swift; sourceTree = "<group>"; };
+		F136832A2435054900DDC072 /* SetupError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupError.swift; sourceTree = "<group>"; };
+		F136832B2435054900DDC072 /* CamView+Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CamView+Feature.swift"; sourceTree = "<group>"; };
+		F16F61E12342786E00574EBE /* ViewController+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Const.swift"; sourceTree = "<group>"; };
+		F16F61E323427FC100574EBE /* ViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Create.swift"; sourceTree = "<group>"; };
+		F1ABBE9420D0798A008B13B5 /* HybridCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HybridCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1ABBEA120D0798B008B13B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1ABBEA920D07A11008B13B5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1ABBEAA20D07A11008B13B5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1ABBED420D07A11008B13B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1ABBED520D07A12008B13B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1ABBE9120D0798A008B13B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F13682872435023600DDC072 /* With in Frameworks */,
+				F13682842435019A00DDC072 /* ResultSugar in Frameworks */,
+				F13682812435011B00DDC072 /* ZoomSwitcherKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F13682882435027800DDC072 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				F13682892435027800DDC072 /* CustomProcessView.swift */,
+				F136828A2435027800DDC072 /* CustomCamView.swift */,
+				F136828B2435027800DDC072 /* button */,
+				F13682AC2435027800DDC072 /* topbar */,
+				F13682BA2435027800DDC072 /* BottomBar */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		F136828B2435027800DDC072 /* button */ = {
+			isa = PBXGroup;
+			children = (
+				F136828C2435027800DDC072 /* RecordButton */,
+				F13682982435027800DDC072 /* ShareButton */,
+				F136829D2435027800DDC072 /* helper */,
+				F13682A72435027800DDC072 /* DEPRECATED */,
+			);
+			path = button;
+			sourceTree = "<group>";
+		};
+		F136828C2435027800DDC072 /* RecordButton */ = {
+			isa = PBXGroup;
+			children = (
+				F136828D2435027800DDC072 /* RecordButton+Event.swift */,
+				F136828E2435027800DDC072 /* RecordButton+Handler.swift */,
+				F136828F2435027800DDC072 /* RecordButton+Const.swift */,
+				F13682902435027800DDC072 /* Circle */,
+				F13682942435027800DDC072 /* Circle.swift */,
+				F13682952435027800DDC072 /* RecordButton+Anim.swift */,
+				F13682962435027800DDC072 /* RecordButton+Create.swift */,
+				F13682972435027800DDC072 /* RecordButton.swift */,
+			);
+			path = RecordButton;
+			sourceTree = "<group>";
+		};
+		F13682902435027800DDC072 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				F13682912435027800DDC072 /* Circle+Helper.swift */,
+				F13682922435027800DDC072 /* Circle+Const.swift */,
+				F13682932435027800DDC072 /* Circle+Create.swift */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		F13682982435027800DDC072 /* ShareButton */ = {
+			isa = PBXGroup;
+			children = (
+				F13682992435027800DDC072 /* ShareButton+Const.swift */,
+				F136829A2435027800DDC072 /* ShareButton+Style.swift */,
+				F136829B2435027800DDC072 /* ShareButton.swift */,
+				F136829C2435027800DDC072 /* ShareButton+Event.swift */,
+			);
+			path = ShareButton;
+			sourceTree = "<group>";
+		};
+		F136829D2435027800DDC072 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				F136829E2435027800DDC072 /* ClickButton */,
+				F13682A12435027800DDC072 /* ToggleButton */,
+				F13682A42435027800DDC072 /* RoundButton */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		F136829E2435027800DDC072 /* ClickButton */ = {
+			isa = PBXGroup;
+			children = (
+				F136829F2435027800DDC072 /* ClickButton+Event.swift */,
+				F13682A02435027800DDC072 /* ClickButton.swift */,
+			);
+			path = ClickButton;
+			sourceTree = "<group>";
+		};
+		F13682A12435027800DDC072 /* ToggleButton */ = {
+			isa = PBXGroup;
+			children = (
+				F13682A22435027800DDC072 /* ToggleButton+Event.swift */,
+				F13682A32435027800DDC072 /* ToggleButton.swift */,
+			);
+			path = ToggleButton;
+			sourceTree = "<group>";
+		};
+		F13682A42435027800DDC072 /* RoundButton */ = {
+			isa = PBXGroup;
+			children = (
+				F13682A52435027800DDC072 /* RoundButton.swift */,
+				F13682A62435027800DDC072 /* RoundButton+Event.swift */,
+			);
+			path = RoundButton;
+			sourceTree = "<group>";
+		};
+		F13682A72435027800DDC072 /* DEPRECATED */ = {
+			isa = PBXGroup;
+			children = (
+				F13682A82435027800DDC072 /* ZoomSwitcerBtn.swift */,
+				F13682A92435027800DDC072 /* ZoomSwitcerBtn+Handler.swift */,
+				F13682AA2435027800DDC072 /* ZoomSwitcerBtn+Style.swift */,
+				F13682AB2435027800DDC072 /* ZoomSwitcerBtn+Const.swift */,
+			);
+			path = DEPRECATED;
+			sourceTree = "<group>";
+		};
+		F13682AC2435027800DDC072 /* topbar */ = {
+			isa = PBXGroup;
+			children = (
+				F13682AD2435027800DDC072 /* TopBar+Const.swift */,
+				F13682AE2435027800DDC072 /* TopBar.swift */,
+				F13682AF2435027800DDC072 /* button */,
+				F13682B92435027800DDC072 /* TopBar+Create.swift */,
+			);
+			path = topbar;
+			sourceTree = "<group>";
+		};
+		F13682AF2435027800DDC072 /* button */ = {
+			isa = PBXGroup;
+			children = (
+				F13682B02435027800DDC072 /* ExitButton */,
+				F13682B32435027800DDC072 /* FlipButton */,
+				F13682B62435027800DDC072 /* FlashButton */,
+			);
+			path = button;
+			sourceTree = "<group>";
+		};
+		F13682B02435027800DDC072 /* ExitButton */ = {
+			isa = PBXGroup;
+			children = (
+				F13682B12435027800DDC072 /* ExitButton.swift */,
+				F13682B22435027800DDC072 /* ExitButton+Const.swift */,
+			);
+			path = ExitButton;
+			sourceTree = "<group>";
+		};
+		F13682B32435027800DDC072 /* FlipButton */ = {
+			isa = PBXGroup;
+			children = (
+				F13682B42435027800DDC072 /* FlipButton+Const.swift */,
+				F13682B52435027800DDC072 /* FlipButton.swift */,
+			);
+			path = FlipButton;
+			sourceTree = "<group>";
+		};
+		F13682B62435027800DDC072 /* FlashButton */ = {
+			isa = PBXGroup;
+			children = (
+				F13682B72435027800DDC072 /* FlashButton+Const.swift */,
+				F13682B82435027800DDC072 /* FlashButton.swift */,
+			);
+			path = FlashButton;
+			sourceTree = "<group>";
+		};
+		F13682BA2435027800DDC072 /* BottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				F13682BB2435027800DDC072 /* ZoomSwitcherKind+Extension.swift */,
+			);
+			path = BottomBar;
+			sourceTree = "<group>";
+		};
+		F13682E02435054900DDC072 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F13682E12435054900DDC072 /* HybridCamera */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F13682E12435054900DDC072 /* HybridCamera */ = {
+			isa = PBXGroup;
+			children = (
+				F13682E22435054900DDC072 /* ui */,
+				F13682F72435054900DDC072 /* ProcessView */,
+				F13683082435054900DDC072 /* HybridCamView */,
+				F136830D2435054900DDC072 /* common */,
+				F136830F2435054900DDC072 /* CamView */,
+			);
+			path = HybridCamera;
+			sourceTree = "<group>";
+		};
+		F13682E22435054900DDC072 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				F13682E32435054900DDC072 /* TopBarKind */,
+				F13682E72435054900DDC072 /* ZoomSwitcherKind.swift */,
+				F13682E82435054900DDC072 /* button */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		F13682E32435054900DDC072 /* TopBarKind */ = {
+			isa = PBXGroup;
+			children = (
+				F13682E42435054900DDC072 /* RecordButtonViewKind.swift */,
+				F13682E52435054900DDC072 /* TopBarViewKind.swift */,
+				F13682E62435054900DDC072 /* TopBarKind.swift */,
+			);
+			path = TopBarKind;
+			sourceTree = "<group>";
+		};
+		F13682E82435054900DDC072 /* button */ = {
+			isa = PBXGroup;
+			children = (
+				F13682E92435054900DDC072 /* ToggleButtonKind */,
+				F13682EF2435054900DDC072 /* ClickButtonKind */,
+				F13682F12435054900DDC072 /* RecordButtonKind */,
+				F13682F52435054900DDC072 /* DEPRECATED */,
+			);
+			path = button;
+			sourceTree = "<group>";
+		};
+		F13682E92435054900DDC072 /* ToggleButtonKind */ = {
+			isa = PBXGroup;
+			children = (
+				F13682EA2435054900DDC072 /* ToggleButtonKind+Const.swift */,
+				F13682EB2435054900DDC072 /* ToggleButtonKind+TypeAlias.swift */,
+				F13682EC2435054900DDC072 /* ClickButtonKind+TypeAlias.swift */,
+				F13682ED2435054900DDC072 /* ToggleButtonKind.swift */,
+				F13682EE2435054900DDC072 /* ClickButtonKind+Const.swift */,
+			);
+			path = ToggleButtonKind;
+			sourceTree = "<group>";
+		};
+		F13682EF2435054900DDC072 /* ClickButtonKind */ = {
+			isa = PBXGroup;
+			children = (
+				F13682F02435054900DDC072 /* ClickButtonKind.swift */,
+			);
+			path = ClickButtonKind;
+			sourceTree = "<group>";
+		};
+		F13682F12435054900DDC072 /* RecordButtonKind */ = {
+			isa = PBXGroup;
+			children = (
+				F13682F22435054900DDC072 /* RecordButtonKind+Const.swift */,
+				F13682F32435054900DDC072 /* RecordButtonKind.swift */,
+				F13682F42435054900DDC072 /* RecordButtonKind+TypeAlias.swift */,
+			);
+			path = RecordButtonKind;
+			sourceTree = "<group>";
+		};
+		F13682F52435054900DDC072 /* DEPRECATED */ = {
+			isa = PBXGroup;
+			children = (
+				F13682F62435054900DDC072 /* ZoomSwitchBtnKind.swift */,
+			);
+			path = DEPRECATED;
+			sourceTree = "<group>";
+		};
+		F13682F72435054900DDC072 /* ProcessView */ = {
+			isa = PBXGroup;
+			children = (
+				F13682F82435054900DDC072 /* ProcessView+Create.swift */,
+				F13682F92435054900DDC072 /* ProcessView+Const.swift */,
+				F13682FA2435054900DDC072 /* ProcessView+Action.swift */,
+				F13682FB2435054900DDC072 /* ImageView */,
+				F13682FE2435054900DDC072 /* ProcessView+Helper.swift */,
+				F13682FF2435054900DDC072 /* ProcessView+TypeAlias.swift */,
+				F13683002435054900DDC072 /* VideoPlayerView */,
+				F13683062435054900DDC072 /* ProcessView.swift */,
+				F13683072435054900DDC072 /* ProcessView+Event.swift */,
+			);
+			path = ProcessView;
+			sourceTree = "<group>";
+		};
+		F13682FB2435054900DDC072 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				F13682FC2435054900DDC072 /* ImageView+Extension.swift */,
+				F13682FD2435054900DDC072 /* ImageView.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		F13683002435054900DDC072 /* VideoPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				F13683012435054900DDC072 /* VideoPlayerView.swift */,
+				F13683022435054900DDC072 /* VideoPlayerView+Create.swift */,
+				F13683032435054900DDC072 /* VideoPlayerView +Event.swift */,
+				F13683042435054900DDC072 /* VideoPlayerView+Close.swift */,
+				F13683052435054900DDC072 /* VideoPlayerView+Action.swift */,
+			);
+			path = VideoPlayerView;
+			sourceTree = "<group>";
+		};
+		F13683082435054900DDC072 /* HybridCamView */ = {
+			isa = PBXGroup;
+			children = (
+				F13683092435054900DDC072 /* HybridCamView+Handler.swift */,
+				F136830A2435054900DDC072 /* HybridCamView+Create.swift */,
+				F136830B2435054900DDC072 /* HybridCamView+TypeAlias.swift */,
+				F136830C2435054900DDC072 /* HybridCamView.swift */,
+			);
+			path = HybridCamView;
+			sourceTree = "<group>";
+		};
+		F136830D2435054900DDC072 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F136830E2435054900DDC072 /* FileUtil.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F136830F2435054900DDC072 /* CamView */ = {
+			isa = PBXGroup;
+			children = (
+				F13683102435054900DDC072 /* CamView+Const.swift */,
+				F13683112435054900DDC072 /* CamView+Video.swift */,
+				F13683122435054900DDC072 /* CamView+Gesture.swift */,
+				F13683132435054900DDC072 /* CamView+Setup.swift */,
+				F13683142435054900DDC072 /* extension */,
+				F13683192435054900DDC072 /* util */,
+				F136831D2435054900DDC072 /* CamView.swift */,
+				F136831E2435054900DDC072 /* CamView+Getter.swift */,
+				F136831F2435054900DDC072 /* CamPreviewView */,
+				F13683222435054900DDC072 /* CamView+TypeAlias.swift */,
+				F13683232435054900DDC072 /* CamView+Action.swift */,
+				F13683242435054900DDC072 /* CamView+Create.swift */,
+				F13683252435054900DDC072 /* CamView+Photo.swift */,
+				F13683262435054900DDC072 /* CamView+GestureHandler.swift */,
+				F13683272435054900DDC072 /* CamView+ViewFinder.swift */,
+				F13683282435054900DDC072 /* error */,
+				F136832B2435054900DDC072 /* CamView+Feature.swift */,
+			);
+			path = CamView;
+			sourceTree = "<group>";
+		};
+		F13683142435054900DDC072 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				F13683152435054900DDC072 /* AVCaptureDevice+Feature.swift */,
+				F13683162435054900DDC072 /* AVCapturePhotoOutput+Feature.swift */,
+				F13683172435054900DDC072 /* AVCaptureSession+Setup.swift */,
+				F13683182435054900DDC072 /* AVCaptureDeviceInput+Feature.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		F13683192435054900DDC072 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F136831A2435054900DDC072 /* CamUtil+TypeAlias.swift */,
+				F136831B2435054900DDC072 /* CamUtil+Error.swift */,
+				F136831C2435054900DDC072 /* CamUtil.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		F136831F2435054900DDC072 /* CamPreviewView */ = {
+			isa = PBXGroup;
+			children = (
+				F13683202435054900DDC072 /* CamPreviewView.swift */,
+				F13683212435054900DDC072 /* CamPreviewView+Create.swift */,
+			);
+			path = CamPreviewView;
+			sourceTree = "<group>";
+		};
+		F13683282435054900DDC072 /* error */ = {
+			isa = PBXGroup;
+			children = (
+				F13683292435054900DDC072 /* CaptureError.swift */,
+				F136832A2435054900DDC072 /* SetupError.swift */,
+			);
+			path = error;
+			sourceTree = "<group>";
+		};
+		F16F61E52342804600574EBE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1ABBEA920D07A11008B13B5 /* ViewController.swift */,
+				F1059EE122EC36C6004A8346 /* ViewController+Extension.swift */,
+				F16F61E12342786E00574EBE /* ViewController+Const.swift */,
+				F16F61E323427FC100574EBE /* ViewController+Create.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F1AA7577226B4E5000D4C272 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1ABBE8B20D0798A008B13B5 = {
+			isa = PBXGroup;
+			children = (
+				F13682E02435054900DDC072 /* Sources */,
+				F1ABBE9620D0798A008B13B5 /* HybridCamera */,
+				F1ABBE9520D0798A008B13B5 /* Products */,
+				F1AA7577226B4E5000D4C272 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1ABBE9520D0798A008B13B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1ABBE9420D0798A008B13B5 /* HybridCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1ABBE9620D0798A008B13B5 /* HybridCamera */ = {
+			isa = PBXGroup;
+			children = (
+				F1ABBEA020D0798B008B13B5 /* LaunchScreen.storyboard */,
+				F1ABBED420D07A11008B13B5 /* AppDelegate.swift */,
+				F13682882435027800DDC072 /* ui */,
+				F16F61E52342804600574EBE /* ViewController */,
+				F1ABBED520D07A12008B13B5 /* Assets.xcassets */,
+				F1ABBEAA20D07A11008B13B5 /* Info.plist */,
+			);
+			path = HybridCamera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1ABBE9320D0798A008B13B5 /* HybridCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1ABBEA620D0798B008B13B5 /* Build configuration list for PBXNativeTarget "HybridCamera" */;
+			buildPhases = (
+				F1ABBE9020D0798A008B13B5 /* Sources */,
+				F1ABBE9120D0798A008B13B5 /* Frameworks */,
+				F1ABBE9220D0798A008B13B5 /* Resources */,
+				F114ADB221A1C27F00942A28 /* Embed Frameworks */,
+				F1E4A88B2275A73E00E8993A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HybridCamera;
+			packageProductDependencies = (
+				F13682802435011B00DDC072 /* ZoomSwitcherKit */,
+				F13682832435019A00DDC072 /* ResultSugar */,
+				F13682862435023600DDC072 /* With */,
+			);
+			productName = HybridCamera;
+			productReference = F1ABBE9420D0798A008B13B5 /* HybridCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1ABBE8C20D0798A008B13B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = eon;
+				TargetAttributes = {
+					F1ABBE9320D0798A008B13B5 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = F1ABBE8F20D0798A008B13B5 /* Build configuration list for PBXProject "HybridCamera" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1ABBE8B20D0798A008B13B5;
+			packageReferences = (
+				F136827F2435011A00DDC072 /* XCRemoteSwiftPackageReference "ZoomSwitcherKit" */,
+				F13682822435019A00DDC072 /* XCRemoteSwiftPackageReference "ResultSugar" */,
+				F13682852435023600DDC072 /* XCRemoteSwiftPackageReference "With" */,
+			);
+			productRefGroup = F1ABBE9520D0798A008B13B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1ABBE9320D0798A008B13B5 /* HybridCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1ABBE9220D0798A008B13B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1ABBEF720D07A12008B13B5 /* Assets.xcassets in Resources */,
+				F1ABBEA220D0798B008B13B5 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F1E4A88B2275A73E00E8993A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1ABBE9020D0798A008B13B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F136833E2435054900DDC072 /* ImageView.swift in Sources */,
+				F13682C32435027800DDC072 /* Circle+Create.swift in Sources */,
+				F136832F2435054900DDC072 /* ZoomSwitcherKind.swift in Sources */,
+				F136832D2435054900DDC072 /* TopBarViewKind.swift in Sources */,
+				F13682D52435027800DDC072 /* ZoomSwitcerBtn+Const.swift in Sources */,
+				F136835A2435054900DDC072 /* CamPreviewView.swift in Sources */,
+				F13682CD2435027800DDC072 /* ClickButton.swift in Sources */,
+				F13683562435054900DDC072 /* CamUtil+Error.swift in Sources */,
+				F13683492435054900DDC072 /* HybridCamView+Create.swift in Sources */,
+				F13683462435054900DDC072 /* ProcessView.swift in Sources */,
+				F13682C12435027800DDC072 /* Circle+Helper.swift in Sources */,
+				F13683622435054900DDC072 /* CaptureError.swift in Sources */,
+				F13682D72435027900DDC072 /* TopBar.swift in Sources */,
+				F136833D2435054900DDC072 /* ImageView+Extension.swift in Sources */,
+				F13682DE2435027900DDC072 /* TopBar+Create.swift in Sources */,
+				F1059EE222EC36C6004A8346 /* ViewController+Extension.swift in Sources */,
+				F13683322435054900DDC072 /* ClickButtonKind+TypeAlias.swift in Sources */,
+				F13683642435054900DDC072 /* CamView+Feature.swift in Sources */,
+				F13683612435054900DDC072 /* CamView+ViewFinder.swift in Sources */,
+				F13683352435054900DDC072 /* ClickButtonKind.swift in Sources */,
+				F136835C2435054900DDC072 /* CamView+TypeAlias.swift in Sources */,
+				F13682DC2435027900DDC072 /* FlashButton+Const.swift in Sources */,
+				F13682D32435027800DDC072 /* ZoomSwitcerBtn+Handler.swift in Sources */,
+				F13682CC2435027800DDC072 /* ClickButton+Event.swift in Sources */,
+				F13683442435054900DDC072 /* VideoPlayerView+Close.swift in Sources */,
+				F136833C2435054900DDC072 /* ProcessView+Action.swift in Sources */,
+				F13683332435054900DDC072 /* ToggleButtonKind.swift in Sources */,
+				F136834C2435054900DDC072 /* FileUtil.swift in Sources */,
+				F13682D62435027900DDC072 /* TopBar+Const.swift in Sources */,
+				F1ABBEF620D07A12008B13B5 /* AppDelegate.swift in Sources */,
+				F13682D42435027800DDC072 /* ZoomSwitcerBtn+Style.swift in Sources */,
+				F13682D02435027800DDC072 /* RoundButton.swift in Sources */,
+				F13683532435054900DDC072 /* AVCaptureSession+Setup.swift in Sources */,
+				F13683392435054900DDC072 /* ZoomSwitchBtnKind.swift in Sources */,
+				F13683402435054900DDC072 /* ProcessView+TypeAlias.swift in Sources */,
+				F13682BD2435027800DDC072 /* CustomCamView.swift in Sources */,
+				F13682BE2435027800DDC072 /* RecordButton+Event.swift in Sources */,
+				F13683582435054900DDC072 /* CamView.swift in Sources */,
+				F13683452435054900DDC072 /* VideoPlayerView+Action.swift in Sources */,
+				F13682D22435027800DDC072 /* ZoomSwitcerBtn.swift in Sources */,
+				F16F61E22342786E00574EBE /* ViewController+Const.swift in Sources */,
+				F136835E2435054900DDC072 /* CamView+Create.swift in Sources */,
+				F13682DB2435027900DDC072 /* FlipButton.swift in Sources */,
+				F136835F2435054900DDC072 /* CamView+Photo.swift in Sources */,
+				F13682C42435027800DDC072 /* Circle.swift in Sources */,
+				F13682C92435027800DDC072 /* ShareButton+Style.swift in Sources */,
+				F13682BC2435027800DDC072 /* CustomProcessView.swift in Sources */,
+				F136833A2435054900DDC072 /* ProcessView+Create.swift in Sources */,
+				F16F61E423427FC100574EBE /* ViewController+Create.swift in Sources */,
+				F13683372435054900DDC072 /* RecordButtonKind.swift in Sources */,
+				F136834D2435054900DDC072 /* CamView+Const.swift in Sources */,
+				F13683312435054900DDC072 /* ToggleButtonKind+TypeAlias.swift in Sources */,
+				F13682BF2435027800DDC072 /* RecordButton+Handler.swift in Sources */,
+				F13683362435054900DDC072 /* RecordButtonKind+Const.swift in Sources */,
+				F136833F2435054900DDC072 /* ProcessView+Helper.swift in Sources */,
+				F13682DD2435027900DDC072 /* FlashButton.swift in Sources */,
+				F13682C72435027800DDC072 /* RecordButton.swift in Sources */,
+				F13683412435054900DDC072 /* VideoPlayerView.swift in Sources */,
+				F136834E2435054900DDC072 /* CamView+Video.swift in Sources */,
+				F13682CB2435027800DDC072 /* ShareButton+Event.swift in Sources */,
+				F13683522435054900DDC072 /* AVCapturePhotoOutput+Feature.swift in Sources */,
+				F13682CF2435027800DDC072 /* ToggleButton.swift in Sources */,
+				F13682C22435027800DDC072 /* Circle+Const.swift in Sources */,
+				F13683432435054900DDC072 /* VideoPlayerView +Event.swift in Sources */,
+				F13683342435054900DDC072 /* ClickButtonKind+Const.swift in Sources */,
+				F136835D2435054900DDC072 /* CamView+Action.swift in Sources */,
+				F13683502435054900DDC072 /* CamView+Setup.swift in Sources */,
+				F13683632435054900DDC072 /* SetupError.swift in Sources */,
+				F13683592435054900DDC072 /* CamView+Getter.swift in Sources */,
+				F13682D92435027900DDC072 /* ExitButton+Const.swift in Sources */,
+				F13682DA2435027900DDC072 /* FlipButton+Const.swift in Sources */,
+				F13683572435054900DDC072 /* CamUtil.swift in Sources */,
+				F136834A2435054900DDC072 /* HybridCamView+TypeAlias.swift in Sources */,
+				F136834B2435054900DDC072 /* HybridCamView.swift in Sources */,
+				F13682C02435027800DDC072 /* RecordButton+Const.swift in Sources */,
+				F13683512435054900DDC072 /* AVCaptureDevice+Feature.swift in Sources */,
+				F13682C52435027800DDC072 /* RecordButton+Anim.swift in Sources */,
+				F13683472435054900DDC072 /* ProcessView+Event.swift in Sources */,
+				F13682DF2435027900DDC072 /* ZoomSwitcherKind+Extension.swift in Sources */,
+				F13682C82435027800DDC072 /* ShareButton+Const.swift in Sources */,
+				F136832C2435054900DDC072 /* RecordButtonViewKind.swift in Sources */,
+				F13683422435054900DDC072 /* VideoPlayerView+Create.swift in Sources */,
+				F136832E2435054900DDC072 /* TopBarKind.swift in Sources */,
+				F13683382435054900DDC072 /* RecordButtonKind+TypeAlias.swift in Sources */,
+				F136835B2435054900DDC072 /* CamPreviewView+Create.swift in Sources */,
+				F13682C62435027800DDC072 /* RecordButton+Create.swift in Sources */,
+				F1ABBED620D07A12008B13B5 /* ViewController.swift in Sources */,
+				F13683542435054900DDC072 /* AVCaptureDeviceInput+Feature.swift in Sources */,
+				F13682D12435027800DDC072 /* RoundButton+Event.swift in Sources */,
+				F13683552435054900DDC072 /* CamUtil+TypeAlias.swift in Sources */,
+				F13682CE2435027800DDC072 /* ToggleButton+Event.swift in Sources */,
+				F13683302435054900DDC072 /* ToggleButtonKind+Const.swift in Sources */,
+				F136834F2435054900DDC072 /* CamView+Gesture.swift in Sources */,
+				F13683602435054900DDC072 /* CamView+GestureHandler.swift in Sources */,
+				F13682CA2435027800DDC072 /* ShareButton.swift in Sources */,
+				F13682D82435027900DDC072 /* ExitButton.swift in Sources */,
+				F136833B2435054900DDC072 /* ProcessView+Const.swift in Sources */,
+				F13683482435054900DDC072 /* HybridCamView+Handler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1ABBEA020D0798B008B13B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1ABBEA120D0798B008B13B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1ABBEA420D0798B008B13B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1ABBEA520D0798B008B13B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1ABBEA720D0798B008B13B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5CC9TD7P7;
+				INFOPLIST_FILE = HybridCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = codes.eont.HybridCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F1ABBEA820D0798B008B13B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5CC9TD7P7;
+				INFOPLIST_FILE = HybridCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = codes.eont.HybridCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1ABBE8F20D0798A008B13B5 /* Build configuration list for PBXProject "HybridCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1ABBEA420D0798B008B13B5 /* Debug */,
+				F1ABBEA520D0798B008B13B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1ABBEA620D0798B008B13B5 /* Build configuration list for PBXNativeTarget "HybridCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1ABBEA720D0798B008B13B5 /* Debug */,
+				F1ABBEA820D0798B008B13B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F136827F2435011A00DDC072 /* XCRemoteSwiftPackageReference "ZoomSwitcherKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eonist/ZoomSwitcherKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F13682822435019A00DDC072 /* XCRemoteSwiftPackageReference "ResultSugar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eonist/ResultSugar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F13682852435023600DDC072 /* XCRemoteSwiftPackageReference "With" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eonist/With.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F13682802435011B00DDC072 /* ZoomSwitcherKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F136827F2435011A00DDC072 /* XCRemoteSwiftPackageReference "ZoomSwitcherKit" */;
+			productName = ZoomSwitcherKit;
+		};
+		F13682832435019A00DDC072 /* ResultSugar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F13682822435019A00DDC072 /* XCRemoteSwiftPackageReference "ResultSugar" */;
+			productName = ResultSugar;
+		};
+		F13682862435023600DDC072 /* With */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F13682852435023600DDC072 /* XCRemoteSwiftPackageReference "With" */;
+			productName = With;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F1ABBE8C20D0798A008B13B5 /* Project object */;
+}
