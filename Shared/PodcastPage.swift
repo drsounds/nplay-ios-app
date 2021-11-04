@@ -13,15 +13,18 @@ struct PodcastPage: View {
     
     var url : String = ""
     var feedURL : URL
+    @State var seasonId : String = ""
+    @State var season : Season? = nil
     var parser : FeedParser
     @State var show : Show? = nil
     init(url: String) {
-        self.url = url
-        self.feedURL = URL(string: url)!
+        self.url = url.replacingOccurrences(of: "stadius:", with: "https:")
+        print(self.url)     
+        self.feedURL = URL(string: self.url)!
         self.parser = FeedParser(URL: self.feedURL)
     }
     
-    func loadShow(_ finished : @escaping (Show?) -> Void) {
+    func loadShow   (_ finished : @escaping (Show?) -> Void) {
         parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
             // Do your thing, then back to the Main thread
             switch result {
@@ -39,11 +42,12 @@ struct PodcastPage: View {
                         imageUrl: "",
                         color: "#888888"
                     )
-                    let season : Season = Season(number: 0, show: show!)
+                    let season : Season = Season(id: self.url + "#1", number: 0, show: show!)
+                    self.seasonId = season.id!
                     for episode in feed.entries ?? [] {
                         season.episodes.append(
                             Episode(
-                                id: "",
+                                id: episode.id!,
                                 number: 1,
                                 name: episode.title!,
                                 description: episode.summary?.value ?? "",
@@ -63,11 +67,12 @@ struct PodcastPage: View {
                         imageUrl: nil,
                         color: "#888888"
                     )
-                    let season = Season(number: 0, show: show!)
+                    let season = Season(id: self.url + "#0", number: 0, show: show!)
+                    self.season = season
                     for episode in feed.items ?? [] {
                         season.episodes.append(
                             Episode(
-                                id: "",
+                                id: episode.guid!.value!,
                                 number:1,
                                 name: episode.title!,
                                 description: episode.description!,
@@ -91,10 +96,19 @@ struct PodcastPage: View {
     }
     var body: some View {
             VStack {
-                if show != nil {
+                if show != nil && season != nil  {
                     ShowView(
                         show: show!
                     )
+                    ShowEpisodeListView(seasons: show!.seasons, episodes: season!.episodes, seasonId: seasonId, seasonChanged: {
+                        seasonId in
+                        self.seasonId = seasonId
+                        for season in self.show!.seasons {
+                            if season.id == seasonId {
+                                self.season = season
+                            }
+                        }
+                    })
                 } else {
                     Text("Loading")
                 }

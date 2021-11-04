@@ -18,8 +18,8 @@ class Season : Entity {
         case number = "numeber"
         case showId = "showId"
     }
-    init(number: Int, show: Show) {
-        super.init(id: "", name: "", description: "", imageUrl: "")
+    init(id: String, number: Int, show: Show) {
+        super.init(id: id, name: "", description: "", imageUrl: "")
         self.number = number
         self.show = show
     }

@@ -19,15 +19,15 @@ struct EpisodeRow: View {
     }
     var body: some View {
         NavigationLink(destination: EpisodePage(id: episode.id!)) {
-            HStack(alignment: .center, spacing: 1) {
+            HStack(alignment: .center, spacing: 3) {
                 if episode.imageUrl != nil {
                 ImageView(
                     url: episode.imageUrl!
-                ).aspectRatio(contentMode: .fit).frame(width: 110, height: 80)
+                ).aspectRatio(contentMode: .fit).frame(minWidth: 0, maxWidth: 30, minHeight: 0, maxHeight: 30)
                 } else {
                     Rectangle().frame(width: 110,  height: 80)
                 }
-                VStack {
+                VStack(alignment: .leading, spacing: 3) {
                     Text(episode.name).bold()
                     Text(formattedDate()).opacity(0.8)
                 }
