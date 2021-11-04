@@ -18,6 +18,9 @@ struct StoryPlayerView: View {
                     if storyObject.type == "video" {
                         HTML5StoryCard(url: storyObject.url)
                     }
+                    if storyObject.type == "camera" {
+                        CameraStoryCard(url: storyObject.url)
+                    }
                     if storyObject.type == "bundle" {
                         HTML5StoryCard(url: storyObject.url)
                     }

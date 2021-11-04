@@ -17,7 +17,13 @@ struct StoryletTestView: View {
                 name: "Test",
                 description: "Test",
                 type: "video",
-                url: "https://www.youtube.com/embed/FLu9vlysV58"
+                url: "https://www.youtube.com/embed/ascGICjdrL8"
+            ),
+            StoryObject(
+                name: "Test",
+                description: "Test",
+                type: "camera",
+                url: "stadius:show:test:segment:280125:particpation"
             )
         ]
     )
