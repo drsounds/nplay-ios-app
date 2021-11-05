@@ -13,6 +13,7 @@ struct nPlayApp: App {
     let persistenceController = PersistenceController.shared
     init() {
         FirebaseApp.configure()
+        
     }
     var body: some Scene {
         WindowGroup {
@@ -25,7 +26,7 @@ struct nPlayApp: App {
                         })
                     }
                     
-                })
+                }).accentColor(Color.green)
         }
     }
 }

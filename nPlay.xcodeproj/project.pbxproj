@@ -287,6 +287,7 @@
 		DA3B99FB27346A4000C97952 /* Podcast */ = {
 			isa = PBXGroup;
 			children = (
+				DA3809D82733E33A00F6DCB8 /* PodcastView.swift */,
 				DAF54C132731A9A300DB669F /* PodcastPage.swift */,
 				DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */,
 				DA3809D22733DDE300F6DCB8 /* PodcastEpisodePage.swift */,
@@ -407,7 +408,6 @@
 				DA06F7CF27318DC90035FEE9 /* EpisodePlayerView.swift */,
 				DA06F7D827318EFA0035FEE9 /* StoryletPlayerView.swift */,
 				DA3B992C2734532B00C97952 /* StoryletTestView.swift */,
-				DA3809D82733E33A00F6DCB8 /* PodcastView.swift */,
 			);
 			path = Episode;
 			sourceTree = "<group>";

@@ -19,6 +19,10 @@ struct PodcastView: View {
                 label: "show",
                 imageUrl: nil
             )
+            VStack(alignment: .leading, spacing: 30) {
+                Text("Description").opacity(0.5)
+                Text(show.description)                
+            }.padding(30)
             PodcastEpisodeListView(show: show, season: show.seasons.first, episode: nil)
         }
     }
