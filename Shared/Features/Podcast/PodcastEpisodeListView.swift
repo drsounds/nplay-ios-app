@@ -48,9 +48,9 @@ struct PodcastEpisodeListView: View {
                             seasonChanged(season.id!)
                         }).buttonStyle(BorderedButtonStyle())
                     }
-                }.padding(30)
+                }.padding(16)
             }
-            Text("Episodes").opacity(0.5).padding(30)
+            Text("Episodes").opacity(0.5).padding(16)
             VStack(alignment: .leading, spacing: 13) {
                 if selectedSeason != nil {
                     ForEach(selectedSeason!.episodes) {

@@ -37,13 +37,13 @@ struct StorySegmentView: View {
                 let storyObject = storySegment.objects[index];
                 
                 if storyObject.type == "video" {
-                    HTML5StoryCard(url: storyObject.url).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.6)
+                    HTML5StoryCard(url: storyObject.url).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.8)
                 } else if storyObject.type == "camera" {
-                    CameraStoryCard(url: storyObject.url).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight:  UIScreen.main.bounds.height * 0.6)
+                    CameraStoryCard(url: storyObject.url).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight:  UIScreen.main.bounds.height * 0.8)
                 } else if storyObject.type == "canvas" {
-                    HTML5StoryCard(url: storyObject.url).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.6)
+                    HTML5StoryCard(url: storyObject.url).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.8)
                 } else if storyObject.type == "youtube" {
-                    HTML5StoryCard(url: "\(storyObject.url)?playsinline=1&autoplay=1").frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.6)
+                    HTML5StoryCard(url: "\(storyObject.url)?playsinline=1&autoplay=1").frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.8)
                 } else {
                     EmptyView().frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 }

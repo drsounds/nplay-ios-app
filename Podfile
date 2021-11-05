@@ -10,6 +10,7 @@ target 'nPlay (iOS)' do
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift', '> 7.0-beta'
   pod 'FeedKit', '~> 9.0'
+  pod 'swift-vibrant'
 end
 
 #target 'nPlay (macOS)' do

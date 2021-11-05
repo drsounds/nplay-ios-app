@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import swiftVibrant
+import swift_vibrant
 
 struct GenericView<Content : View>: View {
     var color : Color
+    var backgroundColor : Color?
     var imageUrl : String?
     var height : UnitPoint = .center
     var showCircle : Bool = false
@@ -29,6 +32,14 @@ struct GenericView<Content : View>: View {
         self.imageUrl = imageUrl
         self.content = content
         self.height = height
+    }
+    init(color: Color, imageUrl: String?, height: UnitPoint, backgroundColor: Color, @ViewBuilder content: @escaping() -> Content) {
+        self.color = color
+        self.imageUrl = imageUrl
+        self.content = content
+        self.height = height
+        self.backgroundColor = backgroundColor
+       
     }
     init(color: Color, imageUrl: String?, height: UnitPoint, showCircle: Bool, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
@@ -72,7 +83,19 @@ struct GenericView<Content : View>: View {
                     content()
                 }
             }
-        }.ignoresSafeArea(.all)
+        }.background(backgroundColor).ignoresSafeArea(.all).onAppear(perform: {
+            let url = URL(string: imageUrl!)
+
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+                DispatchQueue.main.async {
+                    let image = UIImage(data: data!)
+                    Vibrant.from(image).getPalette({ (palette : Palette) in
+                        self.backgroundColor = palette?.DarkMuted
+                    })
+                }
+            }
+        })
     }
 }
  
