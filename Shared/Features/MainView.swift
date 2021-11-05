@@ -10,7 +10,6 @@ import SwiftUI
 struct MainView : View {
     @State var activeTab : String = ""
     var body : some View {
-        /*
         TabView(selection: $activeTab) {
             BrowsePage()
                 .tabItem {
@@ -20,7 +19,7 @@ struct MainView : View {
         }.onOpenURL {
             url in
             activeTab = "browsePage"
-        }*/
-        StoryletTestView()
+        }
+        /*StoryletTestView()*/
     }
 }

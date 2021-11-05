@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StoryPlayerView: View {
+struct StoryletPlayerView: View {
     var storylet : Storylet
     @State var selection : Int = 0
     var body: some View {

@@ -43,6 +43,6 @@ struct StoryletTestView: View {
     )
     
     var body: some View {
-        StoryPlayerView(storylet: storylet)
+        StoryletPlayerView(storylet: storylet)
     }
 }

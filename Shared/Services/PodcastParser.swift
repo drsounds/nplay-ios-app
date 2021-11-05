@@ -32,16 +32,16 @@ class PodcastParser {
                     )
                     let season : Season = Season(id: "\(url.absoluteString)#1", number: 0, show: show!)
                 
-                    for episode in feed.entries ?? [] {
+                    for _episode in feed.entries ?? [] {
                         let episode = Episode(
-                            id: episode.id!,
+                            id: _episode.id!,
                             number: 1,
-                            name: episode.title!,
-                            description: episode.summary?.value ?? "",
+                            name: _episode.title!,
+                            description: _episode.summary?.value ?? "",
                             imageUrl: nil,
                             color: "#777777",
                             season: season,
-                            url: "\(url.absoluteString)#episode=\(episode.id!)"
+                            url: "\(url.absoluteString)#episode=\(_episode.id!)"
                         )
                         if episode.imageUrl == nil {
                             episode.imageUrl = episode.season!.show!.imageUrl
@@ -49,7 +49,17 @@ class PodcastParser {
                         season.episodes.append(
                             episode
                         )
-                        
+                        /*
+                        let _enclosure = _episode.enclosure
+                        if _enclosure != nil {
+                            let enclosure = Enclosure(
+                                name: "",
+                                url: _enclosure!.attributes!.url!,
+                                contentType: _enclosure!.attributes!.type!,
+                                episode: episode
+                            )
+                            episode.enclosures.append(enclosure)
+                        }*/                        
                     }
                     show!.seasons.append(season)
                             
@@ -63,16 +73,16 @@ class PodcastParser {
                         url: url.absoluteString
                     )
                     let season = Season(id: "0", number: 0, show: show!)
-                    for episode in feed.items ?? [] {
+                    for _episode in feed.items ?? [] {
                         let episode = Episode(
-                            id: episode.guid!.value!,
+                            id: _episode.guid!.value!,
                             number:1,
-                            name: episode.title!,
-                            description: episode.description!,
+                            name: _episode.title!,
+                            description: _episode.description!,
                             imageUrl: nil,
                             color: "#888888",
                             season: season,
-                            url: "\(url.absoluteString)#episode=\(episode.guid!.value!)"
+                            url: "\(url.absoluteString)#episode=\(_episode.guid!.value!)"
                         )
                         if episode.imageUrl == nil {
                             episode.imageUrl = episode.season!.show!.imageUrl
@@ -80,6 +90,16 @@ class PodcastParser {
                         season.episodes.append(
                             episode
                         )
+                        let _enclosure = _episode.enclosure
+                        if _enclosure != nil {
+                            let enclosure = Enclosure(
+                                name: "",
+                                url: _enclosure!.attributes!.url!,
+                                contentType: _enclosure!.attributes!.type!,
+                                episode: episode
+                            )
+                            episode.enclosures.append(enclosure)
+                        }
                     }
                     show!.seasons.append(season)
                     finished(show)

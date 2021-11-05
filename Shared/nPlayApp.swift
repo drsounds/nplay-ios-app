@@ -18,7 +18,7 @@ struct nPlayApp: App {
         WindowGroup {
             MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext).onAppear(perform: {
-                    let url = URL(string: "stadius://anchor.fm/s/67950a8/podcast/rss")!
+                    let url = URL(string: "stadius://spacious.neocities.org/stadius/feed.xml")!
                     if UIApplication.shared.canOpenURL(url) {
                         UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
                              print("Open url : \(success)")
