@@ -32,7 +32,7 @@ struct EpisodePlayerView: View {
     var body: some View {
         if status == 200 {
             if storylet != nil {
-                StoryletPlayerView(storylet: storylet!)
+                    StoryletPlayerView(storylet: storylet!)
             }
         } else if status == 100 {
             ProgressView().onAppear() {
