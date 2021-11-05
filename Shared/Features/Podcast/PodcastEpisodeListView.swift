@@ -40,7 +40,7 @@ struct PodcastEpisodeListView: View {
         VStack(alignment: .leading, spacing: 4) {
             VStack(alignment: .trailing, spacing: 0) {
                 HStack {
-                    Text("Season")
+                    Text("Season").font(.custom("PlusJakartaSans-Regular", size: 8))
                     Spacer()
                     ForEach(show.seasons, id: \.id) {
                         season in
@@ -50,7 +50,7 @@ struct PodcastEpisodeListView: View {
                     }
                 }.padding(16)
             }
-            Text("Episodes").opacity(0.5).padding(16)
+            Text("Episodes").font(.custom("PlusJakartaSans-Regular", size: 8)).opacity(0.5).padding(16)
             VStack(alignment: .leading, spacing: 13) {
                 if selectedSeason != nil {
                     ForEach(selectedSeason!.episodes) {

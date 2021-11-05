@@ -27,8 +27,8 @@ struct EpisodeRow: View {
                 Spacer(minLength: 03)
             }*/
             VStack(alignment: .leading, spacing: 2) {
-                Text(episode.name).bold().lineLimit(1)
-                Text(formattedDate()).opacity(0.8)
+                Text(episode.name).font(.custom("PlusJakartaSans-Regular", size: 18)).bold().lineLimit(1)
+                Text(formattedDate()).font(.custom("PlusJakartaSans-Regular", size: 18)).opacity(0.8)
             }.padding(13)
             Spacer()
             Button("..") {

@@ -6,34 +6,34 @@
 //
 
 import SwiftUI
-import swiftVibrant
 import swift_vibrant
 
 struct GenericView<Content : View>: View {
-    var color : Color
-    var backgroundColor : Color?
+    var color : SwiftUI.Color
     var imageUrl : String?
     var height : UnitPoint = .center
     var showCircle : Bool = false
+    @State var backgroundColor : SwiftUI.Color?
+    let content: () -> Content
     
-    init(color: Color, @ViewBuilder content: @escaping() -> Content) {
+    init(color: SwiftUI.Color, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
         print(color)
         print(imageUrl)
         self.content = content
     }
-    init(color: Color, imageUrl: String?, @ViewBuilder content: @escaping() -> Content) {
+    init(color: SwiftUI.Color, imageUrl: String?, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
         self.imageUrl = imageUrl
         self.content = content
     }
-    init(color: Color, imageUrl: String?, height: UnitPoint, @ViewBuilder content: @escaping() -> Content) {
+    init(color: SwiftUI.Color, imageUrl: String?, height: UnitPoint, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
         self.imageUrl = imageUrl
         self.content = content
         self.height = height
     }
-    init(color: Color, imageUrl: String?, height: UnitPoint, backgroundColor: Color, @ViewBuilder content: @escaping() -> Content) {
+    init(color: SwiftUI.Color, imageUrl: String?, height: UnitPoint, backgroundColor: SwiftUI.Color, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
         self.imageUrl = imageUrl
         self.content = content
@@ -41,7 +41,7 @@ struct GenericView<Content : View>: View {
         self.backgroundColor = backgroundColor
        
     }
-    init(color: Color, imageUrl: String?, height: UnitPoint, showCircle: Bool, @ViewBuilder content: @escaping() -> Content) {
+    init(color: SwiftUI.Color, imageUrl: String?, height: UnitPoint, showCircle: Bool, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
         print(color)
         self.imageUrl = imageUrl
@@ -50,7 +50,6 @@ struct GenericView<Content : View>: View {
         self.height = height
         print("Show Circle \(showCircle)")
     }
-    let content: () -> Content
  
     var body: some View {
         ScrollView {
@@ -84,15 +83,17 @@ struct GenericView<Content : View>: View {
                 }
             }
         }.background(backgroundColor).ignoresSafeArea(.all).onAppear(perform: {
-            let url = URL(string: imageUrl!)
+            if imageUrl != nil {
+                let url = URL(string: imageUrl!)
 
-            DispatchQueue.global().async {
-                let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-                DispatchQueue.main.async {
-                    let image = UIImage(data: data!)
-                    Vibrant.from(image).getPalette({ (palette : Palette) in
-                        self.backgroundColor = palette?.DarkMuted
-                    })
+                DispatchQueue.global().async {
+                    let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+                    DispatchQueue.main.async {
+                        let image = UIImage(data: data!)
+                        Vibrant.from(image!).getPalette({ (palette : Palette) in
+                            backgroundColor = Color(palette.DarkMuted!.uiColor)
+                        })
+                    }
                 }
             }
         })

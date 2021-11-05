@@ -33,7 +33,7 @@ struct GenericHeader: View {
                 Spacer(minLength: 70)
             }
             if title != nil {
-            Text(title!).font(.system(size: 30, weight: .bold))
+                Text(title!).font(.custom("PlusJakartaSans-ExtraBold", size: 30))
             }
         }.frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: .infinity).padding(5)
     }
