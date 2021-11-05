@@ -11,12 +11,7 @@ import HybridCamera
 
 struct CameraStoryCard: View {
     var url : String
-    var hybridCameraView : HybridCamView
-    init(url: String) {
-        self.url = url
-        self.hybridCameraView = CustomCamView()
-    }
     var body: some View {
-        CameraView(hybridCameraView: hybridCameraView)
+        Text("Here there will be a camera view later")
     }
 }

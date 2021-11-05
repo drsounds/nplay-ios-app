@@ -25,31 +25,44 @@ struct StorySegmentView: View {
     
     func back() {
         if (index > 0) {
-            index += 1
+            index -= 1
             onIndexChanged(index)
         } else {
             onBeforeStart()
         }
     }
     var body: some View {
-        ZStack {
-            let storyObject = storySegment.objects[index];
-            if storyObject.type == "video" {
-                HTML5StoryCard(url: storyObject.url)
-            } else if storyObject.type == "camera" {
-                CameraStoryCard(url: storyObject.url)
-            } else if storyObject.type == "bundle" {
-                HTML5StoryCard(url: storyObject.url)
+        ZStack(alignment: .topLeading) {
+            if index > -1 && index < storySegment.objects.count {
+                let storyObject = storySegment.objects[index];
+                
+                if storyObject.type == "video" {
+                    HTML5StoryCard(url: storyObject.url).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                } else if storyObject.type == "camera" {
+                    CameraStoryCard(url: storyObject.url).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                } else if storyObject.type == "canvas" {
+                    HTML5StoryCard(url: storyObject.url).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                } else if storyObject.type == "youtube" {
+                    HTML5StoryCard(url: "\(storyObject.url)?playsinline=1&autoplay=1").frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                } else {
+                    EmptyView().frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                }
             } else {
-                EmptyView()
+                EmptyView().frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                
             }
-            // Back button
-            EmptyView().position(x: UIScreen.main.bounds.width - 30, y: 0).frame(width: 30, height: UIScreen.main.bounds.height).onTapGesture {
-                next()
-            }
-            // Next button
-            EmptyView().position(x: 0, y: 0).frame(width: 30, height: UIScreen.main.bounds.height).onTapGesture {
-                next()
+            if storySegment.objects.count > 1 {
+                HStack {
+                    // Next button
+                    Button("<"){
+                        back()
+                    }.buttonStyle(DefaultButtonStyle()).frame(minWidth: 0, maxWidth: 60, minHeight: 0, maxHeight: 60).background(Color.gray).cornerRadius(50)
+                    Spacer()
+                    // Back button
+                    Button(">") {
+                        next()
+                    }.buttonStyle(DefaultButtonStyle()).frame(minWidth: 0, maxWidth: 60, minHeight: 0, maxHeight: 60).background(Color.gray).cornerRadius(50)
+                }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             }
         }
     }

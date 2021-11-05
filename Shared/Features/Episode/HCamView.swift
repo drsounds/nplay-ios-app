@@ -8,6 +8,5 @@
 import Foundation
 import HybridCamera
 
-class HCamView : HybridCamView {
-    override func 
+class HCamView : HybridCamView { 
 }

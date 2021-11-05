@@ -10,6 +10,7 @@ import SwiftUI
 struct With<Content : View>: View {
     let content: () -> Content
     init(_ obj: Any, @ViewBuilder content: @escaping (Any) -> Content) {
+        self.content = content
     }
     var body : some View {
         content()

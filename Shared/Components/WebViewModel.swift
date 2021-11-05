@@ -17,7 +17,10 @@ class WebViewModel: ObservableObject {
     @Published var urlString: String = ""
 
     init() {
-        webView = WKWebView(frame: .zero)
+        let configuration = WKWebViewConfiguration()
+        configuration.allowsInlineMediaPlayback = true
+        configuration.mediaTypesRequiringUserActionForPlayback = []
+        webView = WKWebView(frame: .zero, configuration: configuration)
         url = URL(string: "https://svt.se")!
     }
     // actions

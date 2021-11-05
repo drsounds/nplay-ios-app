@@ -1,5 +1,7 @@
 import UIKit
 import With
+import ZoomSwitcherKit
+
 /**
  * - Fixme: ⚠️️ Add support for ultrawide angel aka 0.5x
  * - Fixme: ⚠️️ Add support for detecting which angels are available
@@ -16,3 +18,5 @@ open class ZoomSwitcerBtn: ToggleButton, ZoomSwitchBtnKind {
       fatalError("init(coder:) has not been implemented")
    }
 }
+
+
