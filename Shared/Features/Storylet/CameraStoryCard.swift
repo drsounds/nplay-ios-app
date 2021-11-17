@@ -10,7 +10,7 @@ import Camera_SwiftUI
 import HybridCamera
 
 struct CameraStoryCard: View {
-    var url : String
+    var storyletObject: StoryletObject
     var body: some View {
         Text("Here there will be a camera view later")
     }

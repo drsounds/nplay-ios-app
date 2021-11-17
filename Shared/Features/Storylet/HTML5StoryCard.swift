@@ -9,12 +9,12 @@ import SwiftUI
 import WebKit
 
 struct HTML5StoryCard: View {
-    var url : String = ""
+    var storyletObject : StoryletObject
     @StateObject var model = WebViewModel()
 
     var body: some View {
         WebView(webView: model.webView).onAppear(perform: {
-            model.loadUrl(url)
+            model.loadUrl(storyletObject.url)
         })
     }
 }

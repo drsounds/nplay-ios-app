@@ -36,8 +36,8 @@
 		DA06F7D127318DC90035FEE9 /* EpisodePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7CF27318DC90035FEE9 /* EpisodePlayerView.swift */; };
 		DA06F7D327318E960035FEE9 /* Storylet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D227318E960035FEE9 /* Storylet.swift */; };
 		DA06F7D427318E960035FEE9 /* Storylet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D227318E960035FEE9 /* Storylet.swift */; };
-		DA06F7D627318EC40035FEE9 /* StoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D527318EC40035FEE9 /* StoryObject.swift */; };
-		DA06F7D727318EC40035FEE9 /* StoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D527318EC40035FEE9 /* StoryObject.swift */; };
+		DA06F7D627318EC40035FEE9 /* StoryletObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D527318EC40035FEE9 /* StoryletObject.swift */; };
+		DA06F7D727318EC40035FEE9 /* StoryletObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D527318EC40035FEE9 /* StoryletObject.swift */; };
 		DA06F7D927318EFA0035FEE9 /* StoryletPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D827318EFA0035FEE9 /* StoryletPlayerView.swift */; };
 		DA06F7DA27318EFA0035FEE9 /* StoryletPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06F7D827318EFA0035FEE9 /* StoryletPlayerView.swift */; };
 		DA3809D02733CF2900F6DCB8 /* PodcastEpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */; };
@@ -108,6 +108,9 @@
 		DAB49523273044DC0014C4C3 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB49521273044DC0014C4C3 /* WebViewModel.swift */; };
 		DAB49525273045340014C4C3 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB49524273045340014C4C3 /* WebView.swift */; };
 		DAB49526273045340014C4C3 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB49524273045340014C4C3 /* WebView.swift */; };
+		DAB72FC2274596C1009BAA26 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB72FC1274596C1009BAA26 /* CanvasView.swift */; };
+		DAB72FC6274596F3009BAA26 /* CanvasObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB72FC5274596F3009BAA26 /* CanvasObject.swift */; };
+		DAB72FCA27459820009BAA26 /* CanvasObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB72FC927459820009BAA26 /* CanvasObjectView.swift */; };
 		DABE40E22724781A00F8151A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E12724781A00F8151A /* PrimaryButton.swift */; };
 		DABE40E32724781A00F8151A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E12724781A00F8151A /* PrimaryButton.swift */; };
 		DABE40E5272596C200F8151A /* EpisodeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40E4272596C200F8151A /* EpisodeRow.swift */; };
@@ -124,6 +127,8 @@
 		DABE40F62726A82000F8151A /* ShowDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40F42726A82000F8151A /* ShowDetailPage.swift */; };
 		DABE40FB2726ED6B00F8151A /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40FA2726ED6B00F8151A /* GenericView.swift */; };
 		DABE40FC2726ED6B00F8151A /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE40FA2726ED6B00F8151A /* GenericView.swift */; };
+		DAEB185327405ECF00369147 /* CanvasStoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEB185227405ECF00369147 /* CanvasStoryCard.swift */; };
+		DAEB185427405ECF00369147 /* CanvasStoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEB185227405ECF00369147 /* CanvasStoryCard.swift */; };
 		DAEDC8302721C698001555BF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC82F2721C698001555BF /* Episode.swift */; };
 		DAEDC8312721C698001555BF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC82F2721C698001555BF /* Episode.swift */; };
 		DAEDC8332721C6BE001555BF /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDC8322721C6BE001555BF /* Season.swift */; };
@@ -191,7 +196,7 @@
 		DA01F1792735A55400C52311 /* PlusJakartaSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-MediumItalic.ttf"; sourceTree = "<group>"; };
 		DA06F7CF27318DC90035FEE9 /* EpisodePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodePlayerView.swift; sourceTree = "<group>"; };
 		DA06F7D227318E960035FEE9 /* Storylet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storylet.swift; sourceTree = "<group>"; };
-		DA06F7D527318EC40035FEE9 /* StoryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryObject.swift; sourceTree = "<group>"; };
+		DA06F7D527318EC40035FEE9 /* StoryletObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryletObject.swift; sourceTree = "<group>"; };
 		DA06F7D827318EFA0035FEE9 /* StoryletPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryletPlayerView.swift; sourceTree = "<group>"; };
 		DA3809CF2733CF2900F6DCB8 /* PodcastEpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastEpisodeListView.swift; sourceTree = "<group>"; };
 		DA3809D22733DDE300F6DCB8 /* PodcastEpisodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastEpisodePage.swift; sourceTree = "<group>"; };
@@ -234,6 +239,9 @@
 		DAB4951E273044660014C4C3 /* BundlePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundlePlayer.swift; sourceTree = "<group>"; };
 		DAB49521273044DC0014C4C3 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		DAB49524273045340014C4C3 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		DAB72FC1274596C1009BAA26 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		DAB72FC5274596F3009BAA26 /* CanvasObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasObject.swift; sourceTree = "<group>"; };
+		DAB72FC927459820009BAA26 /* CanvasObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasObjectView.swift; sourceTree = "<group>"; };
 		DABE40E12724781A00F8151A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		DABE40E4272596C200F8151A /* EpisodeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRow.swift; sourceTree = "<group>"; };
 		DABE40E82725980400F8151A /* EpisodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodePage.swift; sourceTree = "<group>"; };
@@ -242,6 +250,7 @@
 		DABE40F12726A64100F8151A /* ShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowView.swift; sourceTree = "<group>"; };
 		DABE40F42726A82000F8151A /* ShowDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailPage.swift; sourceTree = "<group>"; };
 		DABE40FA2726ED6B00F8151A /* GenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
+		DAEB185227405ECF00369147 /* CanvasStoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasStoryCard.swift; sourceTree = "<group>"; };
 		DAEDC82F2721C698001555BF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		DAEDC8322721C6BE001555BF /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		DAEDC8352721D687001555BF /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -354,10 +363,12 @@
 		DA3B99FC27346A6B00C97952 /* Storylet */ = {
 			isa = PBXGroup;
 			children = (
+				DAEB185527405F7900369147 /* Canvas */,
 				DAEDC8382721D817001555BF /* EntityViewModel.swift */,
 				DA3B99262734512F00C97952 /* VideoStoryCard.swift */,
 				DA3B992F2734560400C97952 /* CameraStoryCard.swift */,
 				DA3B99292734514600C97952 /* HTML5StoryCard.swift */,
+				DAEB185227405ECF00369147 /* CanvasStoryCard.swift */,
 			);
 			path = Storylet;
 			sourceTree = "<group>";
@@ -454,6 +465,15 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		DAB72FC0274596A9009BAA26 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				DAB72FC1274596C1009BAA26 /* CanvasView.swift */,
+				DAB72FC927459820009BAA26 /* CanvasObjectView.swift */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
 		DABE40E7272597FA00F8151A /* Episode */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,9 +488,17 @@
 			path = Episode;
 			sourceTree = "<group>";
 		};
+		DAEB185527405F7900369147 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
 		DAEDC8562724414B001555BF /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				DAB72FC0274596A9009BAA26 /* Canvas */,
 				DA3B99FC27346A6B00C97952 /* Storylet */,
 				DA3B99FB27346A4000C97952 /* Podcast */,
 				DA4F44742721AD970036B3B5 /* MainView.swift */,
@@ -504,7 +532,7 @@
 		DAEDC8592724419D001555BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DA06F7D527318EC40035FEE9 /* StoryObject.swift */,
+				DA06F7D527318EC40035FEE9 /* StoryletObject.swift */,
 				DAEDC83B2721D90B001555BF /* EntityListViewModel.swift */,
 				DA3B992327344F4900C97952 /* Enclosure.swift */,
 				DA06F7D227318E960035FEE9 /* Storylet.swift */,
@@ -512,6 +540,7 @@
 				DA4F44802721C38C0036B3B5 /* Show.swift */,
 				DAEDC82F2721C698001555BF /* Episode.swift */,
 				DAAA5CF1273474580076D86F /* StorySegment.swift */,
+				DAB72FC5274596F3009BAA26 /* CanvasObject.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -810,24 +839,28 @@
 				DAEDC85C272445AB001555BF /* BlockItem.swift in Sources */,
 				DA7D0B21271F391300D19006 /* Persistence.swift in Sources */,
 				DA3809D62733E07500F6DCB8 /* PodcastEpisodeView.swift in Sources */,
-				DA06F7D627318EC40035FEE9 /* StoryObject.swift in Sources */,
+				DA06F7D627318EC40035FEE9 /* StoryletObject.swift in Sources */,
+				DAB72FC2274596C1009BAA26 /* CanvasView.swift in Sources */,
 				DA3B99302734560400C97952 /* CameraStoryCard.swift in Sources */,
 				DA7D0B1B271F391300D19006 /* nPlay.xcdatamodeld in Sources */,
 				DAEDC83C2721D90B001555BF /* EntityListViewModel.swift in Sources */,
 				DAEDC8332721C6BE001555BF /* Season.swift in Sources */,
 				DABE40E22724781A00F8151A /* PrimaryButton.swift in Sources */,
+				DAB72FCA27459820009BAA26 /* CanvasObjectView.swift in Sources */,
 				DA4F447B2721B0650036B3B5 /* BlockView.swift in Sources */,
 				DAEDC8392721D817001555BF /* EntityViewModel.swift in Sources */,
 				DA4F447E2721C3400036B3B5 /* CollectionRepository.swift in Sources */,
 				DAEDC84E27243D5B001555BF /* GenericHeader.swift in Sources */,
 				DA06F7D927318EFA0035FEE9 /* StoryletPlayerView.swift in Sources */,
 				DA3B992427344F4900C97952 /* Enclosure.swift in Sources */,
+				DAB72FC6274596F3009BAA26 /* CanvasObject.swift in Sources */,
 				DA7D0B1F271F391300D19006 /* ContentView.swift in Sources */,
 				DAB49525273045340014C4C3 /* WebView.swift in Sources */,
 				DA4F44812721C38C0036B3B5 /* Show.swift in Sources */,
 				DAAA5CFB273548080076D86F /* StoryletService.swift in Sources */,
 				DAEDC84227243908001555BF /* ShowEpisodeListView.swift in Sources */,
 				DA3B991E2734262400C97952 /* QueryParser.swift in Sources */,
+				DAEB185327405ECF00369147 /* CanvasStoryCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,7 +905,7 @@
 				DAEDC85D272445AB001555BF /* BlockItem.swift in Sources */,
 				DA7D0B22271F391300D19006 /* Persistence.swift in Sources */,
 				DA3809D72733E07500F6DCB8 /* PodcastEpisodeView.swift in Sources */,
-				DA06F7D727318EC40035FEE9 /* StoryObject.swift in Sources */,
+				DA06F7D727318EC40035FEE9 /* StoryletObject.swift in Sources */,
 				DA3B99312734560400C97952 /* CameraStoryCard.swift in Sources */,
 				DA7D0B1C271F391300D19006 /* nPlay.xcdatamodeld in Sources */,
 				DAEDC83D2721D90B001555BF /* EntityListViewModel.swift in Sources */,
@@ -890,6 +923,7 @@
 				DAAA5CFC273548080076D86F /* StoryletService.swift in Sources */,
 				DAEDC84327243908001555BF /* ShowEpisodeListView.swift in Sources */,
 				DA3B991F2734262400C97952 /* QueryParser.swift in Sources */,
+				DAEB185427405ECF00369147 /* CanvasStoryCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

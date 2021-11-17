@@ -21,15 +21,14 @@ struct BlurbView: View {
                     .frame(maxWidth: 300, maxHeight: 300)
             VStack {
                 if(label.count > 0) {
-                Text(label.uppercased()).opacity(0.2)
+                    Text(label.uppercased()).opacity(0.2)
                 }
                 if (name.count > 0) {
-                Text(name).bold()
+                    Text(name).bold()
                 }
                 if (description.count > 0) {
                     Text(description).opacity(0.8)
                 }
-                
             }
             .frame(maxWidth: .infinity)
             .padding(10)
