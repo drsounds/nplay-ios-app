@@ -11,7 +11,7 @@ import FeedKit
 
 struct PodcastEpisodePage: View {
     var uri: String
-    var model : PodcastEpisodeViewModel
+    @ObservedObject var model : PodcastEpisodeViewModel
     init(uriString: String) {
         self.uri = uriString
         self.model = PodcastEpisodeViewModel()

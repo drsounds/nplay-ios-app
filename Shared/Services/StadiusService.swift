@@ -15,6 +15,49 @@ func getUrlFromUri(uriString: String, pos: Int = 2) -> String {
 }
 
 class StadiusService {
+    func getPodcastFromUri(_ uriString: String, finished: @escaping(Result<Show, Error>) -> Void) {
+        let parts = uriString.components(separatedBy: ":")
+        if (parts[0] == "stadius") {
+            if (parts.count > 1) {
+                if (parts[1] == "podcast") {
+                    let base64EncodedFeedUrl = getUrlFromUri(uriString: uriString, pos: 2)
+                    let feedUrl = base64EncodedFeedUrl.base64Decoded()
+                    if (feedUrl != nil) {
+                        PodcastParser().loadFeed(string: feedUrl!, finished: finished)
+                    } else {
+                        
+                    }
+                }
+            }
+        }
+    }
+    func getEpisodeFromUri(_ uriString: String, finished: @escaping(Result<Episode, Error>) -> Void) {
+        let parts = uriString.components(separatedBy: ":")
+        if (parts[0] == "stadius") {
+            if (parts.count > 1) {
+                if (parts[1] == "episode") {
+                    let base64EncodedEpisodeIdentifier = getUrlFromUri(uriString: uriString, pos: 2)
+                    let episodeIdentifier = base64EncodedEpisodeIdentifier.base64Decoded()
+                    if (episodeIdentifier == nil) {
+                        return
+                    }
+                    let episodeIdentifierParts = episodeIdentifier!.components(separatedBy: ":")
+                    if (episodeIdentifierParts.count < 2) {
+                        return
+                    }
+                    let base64EncodedFeedUrl = episodeIdentifierParts[0]
+                    let base64EncodedEpisodeId = episodeIdentifierParts[1]
+                    let feedUrl = base64EncodedFeedUrl.base64Decoded()
+                    let episodeId = base64EncodedEpisodeId.base64Decoded()
+                    if (feedUrl != nil && episodeId != nil) {
+                        PodcastParser().loadEpisode(feedUrl!, episodeId: episodeId!, finished: finished)
+                    } else {
+                        
+                    }
+                }
+            }
+        }
+    }
     
     func loadStadiusPage(uriString: String, finished: @escaping (Result<CanvasObject, Error>) -> Void) {
         let parts = uriString.components(separatedBy: ":")

@@ -121,4 +121,24 @@ class PodcastParser {
         self.loadFeed(URL(string: url)!, finished: finished)
         
     }
+    func loadEpisode(_ feedUrl: String, episodeId: String, finished: @escaping(Result<Episode, Error>) -> Void) {
+        
+        self.loadFeed(string: feedUrl) {
+            result in
+            switch (result) {
+                case .success(let show):
+                    for season in show.seasons {
+                        for episode in season.episodes {
+                            if episode.id == episodeId {
+                                finished(.success(episode))
+                            }
+                        }
+                    }
+                    break
+                case .failure(let error):
+                    finished(.failure(error))
+                    break
+            }
+        }
+    }
 }

@@ -29,10 +29,4 @@ struct BrowsePage: View {
             })
         }
     }
-}
-
-struct BrowsePage_Previews: PreviewProvider {
-    static var previews: some View {
-        BrowseView(shows: [])
-    }
-}
+} 

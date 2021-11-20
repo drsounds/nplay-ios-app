@@ -14,6 +14,7 @@ class PodcastEpisodeViewModel : ObservableObject {
     var feedURL : URL?
     var episodeId: String?
     var parser: PodcastParser
+    var episodeUri: String?
     @Published var status : Int = 100
     @Published var show : Show? = nil
     @Published var season : Season? = nil
@@ -24,26 +25,16 @@ class PodcastEpisodeViewModel : ObservableObject {
     }
     func loadEpisode(_ uriString: String, finished : @escaping (Result<Episode, Error>) -> Void) {
         self.uri = uriString
-        self.feedUrl = getUrlFromUri(uriString: uri!)
-        self.episodeId = getUrlFromUri(uriString: uri!, pos: 4)
-        self.feedURL = URL(string: feedUrl!)!
-        self.parser = PodcastParser()
-        self.parser.loadFeed(string: self.feedUrl!) {
+        StadiusService().getEpisodeFromUri(uriString) {
             result in
             switch (result) {
-                case .success(let show):
-                    for season in show.seasons {
-                        for episode in season.episodes {
-                            if episode.id == self.episodeId {
-                                self.episode = episode
-                                self.season = season
-                                self.selectedSeasonId = self.season!.id!
-                                self.show = show
-                                self.status = 200
-                                finished(.success(episode))
-                            }
-                        }
-                    }
+                case .success(let episode):                     
+                    self.episode = episode
+                    self.season = episode.season
+                    self.selectedSeasonId = episode.season!.id!
+                    self.show = episode.season!.show!
+                    self.status = 200
+                    finished(.success(episode))
                     break
                 case .failure(let error):
                     finished(.failure(error))

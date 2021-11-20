@@ -13,6 +13,10 @@ struct PodcastPage: View {
     
     var uri : String = ""
     @ObservedObject var model : PodcastViewModel
+    init(_ uriString: String) {
+        self.uri = uriString
+        self.model = PodcastViewModel()
+    }
     var body: some View {
         VStack {
             if model.show != nil && model.season != nil  {
