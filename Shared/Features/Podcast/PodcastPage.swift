@@ -11,40 +11,19 @@ import FeedKit
 
 struct PodcastPage: View {
     
-    var url : String = ""
-    var feedURL : URL
-    var realURL : String = ""
-    @State var seasonId : String = ""
-    @State var season : Season? = nil
-    var parser : PodcastParser
-    @State var show : Show? = nil
-    init(url: String) {
-        self.realURL = url
-        self.url = url.components(separatedBy: ["#"])[0].replacingOccurrences(of: "stadius:", with: "https:")
-        self.feedURL = URL(string: self.url)!
-        self.parser = PodcastParser()
-    }
-    
-    func loadShow(_ finished : @escaping (Show?) -> Void) {
-        self.parser.loadFeed(self.feedURL) {
-            show in
-            self.show = show
-            self.season = self.show!.seasons.first!
-            finished(show)
-        }
-    }
+    var uri : String = ""
+    @ObservedObject var model : PodcastViewModel
     var body: some View {
         VStack {
-            if show != nil && season != nil  {
+            if model.show != nil && model.season != nil  {
                 PodcastView(
-                    show: show!
+                    show: model.show!
                 )
-                
             } else {
                 ProgressView()
             }
         }.onAppear(perform: {
-            loadShow() {
+            model.loadShow(uri) {
                 show in
             }
         })

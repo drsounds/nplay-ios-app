@@ -11,14 +11,14 @@ struct CanvasView: View {
     var canvasObject: CanvasObject
     var body: some View {
         VStack {
-            if canvasObject.name != nil {
-                Text(canvasObject.name!)
-            }
-            if canvasObject.description != nil {
-                Text(canvasObject.description!)
-            }
+            Heading(
+                name: canvasObject.name,
+                description: canvasObject.description
+            )
             ForEach(canvasObject.objects) {
-                
+                CanvasObjectView(
+                    canvasObject: $0
+                )
             }
         }
     }

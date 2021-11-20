@@ -13,34 +13,18 @@ struct CanvasObjectView: View {
         VStack {
             
             if canvasObject.type == "text" {
-                if (canvasObject.name != nil) {
-                    Text(canvasObject.name!)
-                } else {
-                    Text("")
-                }
-                if (canvasObject.description != nil) {
-                    Text(canvasObject.description!).opacity(0.8)
-                } else {
-                    Text("")
-                }
+                Heading(
+                    name: canvasObject.name,
+                    description: canvasObject.description
+                )
             } else if canvasObject.type == "image" {
                 if (canvasObject.imageUrl != nil) {
                     ImageView(url: canvasObject.imageUrl!)
                 } else {
                     Text("")
-                }
-                if (canvasObject.name != nil) {
-                    Text(canvasObject.name!)
-                } else {
-                    Text("")
-                }
-                if (canvasObject.description != nil) {
-                    Text(canvasObject.description!).opacity(0.8)
-                } else {
-                    Text("")
-                }
+                } 
             } else if canvasObject.type == "blurb" {
-                BlurbView(
+                BlurbView( 
                     name: canvasObject.name ?? "",
                     description: canvasObject.description ?? "",
                     label: "",
@@ -49,7 +33,27 @@ struct CanvasObjectView: View {
                     imageUrl: canvasObject.imageUrl ?? ""
                 )
             } else if canvasObject.type == "carousel" {
-                 
+                Heading(
+                    name: canvasObject.name,
+                    description: canvasObject.description
+                )
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(canvasObject.objects) {
+                            obj in
+                            if canvasObject.subType == "blurb" {
+                                BlurbView(
+                                    name: obj.name ?? "",
+                                    description: obj.description ?? "",
+                                    label: "",
+                                    type: obj.subType ?? "",
+                                    color: obj.color ?? "",
+                                    imageUrl: obj.imageUrl ?? ""
+                                )
+                            }
+                        }
+                    }
+                }
             } 
         }
     }

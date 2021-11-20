@@ -9,29 +9,14 @@ import Foundation
 import SwiftUI
 
 struct BrowseView : View {          
-    
-    var shows : [Show] = [];
+    var canvasObject: CanvasObject
     @State var browseUrl : String? = nil
     @State var isActive : Bool = false
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack {
-                    BlockView(
-                        items: self.shows,
-                        title: "Shows",
-                        destination: {
-                            item in
-                            ShowDetailPage(id: item.id!)
-                        }
-                    )
-                }
-                .padding(5)
-                if browseUrl != nil {
-                    NavigationLink(destination: PodcastPage(url: browseUrl!), isActive: $isActive) {
-                        Text("")
-                    }
-                }
+            CanvasView(canvasObject: canvasObject)
+            if self.browseUrl != nil {
+                StadiusNavigationLink(uri: self.browseUrl!, isActive: isActive)
             }
         }.onOpenURL(perform: {
             url in

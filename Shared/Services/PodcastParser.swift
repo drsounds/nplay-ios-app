@@ -9,7 +9,7 @@ import Foundation
 import FeedKit
 
 class PodcastParser {
-    func loadFeed(_ url: URL, finished: @escaping (Show?) -> Void) {
+    func loadFeed(_ url: URL, finished: @escaping (Result<Show, Error>) -> Void) {
         let parser = FeedParser(URL: url)
         parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
             // Do your thing, then back to the Main thread
@@ -47,6 +47,9 @@ class PodcastParser {
                             episode.imageUrl = episode.season!.show!.imageUrl
                         }
                         season.episodes.append(
+                            episode
+                        )
+                        show.episodes.append(
                             episode
                         )
                         /*
@@ -102,19 +105,20 @@ class PodcastParser {
                         }
                     }
                     show!.seasons.append(season)
-                    finished(show)
+                    finished(.success(show!))
                             
                 case let .json(feed):       // JSON Feed Model
                     return
                 }
                 
             case .failure(let error):
-                print(error)
+                finished(.failure(error))
             }
         }
     }
-    func loadFeed(string: String, finished: @escaping (Show?) -> Void) {
+    func loadFeed(string: String, finished: @escaping (Result<Show, Error>) -> Void) {
         let url = string.components(separatedBy: "#").first!
         self.loadFeed(URL(string: url)!, finished: finished)
+        
     }
 }

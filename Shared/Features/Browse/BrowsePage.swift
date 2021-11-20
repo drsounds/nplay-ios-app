@@ -8,19 +8,26 @@
 import SwiftUI
 
 struct BrowsePage: View {
-    @ObservedObject var showListViewLoader = EntityListViewLoader<Show>(
-        path: "shows"
-    )
-    init() {
-        self.showListViewLoader.get(nil) {
-            objects in
-        }
+    var uri : String = "stadius:view:browse"
+    @ObservedObject var model : BrowseViewModel
+     
+    init(_ uriString: String) {
+        self.uri = uriString
+        self.model = BrowseViewModel()
     }
 
     var body : some View {
-        BrowseView(shows: showListViewLoader.objectViewModels.map {
-            $0.obj!
-        })
+        if (model.status == 200) {
+            if (model.canvasObject != nil) {
+                BrowseView(canvasObject: model.canvasObject!)
+            } else {
+                Text("Error")
+            }
+        } else {
+            ProgressView().onAppear(perform: {
+                self.model.loadUri(uriString: self.uri)
+            })
+        }
     }
 }
 

@@ -12,6 +12,7 @@ import FirebaseFirestoreSwift
 class Show : Entity {
     var seasons : [Season] = []
     var url : String? = nil
+    var episodes : [Episode] = []
     init(id: String?, name: String, description: String, imageUrl: String?, color: String, url: String?) {
         super.init(id: id, name: name, description: description, imageUrl: imageUrl, color: color);
         self.url = url

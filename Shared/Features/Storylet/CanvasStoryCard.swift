@@ -10,7 +10,11 @@ import SwiftUI
 struct CanvasStoryCard: View {
     var storyletObject : StoryletObject
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if (storyletObject.canvasObject != nil) {
+            CanvasView(canvasObject: storyletObject.canvasObject!)
+        } else {
+            Text("No canvas object found")
+        }
     }
 }
  
