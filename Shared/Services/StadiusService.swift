@@ -65,14 +65,20 @@ class StadiusService {
             if (parts.count > 1) {
                 if (parts[1] == "view") {
                     if (parts.count > 2) {
-                        let path = parts[2...parts.count].joined(separator: "/")
-                        let url = "https://api.nplay.se/\(path).json"
+                        let path = parts[2...parts.count - 1].joined(separator: "/")
+                        let url = "https://api.nplay.se/\(path).json/"
+                        print(url)
                         loadJson(fromURLString: url) { (result) in
                         switch result {
                             case .success(let data):
                                 let decoder = JSONDecoder()
-                                if let canvasObject = try? decoder.decode(CanvasObject.self, from: data) {
+                                
+                                do {
+                                    
+                                    let canvasObject = try decoder.decode(CanvasObject.self, from: data)
                                     finished(.success(canvasObject))
+                                }  catch let jsonError as NSError {
+                                    print("JSON decode failed: \(jsonError.localizedDescription)")
                                 }
                                 break;
                             case .failure(let error):

@@ -21,8 +21,10 @@ class BrowseViewModel : ObservableObject {
             switch (result) {
             case .success(let canvasObject):
                 self.canvasObject = canvasObject
+                self.status = 200
                 break;
             case .failure(let error):
+                self.status = 500
                 break
             }
         })
