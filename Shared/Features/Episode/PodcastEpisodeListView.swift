@@ -55,7 +55,7 @@ struct PodcastEpisodeListView: View {
                 if selectedSeason != nil {
                     ForEach(selectedSeason!.episodes) {
                         episode in
-                        NavigationLink(destination: PodcastEpisodePage(url: episode.url!)) {
+                        NavigationLink(destination: PodcastEpisodePage(uriString: episode.url!)) {
                             EpisodeRow(episode: episode, onMenuClicked: {
                                 episode in
                             })

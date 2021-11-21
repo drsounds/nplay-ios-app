@@ -16,6 +16,8 @@ end
 #target 'nPlay (macOS)' do
   # Comment the next line if you don't want to use dynamic frameworks
 #  use_frameworks!
-
+  platform :macos, '12.0'  
+  pod 'FeedKit', '~> 9.0'
+  #pod 'swift-vibrant'
 #  # Pods for nPlay (macOS)
 #end

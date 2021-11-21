@@ -13,7 +13,7 @@ struct PodcastPage: View {
     
     var uri : String = ""
     @ObservedObject var model : PodcastViewModel
-    init(_ uriString: String) {
+    init(uriString: String) {
         self.uri = uriString
         self.model = PodcastViewModel()
     }

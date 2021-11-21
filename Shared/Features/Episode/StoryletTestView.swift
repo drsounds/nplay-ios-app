@@ -18,7 +18,7 @@ struct StoryletTestView: View {
                 name: "Start",
                 description: "test",
                 objects: [
-                    StoryObject(
+                    StoryletObject(
                         name: "Test",
                         description: "Test",
                         type: "youtube",
@@ -31,7 +31,7 @@ struct StoryletTestView: View {
                 name: "Start",
                 description: "test",
                 objects: [
-                    StoryObject(
+                    StoryletObject(
                         name: "Test",
                         description: "Test",
                         type: "youtube",

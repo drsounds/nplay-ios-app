@@ -49,7 +49,7 @@ class PodcastParser {
                         season.episodes.append(
                             episode
                         )
-                        show.episodes.append(
+                        show!.episodes.append(
                             episode
                         )
                         /*

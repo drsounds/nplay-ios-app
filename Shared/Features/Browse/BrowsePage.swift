@@ -11,7 +11,7 @@ struct BrowsePage: View {
     var uri : String = "stadius:view:browse"
     @ObservedObject var model : BrowseViewModel
      
-    init(_ uriString: String) {
+    init(uriString: String) {
         self.uri = uriString
         self.model = BrowseViewModel()
     }

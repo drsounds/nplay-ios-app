@@ -16,7 +16,9 @@ struct BrowseView : View {
         NavigationView {
             CanvasView(canvasObject: canvasObject)
             if self.browseUrl != nil {
-                StadiusNavigationLink(uri: self.browseUrl!, isActive: isActive)
+                StadiusNavigationLink(uriString: self.browseUrl!, isActive: isActive) {
+                    Text("")
+                }
             }
         }.onOpenURL(perform: {
             url in

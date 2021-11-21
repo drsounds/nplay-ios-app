@@ -11,7 +11,7 @@ struct MainView : View {
     @State var activeTab : String = ""
     var body : some View {
         TabView(selection: $activeTab) {
-            BrowsePage()
+            BrowsePage(uriString: "stadius:view:browse")
                 .tabItem {
                     Label("Browse", systemImage: "house.dash")
                 }

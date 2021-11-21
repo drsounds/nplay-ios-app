@@ -1,6 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-nPlay (iOS)/Pods-nPlay (iOS)-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FeedKit-framework/FeedKit.framework
 ${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework
-${BUILT_PRODUCTS_DIR}/FeedKit/FeedKit.framework
 ${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework
 ${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework
 ${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework
