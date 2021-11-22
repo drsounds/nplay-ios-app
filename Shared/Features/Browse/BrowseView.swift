@@ -14,10 +14,12 @@ struct BrowseView : View {
     @State var isActive : Bool = false
     var body: some View {
         NavigationView {
-            CanvasView(canvasObject: canvasObject)
-            if self.browseUrl != nil {
-                StadiusNavigationLink(uriString: self.browseUrl!, isActive: isActive) {
-                    Text("")
+            ScrollView {
+                CanvasView(canvasObject: canvasObject)
+                if self.browseUrl != nil {
+                    StadiusNavigationLink(uriString: self.browseUrl!, isActive: isActive) {
+                        Text("")
+                    }
                 }
             }
         }.onOpenURL(perform: {

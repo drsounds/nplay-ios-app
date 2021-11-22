@@ -16,5 +16,5 @@ struct CanvasObject : Codable, Identifiable {
     var subType : String?
     var color : String?
     var uri: String?
-    var objects: [CanvasObject] = []
+    var objects: [CanvasObject]? = []
 }

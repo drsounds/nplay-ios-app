@@ -14,7 +14,7 @@ struct PodcastEpisodeView: View {
     var seasonId = ""
     var seasonChanged: (String) -> Void
     var body: some View {
-        GenericView(color: Color(hex: episode.color), imageUrl: nil, height: .bottom, showCircle: true) {
+        GenericView(color: Color(hex: episode.color!), imageUrl: nil, height: .bottom, showCircle: true) {
             VStack(alignment: .leading) {
                 GenericHeader(
                     title: nil,

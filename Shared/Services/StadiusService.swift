@@ -36,12 +36,9 @@ class StadiusService {
         if (parts[0] == "stadius") {
             if (parts.count > 1) {
                 if (parts[1] == "episode") {
-                    let base64EncodedEpisodeIdentifier = getUrlFromUri(uriString: uriString, pos: 2)
-                    let episodeIdentifier = base64EncodedEpisodeIdentifier.base64Decoded()
-                    if (episodeIdentifier == nil) {
-                        return
-                    }
-                    let episodeIdentifierParts = episodeIdentifier!.components(separatedBy: ":")
+                    let episodeIdentifier = getUrlFromUri(uriString: uriString, pos: 2)
+              
+                    let episodeIdentifierParts = episodeIdentifier.components(separatedBy: ":")
                     if (episodeIdentifierParts.count < 2) {
                         return
                     }

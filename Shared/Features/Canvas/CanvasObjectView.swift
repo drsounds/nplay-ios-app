@@ -12,19 +12,45 @@ struct CanvasObjectView: View {
     var body: some View {
         VStack {
             
-            if canvasObject.type == "text" {
-                Heading(
-                    name: canvasObject.name,
-                    description: canvasObject.description
-                )
-            } else if canvasObject.type == "image" {
-                if (canvasObject.imageUrl != nil) {
-                    ImageView(url: canvasObject.imageUrl!)
-                } else {
-                    Text("")
-                } 
+            if canvasObject.type == "block" {
+                if canvasObject.subType == "text" {
+                    Heading(
+                        name: canvasObject.name,
+                        description: canvasObject.description
+                    )
+                } else if canvasObject.subType == "image" {
+                    if (canvasObject.imageUrl != nil) {
+                        ImageView(url: canvasObject.imageUrl!)
+                    } else {
+                        Text("")
+                    }
+                } else if canvasObject.subType == "carousel" {
+                    Heading(
+                        name: canvasObject.name,
+                        description: canvasObject.description
+                    )
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(canvasObject.objects!) {
+                                obj in
+                                if obj.type == "blurb" {
+                                    StadiusNavigationLink(uriString: obj.uri!, isActive: false) {
+                                        BlurbView(
+                                            name: obj.name ?? "",
+                                            description: obj.description ?? "",
+                                            label: "",
+                                            type: obj.subType ?? "",
+                                            color: obj.color ?? "",
+                                            imageUrl: obj.imageUrl ?? ""
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             } else if canvasObject.type == "blurb" {
-                BlurbView( 
+                BlurbView(
                     name: canvasObject.name ?? "",
                     description: canvasObject.description ?? "",
                     label: "",
@@ -32,29 +58,7 @@ struct CanvasObjectView: View {
                     color: canvasObject.color ?? "",
                     imageUrl: canvasObject.imageUrl ?? ""
                 )
-            } else if canvasObject.type == "carousel" {
-                Heading(
-                    name: canvasObject.name,
-                    description: canvasObject.description
-                )
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach(canvasObject.objects) {
-                            obj in
-                            if canvasObject.subType == "blurb" {
-                                BlurbView(
-                                    name: obj.name ?? "",
-                                    description: obj.description ?? "",
-                                    label: "",
-                                    type: obj.subType ?? "",
-                                    color: obj.color ?? "",
-                                    imageUrl: obj.imageUrl ?? ""
-                                )
-                            }
-                        }
-                    }
-                }
-            } 
+            }
         }
     }
 }

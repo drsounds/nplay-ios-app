@@ -14,20 +14,23 @@ class Entity : ObservableObject, Identifiable, Codable {
     var name : String = ""
     var description : String = ""
     var imageUrl : String? = nil
-    var color : String = "#88888855"
+    var color : String? = "#88888855"
+    var uri : String? = "stadius:undefined"
     init() {
     }
-    init(id: String?, name: String, description: String, imageUrl: String?) {
+    init(id: String?, name: String, description: String, imageUrl: String?, uriString: String?) {
         self.id = id
         self.name = name
         self.description = description
         self.imageUrl = imageUrl
+        self.uri = uriString
     }
-    init(id: String?, name: String, description: String, imageUrl: String?, color: String) {
+    init(id: String?, name: String, description: String, imageUrl: String?, color: String, uriString: String?) {
         self.id = id
         self.name = name
         self.description = description
         self.imageUrl = imageUrl
         self.color = color
+        self.uri = uriString
     }
 }

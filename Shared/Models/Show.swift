@@ -13,12 +13,12 @@ class Show : Entity {
     var seasons : [Season] = []
     var url : String? = nil
     var episodes : [Episode] = []
-    init(id: String?, name: String, description: String, imageUrl: String?, color: String, url: String?) {
-        super.init(id: id, name: name, description: description, imageUrl: imageUrl, color: color);
+    init(id: String?, name: String, description: String, imageUrl: String?, color: String, url: String?, uriString: String?) {
+        super.init(id: id, name: name, description: description, imageUrl: imageUrl, color: color, uriString: uriString);
         self.url = url
     }
-    override init(id: String?, name: String, description: String, imageUrl: String?, color: String) {
-        super.init(id: id, name: name, description: description, imageUrl: imageUrl, color: color); 
+    override init(id: String?, name: String, description: String, imageUrl: String?, color: String, uriString: String?) {
+        super.init(id: id, name: name, description: description, imageUrl: imageUrl, color: color, uriString: uriString);
     } 
     required init(from decoder: Decoder) throws {
         try super.init(from: decoder)

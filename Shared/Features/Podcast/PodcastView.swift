@@ -13,7 +13,7 @@ struct PodcastView: View {
         self.show = show
     }
     var body: some View {
-        GenericView(color: SwiftUI.Color(hex: show.color, alpha: 0.5), imageUrl: show.imageUrl, height: .center, backgroundColor: SwiftUI.Color(hex: show.color, alpha: 0.3)) {
+        GenericView(color: SwiftUI.Color(hex: show.color!, alpha: 0.5), imageUrl: show.imageUrl, height: .center, backgroundColor: SwiftUI.Color(hex: show.color!, alpha: 0.3)) {
             GenericHeader(
                 title: show.name,
                 label: "show",

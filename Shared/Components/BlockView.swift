@@ -31,7 +31,7 @@ struct BlockView<T : Entity, D : View> : View {
                         BlurbView(
                             name:item.name,
                             description:item.description,
-                            color: item.color,
+                            color: item.color!,
                             imageUrl: item.imageUrl!
                         )
                     }.buttonStyle(.plain)
@@ -40,16 +40,4 @@ struct BlockView<T : Entity, D : View> : View {
         }
     }
 }
-
-struct BlockView_Previews : PreviewProvider {
-    static var previews: some View {
-        BlockView<Entity, ShowPage>(items: [
-            Entity(id: "1", name:"Test",description:"Test", imageUrl:"http://"),
-            Entity(id: "2", name:"Test",description:"Test", imageUrl:"http://"),
-            Entity(id: "3", name:"Test",description:"Test", imageUrl:"http://"),
-            Entity(id: "4", name:"Test",description:"Test", imageUrl:"http://")
-        ], title: "Test", destination: {
-            item in ShowPage(id: item.id!)
-        })
-    }
-}
+ 

@@ -27,7 +27,7 @@ struct ShowDetailPage: View {
         ZStack {
             if show != nil {
                 GenericView(
-                    color: Color(hex: show!.color),
+                    color: Color(hex: show!.color!),
                     imageUrl: show!.imageUrl
                 ) {
                     

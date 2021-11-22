@@ -22,17 +22,31 @@ class PodcastParser {
                 // Or alternatively...
                 switch feed {
                 case let .atom(feed):       // Atom Syndication Format Feed Model
+                    let showUri = "stadius:show:\(url.absoluteString.base64Encoded()!)"
                     show = Show(
                         id: "",
                         name: feed.title!,
                         description: "",
                         imageUrl: "",
                         color: "#888888",
-                        url: url.absoluteString
+                        url: url.absoluteString,
+                        uriString: showUri
                     )
-                    let season : Season = Season(id: "\(url.absoluteString)#1", number: 0, show: show!)
+                    let seasonUriId = "\(url.absoluteString):".base64Encoded()
+                    let seasonUri = "stadius:season:\(seasonUriId!)"
+                    let seasonUrl = "https://open.getstadius.com/season/\(seasonUriId!)"
+                    let season : Season = Season(
+                        id: seasonUriId!,
+                        number: 0,
+                        show: show!,
+                        url: seasonUrl,
+                        uriString: seasonUri
+                    )
                 
                     for _episode in feed.entries ?? [] {
+                        let episodeUriId = "\(url.absoluteString.base64Encoded()!):\(_episode.id!.base64Encoded()!)".base64Encoded()
+                        let episodeUri = "stadius:episode:\(episodeUriId!)"
+                        let episodeUrl = "https://open.getstadius.com/episode/\(episodeUriId!)"
                         let episode = Episode(
                             id: _episode.id!,
                             number: 1,
@@ -41,7 +55,8 @@ class PodcastParser {
                             imageUrl: nil,
                             color: "#777777",
                             season: season,
-                            url: "\(url.absoluteString)#episode=\(_episode.id!)"
+                            url: episodeUrl,
+                            uriString: episodeUri
                         )
                         if episode.imageUrl == nil {
                             episode.imageUrl = episode.season!.show!.imageUrl
@@ -67,16 +82,31 @@ class PodcastParser {
                     show!.seasons.append(season)
                             
                 case let .rss(feed):        // Really Simple Syndication Feed Model
+                    let showUri = "stadius:show:\(url.absoluteString.base64Encoded()!)"
                     show = Show(
                         id: "",
                         name: feed.title!,
                         description: "",
                         imageUrl: feed.image!.url,
                         color: "#888888",
-                        url: url.absoluteString
+                        url: url.absoluteString,
+                        uriString: showUri
                     )
-                    let season = Season(id: "0", number: 0, show: show!)
+                    let seasonUriId = "\(url.absoluteString.base64Encoded()!):0".base64Encoded()
+                    let seasonUri = "stadius:season:\(seasonUriId!)"
+                    let seasonUrl = "https://open.getstadius.com/season/\(seasonUriId!)"
+                    
+                    let season = Season(
+                        id: "0",
+                        number: 0,
+                        show: show!,
+                        url: seasonUrl,
+                        uriString: seasonUri
+                    )
                     for _episode in feed.items ?? [] {
+                        let episodeUriId = "\(url.absoluteString.base64Encoded()!):\(_episode.guid!.value!.base64Encoded()!)".base64Encoded()
+                        let episodeUri = "stadius:episode:\(episodeUriId!)"
+                        let episodeUrl = "https://open.getstadius.com/episode/\(episodeUriId!)"
                         let episode = Episode(
                             id: _episode.guid!.value!,
                             number:1,
@@ -85,7 +115,8 @@ class PodcastParser {
                             imageUrl: nil,
                             color: "#888888",
                             season: season,
-                            url: "\(url.absoluteString)#episode=\(_episode.guid!.value!)"
+                            url: episodeUrl,
+                            uriString: episodeUri
                         )
                         if episode.imageUrl == nil {
                             episode.imageUrl = episode.season!.show!.imageUrl
