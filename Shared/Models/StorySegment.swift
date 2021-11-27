@@ -10,6 +10,6 @@ import Foundation
 struct StorySegment : Codable, Identifiable {
     var id : String? = ""
     var name : String = ""
-    var description : String = ""
-    var objects : [StoryletObject] = []
+    var description : String? = ""
+    var objects : [StoryletObject]? = []
 }

@@ -9,8 +9,8 @@ import Foundation
 
 struct Storylet : Codable, Identifiable {
     var id : String? = ""
-    var name : String = ""
-    var description : String = ""
-    var segments : [StorySegment] = []
-    var color : String = "#888888"
+    var name : String? = ""
+    var description : String? = ""
+    var segments : [StorySegment]? = []
+    var color : String? = "#888888"
 }

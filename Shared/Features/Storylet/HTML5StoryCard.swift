@@ -14,7 +14,7 @@ struct HTML5StoryCard: View {
     // "\(storyObjectrl)?playsinline=1&autoplay=1"
     var body: some View {
         WebView(webView: model.webView).onAppear(perform: {
-            model.loadUrl(storyletObject.url)
+            model.loadUrl(storyletObject.url!)
         })
     }
 }

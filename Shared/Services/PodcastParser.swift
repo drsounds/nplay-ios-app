@@ -138,7 +138,7 @@ class PodcastParser {
                     show!.seasons.append(season)
                     finished(.success(show!))
                             
-                case let .json(feed):       // JSON Feed Model
+                case let .json(_):       // JSON Feed Model
                     return
                 }
                 

@@ -8,10 +8,10 @@
 import Foundation
 
 class StoryletObject : Codable, Identifiable {
-    var name : String
-    var description : String
-    var type : String
-    var url : String
+    var name : String?
+    var description : String?
+    var type : String?
+    var url : String?
     var canvasObject: CanvasObject? = nil
     init(name: String, description: String, type: String, url: String) {
         self.name = name

@@ -15,7 +15,7 @@ struct StorySegmentView: View {
     @State var index: Int = 0
 
     func next() {
-        if (index < storySegment.objects.count) {
+        if (index < storySegment.objects!.count) {
             index += 1
             onIndexChanged(index)
         } else {
@@ -33,8 +33,8 @@ struct StorySegmentView: View {
     }
     var body: some View {
         ZStack(alignment: .topLeading) {
-            if index > -1 && index < storySegment.objects.count {
-                let storyletObject = storySegment.objects[index];
+            if index > -1 && index < storySegment.objects!.count {
+                let storyletObject = storySegment.objects![index];
                
                 if storyletObject.type == "video" {
                     HTML5StoryCard(storyletObject: storyletObject).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.8)
@@ -53,7 +53,7 @@ struct StorySegmentView: View {
                 EmptyView().frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 
             }
-            if storySegment.objects.count > 1 {
+            if storySegment.objects! .count > 1 {
                 HStack {
                     // Next button
                     Button("<"){

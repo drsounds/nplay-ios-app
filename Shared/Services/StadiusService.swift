@@ -25,10 +25,34 @@ class StadiusService {
                     if (feedUrl != nil) {
                         PodcastParser().loadFeed(string: feedUrl!, finished: finished)
                     } else {
-                        
+                        finished(.failure(NSError("Feed URL couldn't be read from base64")))
                     }
+                } else {
+                     finished(.failure(NSError("Invalid stadius subsystem")))
                 }
+            } else {
+                finished(.failure(NSError("Invalid service")))
             }
+        } else {
+            finished(.failure(NSError("Invalid protocol")))
+        }
+    }
+    func getStoryletFromUri(_ uriString: String, finished: @escaping(Result<Storylet, Error>) -> Void) {
+        let parts = uriString.components(separatedBy: ":")
+        if (parts[0] == "stadius") {
+            if (parts.count > 1) {
+                if (parts[1] == "storylet") {
+                    let base64EncodedStoryletUrl = parts[2]
+                    let storyletUrl = base64EncodedStoryletUrl.base64Decoded()
+                    StoryletService().loadStorylet(storyletUrl!, finished: finished)
+                } else {
+                    finished(.failure(NSError("Invalid service")))
+                }
+            } else {
+                finished(.failure(NSError("Invalid URI")))
+            }
+        } else {
+            finished(.failure(NSError("Invalid protocol")))
         }
     }
     func getEpisodeFromUri(_ uriString: String, finished: @escaping(Result<Episode, Error>) -> Void) {
@@ -49,10 +73,16 @@ class StadiusService {
                     if (feedUrl != nil && episodeId != nil) {
                         PodcastParser().loadEpisode(feedUrl!, episodeId: episodeId!, finished: finished)
                     } else {
-                        
+                        finished(.failure(NSError("Invalid URI")))
                     }
+                } else {
+                    finished(.failure(NSError("Invalid URI")))
                 }
+            } else {
+                finished(.failure(NSError("Invalid URI")))
             }
+        } else {
+            finished(.failure(NSError("Invalid URI")))
         }
     }
     
@@ -82,8 +112,15 @@ class StadiusService {
                                 finished(.failure(error))
                             }
                         }
+                    } else {
+                        finished(.failure(NSError("Invalid URI")))
                     }
+                } else {
+                    finished(.failure(NSError("Invalid subsystem")))
+                    
                 }
+            } else {
+                finished(.failure(NSError("Invalid protocol")))
             }
         }
     }

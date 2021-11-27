@@ -20,7 +20,7 @@ class CollectionRepository<T : Entity>: ObservableObject {
      self.path = path
   }
     func get(_ finished: @escaping ([T]) -> Void) {
-        var  q : Query = store.collection(path)
+        let q : Query = store.collection(path)
         q.addSnapshotListener { querySnapshot, error in
           // 4
           if let error = error {

@@ -19,19 +19,19 @@ class StoryletService {
         }
     }
     // Code from https://programmingwithswift.com/parse-json-from-file-and-url-with-swift/
-  func loadStorylet(_ urlString: String, success: @escaping (Storylet) -> Void, failure: @escaping  (Error?) -> Void) {
+  func loadStorylet(_ urlString: String, finished: @escaping (Result<Storylet, Error>) -> Void) {
         if let url = URL(string: urlString) {
             let urlSession = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
                 if let error = error {
-                    failure(error)
+                    finished(.failure(error))
                 }
                 
                 if let data = data {
                     guard let storylet : Storylet = self.parseStorylet(jsonData: data) else {
-                        failure(nil)
+                        finished(.failure(NSError("Could not read storylet")))
                         return
                     }
-                    success(storylet)
+                    finished(.success(storylet))
                 }
             }
             

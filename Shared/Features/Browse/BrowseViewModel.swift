@@ -25,7 +25,7 @@ class BrowseViewModel : ObservableObject {
                     self.status = 200
                 }
                 break;
-            case .failure(let error):
+            case .failure(let _):
                 DispatchQueue.main.async() {
                     self.status = 500
                 }
