@@ -13,10 +13,10 @@ struct Heading: View {
     var body: some View {
         VStack {
             if (name != nil) {
-                Text(name!)
+                Text(name!).font(.system(size: 28, weight: .bold))
             }
             if (description != nil) {
-                Text(description!).opacity(0.8)
+                Text(description!).opacity(0.5)
             }
         }.padding(13)
     }

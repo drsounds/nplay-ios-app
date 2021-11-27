@@ -14,14 +14,15 @@ struct BrowseView : View {
     @State var isActive : Bool = false
     var body: some View {
         NavigationView {
-            ScrollView {
+            GenericView(color: Color(hex: canvasObject.color!)) {
+            
                 CanvasView(canvasObject: canvasObject)
                 if self.browseUrl != nil {
                     StadiusNavigationLink(uriString: self.browseUrl!, isActive: isActive) {
                         Text("")
                     }
                 }
-            }
+            }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         }.onOpenURL(perform: {
             url in
             self.browseUrl = url.absoluteString

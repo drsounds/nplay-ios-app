@@ -15,11 +15,11 @@ struct BlurbView: View {
     var color : String = "#888888"
     var imageUrl: String = ""
     var body: some View {
-        HStack(alignment: .top, spacing: 0) {
+        HStack(alignment: .top, spacing: 5) {
             VStack() {
                 ImageView(url: imageUrl)
                     .aspectRatio(16/9, contentMode: .fit)
-                        .frame(maxWidth: 300, maxHeight: 300)
+                    .frame(width: UIScreen.main.bounds.width / 2.5)
                 VStack {
                     if(label.count > 0) {
                         Text(label.uppercased()).opacity(0.2)
@@ -27,12 +27,12 @@ struct BlurbView: View {
                     if (name.count > 0) {
                         Text(name).bold()
                     }
-                    if (description.count > 0) {
-                        Text(description).opacity(0.8)
+                    if (description.count > 0 && false) {
+                        Text(description.prefix(10)).font(.system(size: 10)).opacity(0.8)
                     }
                 }
                 .frame(maxWidth: .infinity)
-                .padding(10)
+                .padding(0)
             }
             .background(
                 LinearGradient(

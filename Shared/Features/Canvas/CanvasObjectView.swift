@@ -9,6 +9,9 @@ import SwiftUI
 
 struct CanvasObjectView: View {
     var canvasObject : CanvasObject
+    var fadeIndelay : Int = 0
+    @State var translateY : Double = -10.0
+    @State var opacity : Double = 0.0
     var body: some View {
         VStack {
             
@@ -58,6 +61,11 @@ struct CanvasObjectView: View {
                     color: canvasObject.color ?? "",
                     imageUrl: canvasObject.imageUrl ?? ""
                 )
+            }
+        }.opacity(opacity).onAppear {
+            withAnimation(.easeIn(duration: 10)) {
+                translateY = 0
+                opacity = 1
             }
         }
     }
