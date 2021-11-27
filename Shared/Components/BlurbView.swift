@@ -15,45 +15,36 @@ struct BlurbView: View {
     var color : String = "#888888"
     var imageUrl: String = ""
     var body: some View {
-        VStack() {
-            ImageView(url: imageUrl)
-                .aspectRatio(16/9, contentMode: .fit)
-                    .frame(maxWidth: 300, maxHeight: 300)
-            VStack {
-                if(label.count > 0) {
-                    Text(label.uppercased()).opacity(0.2)
+        HStack(alignment: .top, spacing: 0) {
+            VStack() {
+                ImageView(url: imageUrl)
+                    .aspectRatio(16/9, contentMode: .fit)
+                        .frame(maxWidth: 300, maxHeight: 300)
+                VStack {
+                    if(label.count > 0) {
+                        Text(label.uppercased()).opacity(0.2)
+                    }
+                    if (name.count > 0) {
+                        Text(name).bold()
+                    }
+                    if (description.count > 0) {
+                        Text(description).opacity(0.8)
+                    }
                 }
-                if (name.count > 0) {
-                    Text(name).bold()
-                }
-                if (description.count > 0) {
-                    Text(description).opacity(0.8)
-                }
+                .frame(maxWidth: .infinity)
+                .padding(10)
             }
-            .frame(maxWidth: .infinity)
-            .padding(10)
-        }
-        .background(
-            LinearGradient(
-                gradient: Gradient(
-                    colors: [
-                        Color.init(hex: color, alpha: 0.5   ),
-                        Color.init(hex: color, alpha: 0.0),
-                    ]
-                ),
-                startPoint: .top, endPoint: .bottom
+            .background(
+                LinearGradient(
+                    gradient: Gradient(
+                        colors: [
+                            Color.init(hex: color, alpha: 0.5   ),
+                            Color.init(hex: color, alpha: 0.0),
+                        ]
+                    ),
+                    startPoint: .top, endPoint: .bottom
+                )
             )
-        )
-        .frame(maxWidth:.infinity) 
-    }
-}
-
-struct BlurbView_Previews: PreviewProvider {
-    static var previews: some View {
-        BlurbView(
-            name: "Test",
-            description: "Test",
-            label: "Label"
-        )
+        }.frame(maxWidth:.infinity)
     }
 }

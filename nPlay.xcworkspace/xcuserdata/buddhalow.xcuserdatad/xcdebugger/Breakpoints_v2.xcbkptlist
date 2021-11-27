@@ -934,7 +934,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "loadStorylet(_:success:)"
+            landmarkName = "loadStorylet(_:finished:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -950,7 +950,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
             endingLineNumber = "31"
-            landmarkName = "loadStorylet(_:success:)"
+            landmarkName = "loadStorylet(_:finished:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -966,7 +966,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "loadStorylet(_:success:)"
+            landmarkName = "loadStorylet(_:finished:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1094,7 +1094,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
             endingLineNumber = "22"
-            landmarkName = "loadStorylet(_:success:)"
+            landmarkName = "loadStorylet(_:finished:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
