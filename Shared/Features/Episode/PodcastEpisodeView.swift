@@ -28,7 +28,7 @@ struct PodcastEpisodeView: View {
                 ) {
                     PrimaryButton(title:"Play", click: {}).padding(16)
                 }.padding(16)
-                Text(episode.name).opacity(1).padding(30).font(.custom("ProJakartaSans-ExtraBold", size: 30, weight: .bold))
+                Text(episode.name).opacity(1).padding(30).font(.custom("ProJakartaSans-ExtraBold", size: 60).bold())
                 Text(episode.description).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading).padding(30).font(.system(size: 20, weight: .regular))
                 Spacer(minLength: 10)
                 PodcastEpisodeListView(show: show, season: season, episode: episode)
