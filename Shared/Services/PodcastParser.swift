@@ -124,6 +124,9 @@ class PodcastParser {
                         season.episodes.append(
                             episode
                         )
+                        show!.episodes.append(
+                            episode
+                        )
                         let _enclosure = _episode.enclosure
                         if _enclosure != nil {
                             let enclosure = Enclosure(

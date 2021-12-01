@@ -63,7 +63,7 @@ struct CanvasObjectView: View {
                 )
             }
         }.opacity(opacity).onAppear {
-            withAnimation(.easeIn(duration: 10)) {
+            withAnimation(.easeIn(duration: 0.1 )) {
                 translateY = 0
                 opacity = 1
             }

@@ -23,10 +23,10 @@ struct GenericHeader: View {
             }
         }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3, alignment: .top)*/
         VStack(alignment: .center, spacing: 1) {
-            Spacer(minLength: 140)
+            Spacer(minLength: 220)
             if (imageUrl != nil) {
                 HStack {
-                    ImageView(url: imageUrl!).aspectRatio(16/9, contentMode: .fill).frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width - 60, minHeight: 0, maxHeight: .infinity).shadow(color: Color.black
+                    ImageView(url: imageUrl!).aspectRatio(1/1, contentMode: .fill).frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width - 60, minHeight: 0, maxHeight: .infinity).shadow(color: Color.black
                                                                                                                                                                                              , radius: 7, x: 0, y: 5)
                 }
             } else {

@@ -26,7 +26,7 @@ struct nPlayApp: App {
                         })
                     }
                     
-                }).accentColor(Color.green)
+                }).accentColor(Color(hex: "#e0d2af", alpha: 1))
         }
     }
 }

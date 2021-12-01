@@ -15,7 +15,6 @@ struct BrowseView : View {
     var body: some View {
         NavigationView {
             GenericView(color: Color(hex: canvasObject.color!)) {
-            
                 CanvasView(canvasObject: canvasObject)
                 if self.browseUrl != nil {
                     StadiusNavigationLink(uriString: self.browseUrl!, isActive: isActive) {
