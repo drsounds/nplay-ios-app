@@ -4,8 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Fonts/PlusJakartaSans-Regular.ttf</string>
-		<string>Fonts/PlusJakartaSans-ExtraBold.ttf</string>
+		<string>PlusJakartaSans-Regular.ttf</string>
+		<string>PlusJakartaSans-Bold.ttf</string>
+		<string>PlusJakartaSans-ExtraBold.ttf</string>
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Dark</string>

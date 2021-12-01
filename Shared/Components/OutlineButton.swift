@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct PrimaryButton: View {
+struct OutlineButton: View {
     var title : String = ""
     var click : () -> Void
     var body: some View {
         Button(title.uppercased()) {
             click()
-        }.buttonStyle(PrimaryButtonStyle())
+        }.buttonStyle(OutlineButtonStyle())
     }
 }
  

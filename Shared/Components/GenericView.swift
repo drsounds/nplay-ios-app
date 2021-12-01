@@ -15,7 +15,7 @@ struct GenericView<Content : View>: View {
     var showCircle : Bool = false
     @State var backgroundColor : SwiftUI.Color?
     let content: () -> Content
-    @state var colorAlpha : Double = 0.0
+    @State var colorAlpha : Double = 0.0
     
     init(color: SwiftUI.Color, @ViewBuilder content: @escaping() -> Content) {
         self.color = color
@@ -57,7 +57,7 @@ struct GenericView<Content : View>: View {
             ZStack(alignment: .topLeading) {
                 if showCircle {
                     Circle()
-                        .fill(Color(hex: "#ffffff", alpha: colorAlpha))
+                        .fill(Color(hex: "#ffffff", alpha: CGFloat(1.0)))
                         .frame(width: UIScreen.main.bounds.width * 2, height: UIScreen.main.bounds.width * 2)
                         .position(x: UIScreen.main.bounds.width / 2, y:  UIScreen.main.bounds.width * -0.5)
                 }
@@ -97,11 +97,7 @@ struct GenericView<Content : View>: View {
                     }
                 }
             }
-        }).onAppear {
-            withAnimation(.easeIn(3)) {
-                color = 1
-            }
-        }
+        })
     }
 }
  

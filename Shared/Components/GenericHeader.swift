@@ -38,12 +38,4 @@ struct GenericHeader: View {
         }.frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: .infinity).padding(5)
     }
 }
-
-struct GenericHeader_Previews: PreviewProvider {
-    static var previews: some View {
-        GenericHeader(
-            title: "Test",
-            label: "Test"
-        )
-    }
-}
+ 
