@@ -91,13 +91,13 @@ struct GenericView<Content : View>: View {
                     let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
                     DispatchQueue.main.async {
                         let image = UIImage(data: data!)
-                        Vibrant.from(image!).getPalette({ (palette : Palette) in
+                        /*Vibrant.from(image!).getPalette({ (palette : Palette) in
                             backgroundColor = Color(palette.DarkMuted!.uiColor)
-                        })
+                        })*/    
                     }
                 }
             }
-        })
+        }).animation(.spring(), value: backgroundColor)
     }
 }
  

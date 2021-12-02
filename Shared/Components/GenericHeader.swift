@@ -26,8 +26,7 @@ struct GenericHeader: View {
             Spacer(minLength: 220)
             if (imageUrl != nil) {
                 HStack {
-                    ImageView(url: imageUrl!).aspectRatio(1/1, contentMode: .fill).frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width - 60, minHeight: 0, maxHeight: .infinity).shadow(color: Color.black
-                                                                                                                                                                                             , radius: 7, x: 0, y: 5)
+                    ImageView(url: imageUrl!).aspectRatio(1/1, contentMode: .fill).frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width - 60, minHeight: 0, maxHeight: .infinity).shadow(color: Color(hex: "#000000", alpha: 0.2), radius: 7, x: 0, y: 5)
                 }
             } else {
                 Spacer(minLength: 70)
